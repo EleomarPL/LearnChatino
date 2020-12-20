@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/registerUser/mainWindow.dart';
+import 'package:learn_chatino/registerUser/mainWindow.dart' as registerUser;
+import 'package:learn_chatino/windowsLesson/mainWindowLesson.dart'
+    as windowLesson;
 
 class ComponentsHome extends StatelessWidget {
   @override
@@ -36,7 +38,27 @@ class bodyMainWindow extends StatelessWidget {
       transitionDuration: const Duration(
         milliseconds: 500,
       ),
-      pageBuilder: (context, animation, secondaryAnimation) => MainWindow(),
+      pageBuilder: (context, animation, secondaryAnimation) =>
+          registerUser.MainWindow(),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
+            .chain(CurveTween(curve: Curves.ease));
+
+        return SlideTransition(
+          position: animation.drive(tween),
+          child: child,
+        );
+      },
+    );
+  }
+
+  Route _handleNavigationPressedToLessons() {
+    return PageRouteBuilder(
+      transitionDuration: const Duration(
+        milliseconds: 500,
+      ),
+      pageBuilder: (context, animation, secondaryAnimation) =>
+          windowLesson.MainWindow(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
             .chain(CurveTween(curve: Curves.ease));
@@ -125,10 +147,12 @@ class bodyMainWindow extends StatelessWidget {
                           ),
                         ),
                         onPressed: () => {
-                          if (_formKey.currentState.validate())
+                          /*if (_formKey.currentState.validate())
                             {
                               print("entro"),
-                            }
+                            }*/
+                          Navigator.of(context)
+                              .push(_handleNavigationPressedToLessons()),
                         },
                       ),
                     ],

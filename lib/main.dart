@@ -5,12 +5,11 @@ void main() {
   runApp(MainApp());
 }
 
-// ignore: must_be_immutable
 class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Learn chatino',
+      title: 'Aprendamos chatino',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

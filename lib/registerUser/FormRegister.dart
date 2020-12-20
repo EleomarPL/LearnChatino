@@ -73,16 +73,12 @@ class _FormRegisterState extends State<FormRegister> {
                   color: Colors.white,
                   size: 30,
                 ),
-                //iconSize: 35,
-                //elevation: 100,
                 isExpanded: true,
                 dropdownColor: Colors.transparent,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
-
-                  //backgroundColor: Colors.black,
                 ),
                 underline: Container(
                   height: 2,
