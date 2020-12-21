@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_chatino/windowsLesson/informationTab/carouselInformation.dart';
 
@@ -28,10 +27,7 @@ class _MainInformationState extends State<MainInformation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //drawer: Text('aaa'),
-      //drawerDragStartBehavior: DragStartBehavior.start,
       body: ListView(
-        //padding: const EdgeInsets.all(8.0),
         children: [
           Column(
             children: [
