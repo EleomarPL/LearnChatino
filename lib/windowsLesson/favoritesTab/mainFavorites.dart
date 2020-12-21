@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_chatino/windowsLesson/favoritesTab/ComponentWord.dart';
 
 class MainFavorite extends StatefulWidget {
   MainFavorite({Key key}) : super(key: key);
@@ -10,8 +11,42 @@ class MainFavorite extends StatefulWidget {
 class _MainFavoriteState extends State<MainFavorite> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("class Favorites"),
+    return Scaffold(
+      bottomNavigationBar: RaisedButton(
+        color: Colors.blue[900],
+        child: Text(
+          'AÑADIR PALABRA NUEVA',
+          style: TextStyle(
+            fontSize: 17,
+            color: Colors.white,
+          ),
+        ),
+        onPressed: () => {},
+      ),
+      body: ListView(
+        children: [
+          Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Mis palabras',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              //Example component
+              ComponentWord(
+                wordInSpanish: "Bienvenido",
+                wordInChatino: "Ninansca",
+                pathImage: "assets/background.png",
+              ),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
