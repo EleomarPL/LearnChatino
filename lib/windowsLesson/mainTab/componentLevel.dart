@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/MainLesson.dart';
 
 class ComponentLevel extends StatefulWidget {
   final int numLevel;
@@ -18,6 +19,27 @@ class ComponentLevel extends StatefulWidget {
 }
 
 class _ComponentLevelState extends State<ComponentLevel> {
+  Route _handleNavigationPressed(int numLesson) {
+    return PageRouteBuilder(
+      transitionDuration: const Duration(
+        milliseconds: 500,
+      ),
+      pageBuilder: (context, animation, secondaryAnimation) => MainLesson(
+        numLevel: widget.numLevel,
+        numLesson: numLesson,
+      ),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
+            .chain(CurveTween(curve: Curves.ease));
+
+        return SlideTransition(
+          position: animation.drive(tween),
+          child: child,
+        );
+      },
+    );
+  }
+
   Widget _lessonComponent(int numLesson, String pathImage, bool isAccessible) =>
       Stack(
         alignment: Alignment.topCenter,
@@ -41,7 +63,10 @@ class _ComponentLevelState extends State<ComponentLevel> {
                 (isAccessible)
                     ? RaisedButton(
                         color: Colors.green,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context)
+                              .push(_handleNavigationPressed(numLesson));
+                        },
                         elevation: 0,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(

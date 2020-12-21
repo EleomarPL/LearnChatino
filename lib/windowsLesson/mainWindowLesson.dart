@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/favoritesTab/mainFavorites.dart';
-import 'package:learn_chatino/windowsLesson/informationTab/mainInformation.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/mainMain.dart';
+import 'package:learn_chatino/windowsLesson/favoritesTab/MainFavorites.dart';
+import 'package:learn_chatino/windowsLesson/informationTab/MainInformation.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/MainMain.dart';
 
 class MainWindow extends StatefulWidget {
   MainWindow({Key key}) : super(key: key);
