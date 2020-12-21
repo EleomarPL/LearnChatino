@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/HeaderWindowLesson.dart';
 
 class MainExercise extends StatefulWidget {
-  MainExercise({Key key}) : super(key: key);
+  final int numLevel;
+  final int numLesson;
+  MainExercise({Key key, this.numLevel, this.numLesson}) : super(key: key);
 
   @override
   _MainExerciseState createState() => _MainExerciseState();
@@ -10,9 +13,11 @@ class MainExercise extends StatefulWidget {
 class _MainExerciseState extends State<MainExercise> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Aprendamos Chatino"),
+    return HeaderWindowLesson(
+      lesson: 'Lección ${widget.numLesson}',
+      titleBody: 'Ejercicios',
+      body: Column(
+        children: [],
       ),
     );
   }

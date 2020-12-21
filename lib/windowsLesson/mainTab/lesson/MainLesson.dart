@@ -111,7 +111,10 @@ class MainLesson extends StatelessWidget {
                 child: _optionLesson('Pronunciación', Colors.green, context),
                 onTap: () {
                   Navigator.of(context)
-                      .push(_handleNavigationPressed(MainPronunciaton()));
+                      .push(_handleNavigationPressed(MainPronunciaton(
+                    numLevel: numLevel,
+                    numLesson: numLesson,
+                  )));
                 },
               )
             ],
@@ -126,14 +129,20 @@ class MainLesson extends StatelessWidget {
                 child: _optionLesson('Conversación', Colors.green, context),
                 onTap: () {
                   Navigator.of(context)
-                      .push(_handleNavigationPressed(MainConversation()));
+                      .push(_handleNavigationPressed(MainConversation(
+                    numLevel: numLevel,
+                    numLesson: numLesson,
+                  )));
                 },
               ),
               GestureDetector(
                 child: _optionLesson('Ejercicios', Colors.blue[300], context),
                 onTap: () {
                   Navigator.of(context)
-                      .push(_handleNavigationPressed(MainExercise()));
+                      .push(_handleNavigationPressed(MainExercise(
+                    numLevel: numLevel,
+                    numLesson: numLesson,
+                  )));
                 },
               ),
             ],
