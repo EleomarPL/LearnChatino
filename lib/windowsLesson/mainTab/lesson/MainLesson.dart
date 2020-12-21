@@ -1,9 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/conversation/mainConversation.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/exercise/MainExercise.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/pronunciaton/MainPronunciaton.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/vocabulary/MainVocabulary.dart';
 
 class MainLesson extends StatelessWidget {
   final int numLevel;
   final int numLesson;
   const MainLesson({Key key, this.numLevel, this.numLesson}) : super(key: key);
+  Route _handleNavigationPressed(Widget classToGo) {
+    return PageRouteBuilder(
+      transitionDuration: const Duration(
+        milliseconds: 500,
+      ),
+      pageBuilder: (context, animation, secondaryAnimation) => classToGo,
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
+            .chain(CurveTween(curve: Curves.ease));
+
+        return SlideTransition(
+          position: animation.drive(tween),
+          child: child,
+        );
+      },
+    );
+  }
+
   Widget _textLesson(String text, double sizeText, FontWeight weightText) =>
       Text(
         text,
@@ -78,13 +100,18 @@ class MainLesson extends StatelessWidget {
               GestureDetector(
                 child: _optionLesson('Vocabulario', Colors.green, context),
                 onTap: () {
-                  print('vocabulario');
+                  Navigator.of(context)
+                      .push(_handleNavigationPressed(MainVocabulary(
+                    numLevel: numLevel,
+                    numLesson: numLesson,
+                  )));
                 },
               ),
               GestureDetector(
                 child: _optionLesson('Pronunciación', Colors.green, context),
                 onTap: () {
-                  print('pronunciación');
+                  Navigator.of(context)
+                      .push(_handleNavigationPressed(MainPronunciaton()));
                 },
               )
             ],
@@ -98,13 +125,15 @@ class MainLesson extends StatelessWidget {
               GestureDetector(
                 child: _optionLesson('Conversación', Colors.green, context),
                 onTap: () {
-                  print('conversación');
+                  Navigator.of(context)
+                      .push(_handleNavigationPressed(MainConversation()));
                 },
               ),
               GestureDetector(
                 child: _optionLesson('Ejercicios', Colors.blue[300], context),
                 onTap: () {
-                  print('ejercicios');
+                  Navigator.of(context)
+                      .push(_handleNavigationPressed(MainExercise()));
                 },
               ),
             ],
