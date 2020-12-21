@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:learn_chatino/windowsLesson/mainTab/lesson/HeaderWindowLesson.dart';
+import 'package:learn_chatino/windowsLesson/mainTab/lesson/pronunciaton/BaseWindowPronunciaton.dart';
 
 class MainPronunciaton extends StatefulWidget {
   final int numLevel;
@@ -12,6 +13,29 @@ class MainPronunciaton extends StatefulWidget {
 }
 
 class _MainPronunciatonState extends State<MainPronunciaton> {
+  Route _handleNavigationPressed(bool isBasicVowel) {
+    return PageRouteBuilder(
+      transitionDuration: const Duration(
+        milliseconds: 500,
+      ),
+      pageBuilder: (context, animation, secondaryAnimation) =>
+          BaseWindowPronunciaton(
+        numLevel: widget.numLevel,
+        numLesson: widget.numLesson,
+        isBasicVowel: isBasicVowel,
+      ),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
+            .chain(CurveTween(curve: Curves.ease));
+
+        return SlideTransition(
+          position: animation.drive(tween),
+          child: child,
+        );
+      },
+    );
+  }
+
   Widget _componentOption(String title, Color colorBackground) => Container(
         color: colorBackground,
         child: Text(
@@ -42,7 +66,7 @@ class _MainPronunciatonState extends State<MainPronunciaton> {
                 Colors.red[600],
               ),
               onTap: () {
-                print('vocales básicas');
+                Navigator.of(context).push(_handleNavigationPressed(true));
               },
             ),
             SizedBox(
@@ -54,7 +78,7 @@ class _MainPronunciatonState extends State<MainPronunciaton> {
                 Colors.orange[600],
               ),
               onTap: () {
-                print('vocales largas');
+                Navigator.of(context).push(_handleNavigationPressed(false));
               },
             ),
           ],
