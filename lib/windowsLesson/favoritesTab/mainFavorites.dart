@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/favoritesTab/ComponentWord.dart';
+import 'ComponentWord.dart';
 
 class MainFavorite extends StatefulWidget {
   MainFavorite({Key key}) : super(key: key);

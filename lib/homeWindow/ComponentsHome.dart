@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/registerUser/mainWindow.dart' as registerUser;
-import 'package:learn_chatino/windowsLesson/MainWindowLesson.dart'
-    as windowLesson;
+import '../registerUser/mainWindow.dart' as registerUser;
+import '../windowsLesson/MainWindowLesson.dart' as windowLesson;
 
 class ComponentsHome extends StatelessWidget {
   @override

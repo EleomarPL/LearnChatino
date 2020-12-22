@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/HeaderWindowLesson.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/pronunciaton/BasicVowels.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/pronunciaton/LongVowels.dart';
+import '../HeaderWindowLesson.dart';
+import 'BasicVowels.dart';
+import 'LongVowels.dart';
 
 class BaseWindowPronunciaton extends StatefulWidget {
   final int numLevel;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/MainLesson.dart';
+import 'lesson/MainLesson.dart';
 
 class ComponentLevel extends StatefulWidget {
   final int numLevel;

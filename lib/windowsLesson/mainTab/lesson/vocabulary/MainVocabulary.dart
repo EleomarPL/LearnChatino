@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/HeaderWindowLesson.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/vocabulary/ComponentVocabulary.dart';
+import '../HeaderWindowLesson.dart';
+import 'ComponentVocabulary.dart';
 
 class MainVocabulary extends StatefulWidget {
   final int numLevel;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/registerUser/BackgroundWindow.dart';
-import 'package:learn_chatino/registerUser/FormRegister.dart';
+import 'BackgroundWindow.dart';
+import 'FormRegister.dart';
 
 class MainWindow extends StatefulWidget {
   @override

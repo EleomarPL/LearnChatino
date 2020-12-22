@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/informationTab/CarouselInformation.dart';
+import 'CarouselInformation.dart';
 
 class MainInformation extends StatefulWidget {
   MainInformation({Key key}) : super(key: key);

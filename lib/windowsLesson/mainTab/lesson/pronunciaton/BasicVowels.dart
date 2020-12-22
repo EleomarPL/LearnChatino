@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 class BasicVowels extends StatefulWidget {
   final int numLevel;

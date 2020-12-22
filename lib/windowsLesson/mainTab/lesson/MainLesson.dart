@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/conversation/mainConversation.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/exercise/MainExercise.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/pronunciaton/MainPronunciaton.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/vocabulary/MainVocabulary.dart';
+import 'conversation/MainConversation.dart';
+import 'exercise/MainExercise.dart';
+import 'pronunciaton/MainPronunciaton.dart';
+import 'vocabulary/MainVocabulary.dart';
 
 class MainLesson extends StatelessWidget {
   final int numLevel;

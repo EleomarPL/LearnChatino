@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/HeaderWindowLesson.dart';
-import 'package:learn_chatino/windowsLesson/mainTab/lesson/pronunciaton/BaseWindowPronunciaton.dart';
+import '../HeaderWindowLesson.dart';
+import 'BaseWindowPronunciaton.dart';
 
 class MainPronunciaton extends StatefulWidget {
   final int numLevel;
