@@ -17,11 +17,19 @@ class _MainVocabularyState extends State<MainVocabulary> {
     return HeaderWindowLesson(
       lesson: 'Lección ${widget.numLesson}',
       titleBody: 'Vocabulario',
-      body: Column(
+      body: ListView(
         children: [
-          ComponentVocabulary(
-            wordInSpanish: 'Bienvenido',
-            pathImage: 'assets/background.png',
+          Column(
+            children: [
+              ComponentVocabulary(
+                wordInSpanish: 'Bienvenido',
+                pathImage: 'assets/background.png',
+              ),
+              ComponentVocabulary(
+                wordInSpanish: 'Bienvenido',
+                pathImage: 'assets/background.png',
+              ),
+            ],
           ),
         ],
       ),

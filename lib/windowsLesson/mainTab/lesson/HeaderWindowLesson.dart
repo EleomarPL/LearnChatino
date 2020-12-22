@@ -42,11 +42,7 @@ class HeaderWindowLesson extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: ListView(
-          children: [
-            body,
-          ],
-        ),
+        body: body,
       ),
     );
   }

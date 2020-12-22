@@ -30,9 +30,18 @@ Widget _background() => Opacity(
       ),
     );
 
-class bodyMainWindow extends StatelessWidget {
+// ignore: camel_case_types
+class bodyMainWindow extends StatefulWidget {
+  @override
+  _bodyMainWindowState createState() => _bodyMainWindowState();
+}
+
+// ignore: camel_case_types
+class _bodyMainWindowState extends State<bodyMainWindow> {
   final _formKey = GlobalKey<FormState>();
+
   TextEditingController controllerUser = TextEditingController();
+
   Route _handleNavigationPressed() {
     return PageRouteBuilder(
       transitionDuration: const Duration(

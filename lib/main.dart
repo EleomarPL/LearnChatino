@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/homeWindow/ComponentsHome.dart';
+import 'homeWindow/ComponentsHome.dart';
 
 void main() {
   runApp(MainApp());
