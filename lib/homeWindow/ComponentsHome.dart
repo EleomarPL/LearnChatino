@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../registerUser/mainWindow.dart' as registerUser;
+import '../registerUser/MainWindow.dart' as registerUser;
 import '../windowsLesson/MainWindowLesson.dart' as windowLesson;
 
 class ComponentsHome extends StatelessWidget {
