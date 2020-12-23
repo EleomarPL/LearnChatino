@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'ComponentLevel.dart';
 
 class MainMain extends StatefulWidget {
-  //MainMain({Key key}) : super(key: key);
+  MainMain({Key key}) : super(key: key);
 
   @override
   _MainMainState createState() => _MainMainState();
@@ -16,7 +16,6 @@ class _MainMainState extends State<MainMain> {
       child: ListView(
         padding: EdgeInsets.all(15.0),
         children: [
-          //ComponentLevel(),
           ComponentLevel(
             numLevel: 1,
             isAccessibleLessonOne: true,

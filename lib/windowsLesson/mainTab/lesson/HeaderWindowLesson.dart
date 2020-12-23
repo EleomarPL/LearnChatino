@@ -33,6 +33,7 @@ class HeaderWindowLesson extends StatelessWidget {
           elevation: 0,
           automaticallyImplyLeading: false,
           backgroundColor: Colors.white,
+          toolbarHeight: 40.0,
           title: Text(
             '$titleBody',
             style: TextStyle(
