@@ -7,6 +7,11 @@ class ComponentBody extends StatefulWidget {
   final int numLevel;
   final int numLesson;
   final int lengthTabBar;
+  final double lengthText;
+  final Color backgroundColor;
+  final Color labelSelectedColor;
+  final Color labelUnselectedColor;
+  final Color backgroundBoxSelectec;
   List<String> listTabBar;
   List<Widget> listTabBarView;
   ComponentBody(
@@ -15,17 +20,22 @@ class ComponentBody extends StatefulWidget {
       this.numLesson,
       this.listTabBar,
       this.listTabBarView,
-      this.lengthTabBar})
+      this.lengthTabBar,
+      this.lengthText,
+      this.backgroundColor,
+      this.labelSelectedColor,
+      this.labelUnselectedColor,
+      this.backgroundBoxSelectec})
       : super(key: key);
 
   @override
   _ComponentBodyState createState() => _ComponentBodyState();
 }
 
-Widget _textTabBar(String text) => Text(
+Widget _textTabBar(String text, double lengthText) => Text(
       text,
       style: TextStyle(
-        fontSize: 40,
+        fontSize: lengthText,
         fontWeight: FontWeight.w900,
       ),
     );
@@ -103,7 +113,7 @@ class _ComponentBodyState extends State<ComponentBody>
   @override
   Widget build(BuildContext context) {
     List<Widget> listTab = widget.listTabBar.map((String titleBar) {
-      return _textTabBar(titleBar);
+      return _textTabBar(titleBar, widget.lengthText);
     }).toList();
     return Scaffold(
       appBar: AppBar(
@@ -111,13 +121,20 @@ class _ComponentBodyState extends State<ComponentBody>
         shadowColor: Colors.white,
         backgroundColor: Colors.white,
         elevation: 0.0,
-        title: TabBar(
-          controller: _tabController,
-          labelColor: Colors.red[600],
-          unselectedLabelColor: Colors.grey[600],
-          indicatorColor: Colors.white,
-          labelPadding: const EdgeInsets.only(right: 8.0, left: 8.0),
-          tabs: listTab,
+        titleSpacing: 5.0,
+        title: Container(
+          color: widget.backgroundColor,
+          child: TabBar(
+            controller: _tabController,
+            labelColor: widget.labelSelectedColor,
+            unselectedLabelColor: widget.labelUnselectedColor,
+            indicatorColor: Colors.transparent,
+            indicator: BoxDecoration(
+              color: widget.backgroundBoxSelectec,
+            ),
+            labelPadding: const EdgeInsets.only(right: 2.0, left: 2.0),
+            tabs: listTab,
+          ),
         ),
         iconTheme: IconThemeData(color: Colors.white),
       ),

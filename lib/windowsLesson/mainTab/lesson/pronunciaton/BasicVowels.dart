@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'components/ComponentBody.dart';
+import '../components/ComponentBody.dart';
 
 class BasicVowels extends StatefulWidget {
   final int numLevel;
@@ -17,6 +17,11 @@ class _BasicVowelsState extends State<BasicVowels> {
       numLevel: widget.numLevel,
       numLesson: widget.numLesson,
       lengthTabBar: 5,
+      lengthText: 40,
+      backgroundColor: Colors.white,
+      labelSelectedColor: Colors.red[600],
+      labelUnselectedColor: Colors.grey[600],
+      backgroundBoxSelectec: Colors.white,
       listTabBar: ["a", "e", "i", "o", "u"],
       listTabBarView: [
         Text("Widgets of tab aa is here"),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'components/ComponentBody.dart';
+import '../components/ComponentBody.dart';
 
 class LongVowels extends StatefulWidget {
   final int numLevel;
@@ -18,6 +18,11 @@ class _LongVowelsState extends State<LongVowels> {
       numLevel: widget.numLevel,
       numLesson: widget.numLesson,
       lengthTabBar: 5,
+      lengthText: 40,
+      backgroundColor: Colors.white,
+      labelSelectedColor: Colors.red[600],
+      labelUnselectedColor: Colors.grey[600],
+      backgroundBoxSelectec: Colors.white,
       listTabBar: ["aa", "ee", "ii", "oo", "uu"],
       listTabBarView: [
         Text("Widgets of tab aa is here"),
