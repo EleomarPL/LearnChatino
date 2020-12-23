@@ -50,6 +50,7 @@ flutter:
     - assets/
     - assets/registerUser/
     - assets/lessonHome/
+    - assets/lessonHome/exercise/
     - assets/informationTab/
   #   - images/a_dot_ham.jpeg
 

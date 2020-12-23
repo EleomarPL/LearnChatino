@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/ComponentPronunciaton.dart';
 import '../components/ComponentBody.dart';
 
 class BasicVowels extends StatefulWidget {
@@ -24,7 +25,13 @@ class _BasicVowelsState extends State<BasicVowels> {
       backgroundBoxSelectec: Colors.white,
       listTabBar: ["a", "e", "i", "o", "u"],
       listTabBarView: [
-        Text("Widgets of tab aa is here"),
+        //example component pronunciaton
+        ComponentPronunciaton(
+          pathImage: 'assets/background.png',
+          wordInSpanish: 'frijol',
+          wordInChatino: 'ndaa',
+          pathSound: '',
+        ),
         Text("Widgets of tab ee is here"),
         Text("Widgets of tab ii is here"),
         Text("Widgets of tab oo is here"),

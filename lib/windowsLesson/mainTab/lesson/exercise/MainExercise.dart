@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ComponentExercise.dart';
 import '../components/ComponentBody.dart';
 import '../HeaderWindowLesson.dart';
 
@@ -28,8 +29,23 @@ class _MainExerciseState extends State<MainExercise> {
         backgroundBoxSelectec: Colors.red,
         listTabBar: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
         listTabBarView: [
-          Text("Widgets of tab exercise 1 is here"),
-          Text("Widgets of tab exercise 2 is here"),
+          //example component exercise
+          ComponentExercise(
+            numLesson: widget.numLesson,
+            numLevel: widget.numLevel,
+            correctWord1: "yua",
+            incorrectWord1: "Ayu",
+            correctWord2: "yuaa",
+            incorrectWord2: "aayu",
+          ),
+          ComponentExercise(
+            numLesson: widget.numLesson,
+            numLevel: widget.numLevel,
+            correctWord1: "yua",
+            incorrectWord1: "Ayu",
+            correctWord2: "yuaa",
+            incorrectWord2: "aayu",
+          ),
           Text("Widgets of tab exercise 3 is here"),
           Text("Widgets of tab exercise 4 is here"),
           Text("Widgets of tab exercise 5 is here"),

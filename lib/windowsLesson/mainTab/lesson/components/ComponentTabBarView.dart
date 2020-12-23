@@ -34,6 +34,7 @@ class _ComponentTabBarViewState extends State<ComponentTabBarView> {
             color: Colors.white,
             child: _textBody(textButton, sizeText, weightText, colorText),
             onPressed: () {
+              FocusScope.of(context).requestFocus(new FocusNode());
               setState(() {
                 if (isNext) {
                   widget.tabController
@@ -48,12 +49,16 @@ class _ComponentTabBarViewState extends State<ComponentTabBarView> {
       backgroundColor: Colors.white,
       body: ListView(
         children: [
-          Divider(
-            height: 2.0,
-            thickness: 1.0,
-            color: Colors.grey,
+          Column(
+            children: [
+              Divider(
+                height: 2.0,
+                thickness: 1.0,
+                color: Colors.grey,
+              ),
+              widget.body,
+            ],
           ),
-          widget.body,
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
