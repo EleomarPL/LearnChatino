@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_chatino/contentData/ContentData.dart';
 import '../HeaderWindowLesson.dart';
 import 'ComponentVocabulary.dart';
 
@@ -12,6 +13,7 @@ class MainVocabulary extends StatefulWidget {
 }
 
 class _MainVocabularyState extends State<MainVocabulary> {
+  ContentData contentData = ContentData();
   @override
   Widget build(BuildContext context) {
     return HeaderWindowLesson(
@@ -21,14 +23,32 @@ class _MainVocabularyState extends State<MainVocabulary> {
         children: [
           Column(
             children: [
-              ComponentVocabulary(
-                wordInSpanish: 'Bienvenido',
-                pathImage: 'assets/background.png',
-              ),
-              ComponentVocabulary(
-                wordInSpanish: 'Bienvenido',
-                pathImage: 'assets/background.png',
-              ),
+              FutureBuilder(
+                  future: contentData.getVocabulary(
+                      widget.numLevel, widget.numLesson),
+                  builder: (BuildContext context,
+                      AsyncSnapshot<Map<String, dynamic>> snapshot) {
+                    if (snapshot.connectionState == ConnectionState.done) {
+                      print(snapshot.data['word-1']['pathBackground']);
+                      return Column(
+                        children: [
+                          for (int i = 0; i < (snapshot.data).length; i++)
+                            ComponentVocabulary(
+                              wordInSpanish: snapshot.data['word-${i + 1}']
+                                      ['wordInSpanish']
+                                  .toString(),
+                              pathImage: snapshot.data['word-${i + 1}']
+                                      ['pathBackground']
+                                  .toString(),
+                            )
+                        ],
+                      );
+                    } else {
+                      return Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    }
+                  }),
             ],
           ),
         ],

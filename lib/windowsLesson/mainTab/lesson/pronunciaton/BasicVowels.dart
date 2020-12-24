@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../contentData/ContentData.dart';
 import 'components/ComponentPronunciaton.dart';
 import '../components/ComponentBody.dart';
 
@@ -12,6 +13,29 @@ class BasicVowels extends StatefulWidget {
 }
 
 class _BasicVowelsState extends State<BasicVowels> {
+  List<String> _tabBasicVowels = ["a", "e", "i", "o", "u"];
+  ContentData _contentData = ContentData();
+  Widget _fillListVowel(String letter) {
+    return FutureBuilder(
+        future: _contentData.getPronunciaton(
+            widget.numLevel, widget.numLesson, "basicvowels", letter),
+        builder: (BuildContext context,
+            AsyncSnapshot<Map<String, dynamic>> snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return ComponentPronunciaton(
+              pathImage: snapshot.data['pathImage'].toString(),
+              wordInSpanish: snapshot.data['wordInSpanish'].toString(),
+              wordInChatino: snapshot.data['wordInChatino'].toString(),
+              pathSound: '',
+            );
+          } else {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return ComponentBody(
@@ -23,20 +47,10 @@ class _BasicVowelsState extends State<BasicVowels> {
       labelSelectedColor: Colors.red[600],
       labelUnselectedColor: Colors.grey[600],
       backgroundBoxSelectec: Colors.white,
-      listTabBar: ["a", "e", "i", "o", "u"],
-      listTabBarView: [
-        //example component pronunciaton
-        ComponentPronunciaton(
-          pathImage: 'assets/background.png',
-          wordInSpanish: 'frijol',
-          wordInChatino: 'ndaa',
-          pathSound: '',
-        ),
-        Text("Widgets of tab ee is here"),
-        Text("Widgets of tab ii is here"),
-        Text("Widgets of tab oo is here"),
-        Text("Widgets of tab uu is here"),
-      ],
+      listTabBar: _tabBasicVowels,
+      listTabBarView: _tabBasicVowels.map((e) {
+        return _fillListVowel(e);
+      }).toList(),
     );
   }
 }

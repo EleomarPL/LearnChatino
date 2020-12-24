@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import '../../../../contentData/ContentData.dart';
 
 import '../components/ComponentBody.dart';
+import 'components/ComponentPronunciaton.dart';
 
 class LongVowels extends StatefulWidget {
   final int numLevel;
@@ -12,6 +14,29 @@ class LongVowels extends StatefulWidget {
 }
 
 class _LongVowelsState extends State<LongVowels> {
+  List<String> _tabLongVowels = ["aa", "ee", "ii", "oo", "uu"];
+  ContentData _contentData = ContentData();
+  Widget _fillListVowel(String letter) {
+    return FutureBuilder(
+        future: _contentData.getPronunciaton(
+            widget.numLevel, widget.numLesson, "longvowels", letter),
+        builder: (BuildContext context,
+            AsyncSnapshot<Map<String, dynamic>> snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return ComponentPronunciaton(
+              pathImage: snapshot.data['pathImage'].toString(),
+              wordInSpanish: snapshot.data['wordInSpanish'].toString(),
+              wordInChatino: snapshot.data['wordInChatino'].toString(),
+              pathSound: '',
+            );
+          } else {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return ComponentBody(
@@ -23,14 +48,10 @@ class _LongVowelsState extends State<LongVowels> {
       labelSelectedColor: Colors.red[600],
       labelUnselectedColor: Colors.grey[600],
       backgroundBoxSelectec: Colors.white,
-      listTabBar: ["aa", "ee", "ii", "oo", "uu"],
-      listTabBarView: [
-        Text("Widgets of tab aa is here"),
-        Text("Widgets of tab ee is here"),
-        Text("Widgets of tab ii is here"),
-        Text("Widgets of tab oo is here"),
-        Text("Widgets of tab uu is here"),
-      ],
+      listTabBar: _tabLongVowels,
+      listTabBarView: _tabLongVowels.map((e) {
+        return _fillListVowel(e);
+      }).toList(),
     );
   }
 }
