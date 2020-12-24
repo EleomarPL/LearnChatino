@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_chatino/contentData/ContentData.dart';
+import '../../../../contentData/ContentData.dart';
 import '../HeaderWindowLesson.dart';
 import 'ComponentVocabulary.dart';
 

@@ -96,44 +96,64 @@
             },
             "exercises": {
                 "act-1": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "mula",
+                    "incorrectWord1": "ulam",
+                    "correctWord2": "caballo",
+                    "incorrectWord2": "lalboac"
                 },
                 "act-2": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-3": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-4": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-5": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-6": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-7": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-8": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-9": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-10": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 }
             }
         },

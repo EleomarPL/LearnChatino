@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../contentData/ContentData.dart';
 import 'ComponentExercise.dart';
 import '../components/ComponentBody.dart';
 import '../HeaderWindowLesson.dart';
@@ -13,6 +14,42 @@ class MainExercise extends StatefulWidget {
 }
 
 class _MainExerciseState extends State<MainExercise> {
+  List<String> _tabExercise = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10'
+  ];
+  ContentData _contentData = ContentData();
+  Widget _fillListVowel(int numExercise) {
+    return FutureBuilder(
+        future: _contentData.getExercise(
+            widget.numLevel, widget.numLesson, numExercise),
+        builder: (BuildContext context,
+            AsyncSnapshot<Map<String, dynamic>> snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return ComponentExercise(
+              numLesson: widget.numLesson,
+              numLevel: widget.numLevel,
+              correctWord1: snapshot.data['correctWord1'].toString(),
+              incorrectWord1: snapshot.data['incorrectWord1'].toString(),
+              correctWord2: snapshot.data['correctWord2'].toString(),
+              incorrectWord2: snapshot.data['incorrectWord2'].toString(),
+            );
+          } else {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return HeaderWindowLesson(
@@ -27,34 +64,10 @@ class _MainExerciseState extends State<MainExercise> {
         labelSelectedColor: Colors.white,
         labelUnselectedColor: Colors.black,
         backgroundBoxSelectec: Colors.red,
-        listTabBar: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-        listTabBarView: [
-          //example component exercise
-          ComponentExercise(
-            numLesson: widget.numLesson,
-            numLevel: widget.numLevel,
-            correctWord1: "yua",
-            incorrectWord1: "Ayu",
-            correctWord2: "yuaa",
-            incorrectWord2: "aayu",
-          ),
-          ComponentExercise(
-            numLesson: widget.numLesson,
-            numLevel: widget.numLevel,
-            correctWord1: "yua",
-            incorrectWord1: "Ayu",
-            correctWord2: "yuaa",
-            incorrectWord2: "aayu",
-          ),
-          Text("Widgets of tab exercise 3 is here"),
-          Text("Widgets of tab exercise 4 is here"),
-          Text("Widgets of tab exercise 5 is here"),
-          Text("Widgets of tab exercise 6 is here"),
-          Text("Widgets of tab exercise 7 is here"),
-          Text("Widgets of tab exercise 8 is here"),
-          Text("Widgets of tab exercise 9 is here"),
-          Text("Widgets of tab exercise 10 is here"),
-        ],
+        listTabBar: _tabExercise,
+        listTabBarView: _tabExercise.map((e) {
+          return _fillListVowel(int.tryParse(e));
+        }).toList(),
       ),
     );
   }
