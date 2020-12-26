@@ -48,12 +48,6 @@ class _ComponentConversationState extends State<ComponentConversation> {
             (_controller.value.isPlaying)
                 ? _controller.pause()
                 : _controller.play();
-
-            /*if (_controller.value.isPlaying) {
-              _controller.pause();
-            } else {
-              _controller.play();
-            }*/
           });
         },
         // Muestra el icono correcto dependiendo del estado del vídeo.

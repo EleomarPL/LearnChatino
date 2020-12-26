@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../registerUser/MainWindow.dart' as registerUser;
 import '../windowsLesson/MainWindowLesson.dart' as windowLesson;
+import '../database/MainDatabase.dart';
+import '../database/ObjectTables.dart';
 
 class ComponentsHome extends StatelessWidget {
   @override
@@ -41,32 +43,12 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
 
   TextEditingController controllerUser = TextEditingController();
 
-  Route _handleNavigationPressed() {
+  Route _handleNavigationPressed(Widget nextWindow) {
     return PageRouteBuilder(
       transitionDuration: const Duration(
         milliseconds: 500,
       ),
-      pageBuilder: (context, animation, secondaryAnimation) =>
-          registerUser.MainWindow(),
-      transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
-            .chain(CurveTween(curve: Curves.ease));
-
-        return SlideTransition(
-          position: animation.drive(tween),
-          child: child,
-        );
-      },
-    );
-  }
-
-  Route _handleNavigationPressedToLessons() {
-    return PageRouteBuilder(
-      transitionDuration: const Duration(
-        milliseconds: 500,
-      ),
-      pageBuilder: (context, animation, secondaryAnimation) =>
-          windowLesson.MainWindow(),
+      pageBuilder: (context, animation, secondaryAnimation) => nextWindow,
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
             .chain(CurveTween(curve: Curves.ease));
@@ -81,102 +63,89 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
-        Spacer(
-          flex: 3,
-        ),
-        Expanded(
-          flex: 11,
-          child: Image.asset(
-            'assets/header.png',
-            width: double.infinity - 100,
-            fit: BoxFit.cover,
-          ),
-        ),
-        Spacer(
-          flex: 1,
-        ),
-        Expanded(
-          flex: 13,
-          child: Material(
-            color: Colors.transparent,
-            child: Form(
-              key: _formKey,
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 30, left: 30),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      TextFormField(
-                        controller: controllerUser,
-                        validator: (String value) {
-                          return (value.trim().isEmpty)
-                              ? 'Rellena el campo'
-                              : ((value.length > 29)
-                                  ? "Maximo 29 caracteres"
-                                  : null);
-                        },
-                        style: TextStyle(
-                          fontSize: 23,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                        ),
-                        decoration: InputDecoration(
-                          labelText: "Usuario",
-                          alignLabelWithHint: true,
-                          labelStyle: TextStyle(
+        Column(
+          children: [
+            Image.asset(
+              'assets/header.png',
+              width: double.infinity - 100,
+              fit: BoxFit.cover,
+              height: 200.0,
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Material(
+              color: Colors.transparent,
+              child: Form(
+                key: _formKey,
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 30, left: 30),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        TextFormField(
+                          controller: controllerUser,
+                          validator: (String value) {
+                            return (value.trim().isEmpty)
+                                ? 'Rellena el campo'
+                                : ((value.length > 29)
+                                    ? "Maximo 29 caracteres"
+                                    : null);
+                          },
+                          style: TextStyle(
+                            fontSize: 23,
                             color: Colors.white,
+                            fontWeight: FontWeight.w500,
                           ),
-                          focusColor: Colors.white,
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
+                          decoration: InputDecoration(
+                            labelText: "Usuario",
+                            alignLabelWithHint: true,
+                            labelStyle: TextStyle(
+                              color: Colors.white,
+                            ),
+                            focusColor: Colors.white,
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.white,
+                              ),
+                            ),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                          ),
+                          cursorColor: Colors.white,
+                          textAlign: TextAlign.center,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        RaisedButton(
+                          color: Colors.blue[900],
+                          child: Text(
+                            'INICIAR SESIÓN',
+                            style: TextStyle(
+                              fontSize: 18,
                               color: Colors.white,
                             ),
                           ),
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white),
-                          ),
+                          onPressed: () {},
                         ),
-                        cursorColor: Colors.white,
-                        textAlign: TextAlign.center,
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      RaisedButton(
-                        color: Colors.blue[900],
-                        child: Text(
-                          'INICIAR SESIÓN',
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                          ),
-                        ),
-                        onPressed: () => {
-                          /*if (_formKey.currentState.validate())
-                            {
-                              print("entro"),
-                            }*/
-                          Navigator.of(context)
-                              .push(_handleNavigationPressedToLessons()),
-                        },
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ),
-        Expanded(
-          flex: 14,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                child: Text(
+            SizedBox(
+              height: 80.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
                   "¿No tienes cuenta?, ",
                   style: TextStyle(
                     fontSize: 14,
@@ -184,24 +153,26 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                     decoration: TextDecoration.none,
                   ),
                 ),
-              ),
-              Flexible(
-                child: GestureDetector(
+                RaisedButton(
+                  color: Colors.transparent,
+                  elevation: 0.0,
+                  padding: EdgeInsets.all(0.0),
                   child: Text(
                     "Crea uno aquí!",
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 17,
                       color: Colors.blue,
                       decoration: TextDecoration.none,
                     ),
                   ),
-                  onTap: () => {
-                    Navigator.of(context).push(_handleNavigationPressed()),
+                  onPressed: () => {
+                    Navigator.of(context).push(
+                        _handleNavigationPressed(registerUser.MainWindow())),
                   },
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ),
       ],
     );
