@@ -32,4 +32,12 @@ class ContentData {
     return list['level-$numLevel']['lesson-$numLesson']['exercises']
         ['act-$numExercise'];
   }
+
+  Future<String> getConversation(int numLevel, int numLesson) async {
+    Future<dynamic> data =
+        rootBundle.loadString('assets/ContentLevelLesson.json');
+    Map<String, dynamic> list = jsonDecode(await data);
+    return list['level-$numLevel']['lesson-$numLesson']['conversation']
+        ['pathVideo'];
+  }
 }

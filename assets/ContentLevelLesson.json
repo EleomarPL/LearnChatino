@@ -94,6 +94,9 @@
                     }
                 }
             },
+            "conversation": {
+                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+            },            
             "exercises": {
                 "act-1": {
                     "correctWord1": "mula",

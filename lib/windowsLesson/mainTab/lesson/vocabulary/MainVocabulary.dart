@@ -29,7 +29,6 @@ class _MainVocabularyState extends State<MainVocabulary> {
                   builder: (BuildContext context,
                       AsyncSnapshot<Map<String, dynamic>> snapshot) {
                     if (snapshot.connectionState == ConnectionState.done) {
-                      print(snapshot.data['word-1']['pathBackground']);
                       return Column(
                         children: [
                           for (int i = 0; i < (snapshot.data).length; i++)

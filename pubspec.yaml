@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
   carousel_slider: ^2.3.1
+  video_player: ^1.0.1
   sqflite: ^1.3.0
   path: ^1.7.0
 
@@ -57,6 +58,7 @@ flutter:
     - assets/dataApp/level1/lesson1/vocabulary/
     - assets/dataApp/level1/lesson1/pronunciaton/basicvowels/
     - assets/dataApp/level1/lesson1/pronunciaton/longvowels/
+    - assets/dataApp/level1/lesson1/conversation/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
