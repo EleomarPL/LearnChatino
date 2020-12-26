@@ -27,7 +27,7 @@ class _LongVowelsState extends State<LongVowels> {
               pathImage: snapshot.data['pathImage'].toString(),
               wordInSpanish: snapshot.data['wordInSpanish'].toString(),
               wordInChatino: snapshot.data['wordInChatino'].toString(),
-              pathSound: '',
+              pathSound: snapshot.data['pathSound'].toString(),
             );
           } else {
             return Center(

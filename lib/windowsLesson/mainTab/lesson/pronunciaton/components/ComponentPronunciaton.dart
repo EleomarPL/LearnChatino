@@ -1,3 +1,4 @@
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 
 Widget _textComponentPonunciaton(
@@ -56,7 +57,11 @@ class ComponentPronunciaton extends StatelessWidget {
             ],
           ),
           onTap: () {
-            print('play sound');
+            AssetsAudioPlayer.newPlayer().open(
+              Audio(pathSound),
+              autoStart: true,
+              showNotification: true,
+            );
           },
         ),
       ],

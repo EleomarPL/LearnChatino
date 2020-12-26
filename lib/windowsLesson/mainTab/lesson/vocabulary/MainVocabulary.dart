@@ -39,6 +39,9 @@ class _MainVocabularyState extends State<MainVocabulary> {
                               pathImage: snapshot.data['word-${i + 1}']
                                       ['pathBackground']
                                   .toString(),
+                              pathSound: snapshot.data['word-${i + 1}']
+                                      ['pathSound']
+                                  .toString(),
                             )
                         ],
                       );
