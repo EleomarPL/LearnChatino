@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../database/MainDatabase.dart';
+import '../database/ObjectTables.dart';
 
 class FormRegister extends StatefulWidget {
   @override
@@ -129,11 +131,16 @@ class _FormRegisterState extends State<FormRegister> {
                     color: Colors.white,
                   ),
                 ),
-                onPressed: () => {
-                  if (_formKey.currentState.validate())
-                    {
-                      print("entro"),
-                    }
+                onPressed: () async {
+                  if (_formKey.currentState.validate()) {
+                    MainDatabase _db = MainDatabase();
+                    await _db.initDB();
+                    await _db.insertUser(User(
+                        controllerName.text,
+                        controllerUser.text,
+                        (dropdownValue == "Modo aprendiz" ? 0 : 1)));
+                    Navigator.pop(context);
+                  }
                 },
               ),
               SizedBox(
