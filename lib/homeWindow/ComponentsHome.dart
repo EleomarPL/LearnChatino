@@ -131,7 +131,23 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                               color: Colors.white,
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () async {
+                            if (_formKey.currentState.validate()) {
+                              MainDatabase _db = MainDatabase();
+                              await _db.initDB();
+                              Future<int> resultQueryUser =
+                                  _db.queryUser((controllerUser.text).trim());
+                              resultQueryUser.then((value) async {
+                                if (value != null) {
+                                  Navigator.of(context).push(
+                                      _handleNavigationPressed(
+                                          windowLesson.MainWindow(
+                                    idUser: value,
+                                  )));
+                                } else {}
+                              });
+                            }
+                          },
                         ),
                       ],
                     ),

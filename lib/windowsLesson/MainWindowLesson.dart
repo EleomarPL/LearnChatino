@@ -4,7 +4,8 @@ import 'informationTab/MainInformation.dart';
 import 'mainTab/MainMain.dart';
 
 class MainWindow extends StatefulWidget {
-  MainWindow({Key key}) : super(key: key);
+  final int idUser;
+  MainWindow({Key key, this.idUser}) : super(key: key);
 
   @override
   _mainWindowState createState() => _mainWindowState();

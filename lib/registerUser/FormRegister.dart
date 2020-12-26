@@ -25,7 +25,7 @@ class _FormRegisterState extends State<FormRegister> {
       validator: (String value) {
         return (value.trim().isEmpty)
             ? 'Rellena el campo'
-            : ((value.length > 29) ? "Maximo 25 caracteres" : null);
+            : ((value.length > 29) ? "Maximo 29 caracteres" : null);
       },
       style: TextStyle(
         fontSize: 23,
@@ -182,10 +182,10 @@ class _FormRegisterState extends State<FormRegister> {
                   if (_formKey.currentState.validate()) {
                     MainDatabase _db = MainDatabase();
                     await _db.initDB();
-                    Future<bool> isEmpty =
+                    Future<int> isEmpty =
                         _db.queryUser((controllerUser.text).trim());
                     isEmpty.then((value) async {
-                      if (value) {
+                      if (value == null) {
                         await _db.insertUser(User(
                             (controllerName.text).trim(),
                             (controllerUser.text).trim(),

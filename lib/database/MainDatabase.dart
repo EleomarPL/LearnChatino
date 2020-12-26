@@ -43,9 +43,9 @@ class MainDatabase {
     );
   }
 
-  Future<bool> queryUser(String user) async {
+  Future<int> queryUser(String user) async {
     List<Map<String, dynamic>> results =
         await _db.rawQuery('SELECT * FROM user WHERE  userUser = ?', ['$user']);
-    return (results.length == 0) ? true : false;
+    return (results.length == 0) ? null : results[0]['idUser'];
   }
 }
