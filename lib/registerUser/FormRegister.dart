@@ -53,6 +53,53 @@ class _FormRegisterState extends State<FormRegister> {
     );
   }
 
+  _showMessague() => showDialog(
+        context: context,
+        builder: (context) {
+          return SimpleDialog(
+            backgroundColor: Colors.black87,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
+                child: Column(
+                  children: [
+                    Center(
+                        child: Text(
+                      'Ya existe una cuenta con el mismo usuario, '
+                      'utilice otro',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        RaisedButton(
+                          color: Colors.blue[800],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(
+                              15.0,
+                            ),
+                          ),
+                          child: Text(
+                            'Ok',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                          onPressed: () => {
+                            Navigator.pop(context),
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              )
+            ],
+          );
+        },
+      );
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -135,11 +182,19 @@ class _FormRegisterState extends State<FormRegister> {
                   if (_formKey.currentState.validate()) {
                     MainDatabase _db = MainDatabase();
                     await _db.initDB();
-                    await _db.insertUser(User(
-                        controllerName.text,
-                        controllerUser.text,
-                        (dropdownValue == "Modo aprendiz" ? 0 : 1)));
-                    Navigator.pop(context);
+                    Future<bool> isEmpty =
+                        _db.queryUser((controllerUser.text).trim());
+                    isEmpty.then((value) async {
+                      if (value) {
+                        await _db.insertUser(User(
+                            (controllerName.text).trim(),
+                            (controllerUser.text).trim(),
+                            (dropdownValue == "Modo aprendiz" ? 0 : 1)));
+                        Navigator.pop(context);
+                      } else {
+                        _showMessague();
+                      }
+                    });
                   }
                 },
               ),

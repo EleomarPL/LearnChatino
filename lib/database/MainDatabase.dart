@@ -42,4 +42,10 @@ class MainDatabase {
       conflictAlgorithm: ConflictAlgorithm.ignore,
     );
   }
+
+  Future<bool> queryUser(String user) async {
+    List<Map<String, dynamic>> results =
+        await _db.rawQuery('SELECT * FROM user WHERE  userUser = ?', ['$user']);
+    return (results.length == 0) ? true : false;
+  }
 }
