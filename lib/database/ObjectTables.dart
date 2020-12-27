@@ -1,5 +1,4 @@
 class User {
-  //int idUser;
   String nameUser;
   String userUser;
   int typeUser;
@@ -14,12 +13,13 @@ class User {
 }
 
 class WordFavorites {
+  int idUser;
   String wordSpanish;
   String wordChatino;
   String pathImage;
   String pathSound;
-  WordFavorites(
-      this.wordSpanish, this.wordChatino, this.pathImage, this.pathSound);
+  WordFavorites(this.idUser, this.wordSpanish, this.wordChatino, this.pathImage,
+      this.pathSound);
   Map<String, dynamic> toMap() {
     return {
       "wordSpanish": wordSpanish,
@@ -27,6 +27,14 @@ class WordFavorites {
       "pathImage": pathImage,
       "pathSound": pathSound
     };
+  }
+
+  WordFavorites.toMap(Map<String, dynamic> map) {
+    idUser = map['idUser'];
+    wordSpanish = map['wordSpanish'];
+    wordChatino = map['wordChatino'];
+    pathImage = map['pathImage'];
+    pathSound = map['pathSound'];
   }
 }
 

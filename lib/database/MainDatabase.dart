@@ -7,6 +7,7 @@ class MainDatabase {
   Database _db;
   List<String> tablesDB = [
     'CREATE TABLE wordFavorites('
+        'idUser INTEGER NOT NULL,'
         'wordSpanish VARCHAR(30) NOT NULL,'
         'wordChatino VARCHAR(30) NOT NULL,'
         'pathImage TEXT NOT NULL,'
@@ -59,7 +60,6 @@ class MainDatabase {
   }
 
   Future<List<ProgressUser>> getProgressUser(int idUser) async {
-    ProgressUser progress = ProgressUser(1, 1, 1, 0);
     List<Map<String, dynamic>> data = await _db
         .rawQuery('SELECT * FROM progressUser WHERE idUser = ?', ['$idUser']);
     return data.map((map) => ProgressUser.toMap(map)).toList();
@@ -74,5 +74,11 @@ class MainDatabase {
       await _db.insert(
           'progressUser', ProgressUser(idUser, i + 1, 3, 0).toMap());
     }
+  }
+
+  Future<List<WordFavorites>> getWordFavorites(int idUser) async {
+    List<Map<String, dynamic>> data = await _db
+        .rawQuery('SELECT * FROM wordFavorites WHERE idUser = ?', ['$idUser']);
+    return data.map((map) => WordFavorites.toMap(map)).toList();
   }
 }

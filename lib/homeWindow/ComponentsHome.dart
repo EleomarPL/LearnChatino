@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../registerUser/MainWindow.dart' as registerUser;
 import '../windowsLesson/MainWindowLesson.dart' as windowLesson;
 import '../database/MainDatabase.dart';
-import '../database/ObjectTables.dart';
 
 class ComponentsHome extends StatelessWidget {
   @override
