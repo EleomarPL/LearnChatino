@@ -5,7 +5,8 @@ import 'mainTab/MainMain.dart';
 
 class MainWindow extends StatefulWidget {
   final int idUser;
-  MainWindow({Key key, this.idUser}) : super(key: key);
+  final int typeUser;
+  MainWindow({Key key, this.idUser, this.typeUser}) : super(key: key);
 
   @override
   _mainWindowState createState() => _mainWindowState();
@@ -75,8 +76,13 @@ class _mainWindowState extends State<MainWindow> {
         ),
         body: TabBarView(
           children: [
-            MainMain(),
-            MainFavorite(),
+            MainMain(
+              idUser: widget.idUser,
+              typeUser: widget.typeUser,
+            ),
+            MainFavorite(
+              idUser: widget.idUser,
+            ),
             MainInformation(),
           ],
         ),

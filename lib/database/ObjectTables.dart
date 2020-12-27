@@ -29,3 +29,27 @@ class WordFavorites {
     };
   }
 }
+
+class ProgressUser {
+  int idUser;
+  int levelAdavance;
+  int lessonAdvance;
+  int exercise;
+  ProgressUser(
+      this.idUser, this.levelAdavance, this.lessonAdvance, this.exercise);
+  Map<String, dynamic> toMap() {
+    return {
+      'idUser': idUser,
+      'levelAdvance': levelAdavance,
+      'lessonAdvance': lessonAdvance,
+      'exercise': exercise
+    };
+  }
+
+  ProgressUser.toMap(Map<String, dynamic> map) {
+    idUser = map['idUser'];
+    levelAdavance = map['levelAdvance'];
+    lessonAdvance = map['lessonAdvance'];
+    exercise = map['exercise'];
+  }
+}

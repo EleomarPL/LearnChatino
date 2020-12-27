@@ -6,12 +6,18 @@ class ComponentLevel extends StatefulWidget {
   final bool isAccessibleLessonOne;
   final bool isAccessibleLessonTwo;
   final bool isAccessibleLessonThree;
+  final bool isFinishedLessonOne;
+  final bool isFinishedLessonTwo;
+  final bool isFinishedLessonThree;
   ComponentLevel(
       {Key key,
       this.numLevel,
       this.isAccessibleLessonOne,
       this.isAccessibleLessonTwo,
-      this.isAccessibleLessonThree})
+      this.isAccessibleLessonThree,
+      this.isFinishedLessonOne,
+      this.isFinishedLessonTwo,
+      this.isFinishedLessonThree})
       : super(key: key);
 
   @override
@@ -115,14 +121,29 @@ class _ComponentLevelState extends State<ComponentLevel> {
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                _lessonComponent(1, 'assets/lessonHome/huevo_gris.png',
+                //'assets/lessonHome/huevo_normal.png'
+                //'assets/lessonHome/huevo_amarillo.png'
+                //'assets/lessonHome/huevo_rojo.png'
+                _lessonComponent(
+                    1,
+                    (widget.isFinishedLessonOne)
+                        ? 'assets/lessonHome/huevo_normal.png'
+                        : 'assets/lessonHome/huevo_gris.png',
                     widget.isAccessibleLessonOne),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    _lessonComponent(2, 'assets/lessonHome/huevo_gris.png',
+                    _lessonComponent(
+                        2,
+                        (widget.isFinishedLessonTwo)
+                            ? 'assets/lessonHome/huevo_amarillo.png'
+                            : 'assets/lessonHome/huevo_gris.png',
                         widget.isAccessibleLessonTwo),
-                    _lessonComponent(3, 'assets/lessonHome/huevo_gris.png',
+                    _lessonComponent(
+                        3,
+                        (widget.isFinishedLessonThree)
+                            ? 'assets/lessonHome/huevo_rojo.png'
+                            : 'assets/lessonHome/huevo_gris.png',
                         widget.isAccessibleLessonThree),
                   ],
                 ),

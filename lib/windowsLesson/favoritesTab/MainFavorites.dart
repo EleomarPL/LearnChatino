@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'ComponentWord.dart';
 
 class MainFavorite extends StatefulWidget {
-  MainFavorite({Key key}) : super(key: key);
+  final int idUser;
+  MainFavorite({Key key, this.idUser}) : super(key: key);
 
   @override
   _MainFavoriteState createState() => _MainFavoriteState();

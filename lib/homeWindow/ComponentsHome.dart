@@ -135,14 +135,16 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                             if (_formKey.currentState.validate()) {
                               MainDatabase _db = MainDatabase();
                               await _db.initDB();
-                              Future<int> resultQueryUser =
-                                  _db.queryUser((controllerUser.text).trim());
-                              resultQueryUser.then((value) async {
-                                if (value != null) {
+                              Future<Map<String, dynamic>> resultQueryUser =
+                                  _db.listInformationUser(
+                                      (controllerUser.text).trim());
+                              resultQueryUser.then((key) async {
+                                if (key != null) {
                                   Navigator.of(context).push(
                                       _handleNavigationPressed(
                                           windowLesson.MainWindow(
-                                    idUser: value,
+                                    idUser: key['idUser'],
+                                    typeUser: key['typeUser'],
                                   )));
                                 } else {}
                               });
