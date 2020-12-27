@@ -18,11 +18,11 @@ _validateData(BuildContext context, MainDatabase mainDatabase, int idUser) {
     builder:
         (BuildContext context, AsyncSnapshot<List<WordFavorites>> snapshot) {
       if (snapshot.hasData && snapshot.data.length != 0) {
-        print(snapshot.data.length);
         return Column(
           children: [
             for (WordFavorites wordFavorites in snapshot.data)
               ComponentWord(
+                idUser: idUser,
                 wordInSpanish: wordFavorites.wordSpanish,
                 wordInChatino: wordFavorites.wordChatino,
                 pathImage: wordFavorites.pathImage,

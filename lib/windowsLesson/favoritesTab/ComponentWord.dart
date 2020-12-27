@@ -1,7 +1,10 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
+import '../../database/ObjectTables.dart';
+import '../../database/MainDatabase.dart';
 
 class ComponentWord extends StatefulWidget {
+  final int idUser;
   final String wordInSpanish;
   final String wordInChatino;
   final String pathImage;
@@ -11,7 +14,8 @@ class ComponentWord extends StatefulWidget {
       this.wordInSpanish,
       this.wordInChatino,
       this.pathImage,
-      this.pathSound})
+      this.pathSound,
+      this.idUser})
       : super(key: key);
 
   @override
@@ -103,7 +107,17 @@ class _ComponentWordState extends State<ComponentWord> {
                                 "Quitar de favoritos", 19.0, FontWeight.normal),
                           ],
                         ),
-                        onTap: () {
+                        onTap: () async {
+                          MainDatabase _db = MainDatabase();
+                          await _db.initDB();
+                          (colorFavorite == Colors.white)
+                              ? _db.insertWordFavorite(WordFavorites(
+                                  widget.idUser,
+                                  widget.wordInSpanish,
+                                  widget.wordInChatino,
+                                  widget.pathImage,
+                                  widget.pathSound))
+                              : _db.deleteWord(widget.wordInSpanish);
                           setState(() {
                             colorFavorite = (colorFavorite == Colors.white)
                                 ? Colors.red[900]
