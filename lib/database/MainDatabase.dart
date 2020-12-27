@@ -60,8 +60,9 @@ class MainDatabase {
   }
 
   Future<List<ProgressUser>> getProgressUser(int idUser) async {
-    List<Map<String, dynamic>> data = await _db
-        .rawQuery('SELECT * FROM progressUser WHERE idUser = ?', ['$idUser']);
+    List<Map<String, dynamic>> data = await _db.rawQuery(
+        'SELECT * FROM progressUser WHERE idUser = ? ORDER BY levelAdvance AND lessonAdvance',
+        ['$idUser']);
     return data.map((map) => ProgressUser.toMap(map)).toList();
   }
 
@@ -80,5 +81,24 @@ class MainDatabase {
     List<Map<String, dynamic>> data = await _db
         .rawQuery('SELECT * FROM wordFavorites WHERE idUser = ?', ['$idUser']);
     return data.map((map) => WordFavorites.toMap(map)).toList();
+  }
+
+  Future<void> insertWordFavorite(WordFavorites word) async {
+    await _db.insert('wordFavorites', word.toMap(),
+        conflictAlgorithm: ConflictAlgorithm.ignore);
+  }
+
+  Future<bool> existThisWordInFavorite(String word) async {
+    List<Map<String, dynamic>> data = await _db.rawQuery(
+        'SELECT * FROM wordFavorites WHERE wordSpanish = ?', ['$word']);
+    return (data.length == 0) ? false : true;
+  }
+
+  Future<void> deleteWord(String wordInSpanish) async {
+    await _db.delete(
+      'wordFavorites',
+      where: "wordSpanish = ?",
+      whereArgs: ['$wordInSpanish'],
+    );
   }
 }

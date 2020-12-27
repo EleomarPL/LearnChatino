@@ -1,12 +1,21 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
+import '../../../../database/MainDatabase.dart';
+import '../../../../database/ObjectTables.dart';
 
 class ComponentVocabulary extends StatefulWidget {
+  final int idUser;
   final String wordInSpanish;
+  final String wordInChatino;
   final String pathImage;
   final String pathSound;
   ComponentVocabulary(
-      {Key key, this.wordInSpanish, this.pathImage, this.pathSound})
+      {Key key,
+      this.wordInSpanish,
+      this.pathImage,
+      this.pathSound,
+      this.wordInChatino,
+      this.idUser})
       : super(key: key);
 
   @override
@@ -24,6 +33,21 @@ Widget _textWords(String text, double sizeWord, FontWeight weightText) => Text(
 
 class _ComponentVocabularyState extends State<ComponentVocabulary> {
   Color colorFavorite = Colors.white;
+  _methodInitComponent() async {
+    MainDatabase _db = MainDatabase();
+    await _db.initDB();
+    bool band = await _db.existThisWordInFavorite(widget.wordInSpanish);
+    setState(() {
+      colorFavorite = (band) ? Colors.red[900] : Colors.white;
+    });
+  }
+
+  @override
+  void initState() {
+    _methodInitComponent();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -65,6 +89,7 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _textWords(widget.wordInSpanish, 22.0, FontWeight.bold),
+                      _textWords(widget.wordInChatino, 21.0, FontWeight.normal),
                       SizedBox(
                         height: 5,
                       ),
@@ -92,7 +117,17 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                                 "Añadir a favoritos", 19.0, FontWeight.normal),
                           ],
                         ),
-                        onTap: () {
+                        onTap: () async {
+                          MainDatabase _db = MainDatabase();
+                          await _db.initDB();
+                          (colorFavorite == Colors.white)
+                              ? _db.insertWordFavorite(WordFavorites(
+                                  widget.idUser,
+                                  widget.wordInSpanish,
+                                  widget.wordInChatino,
+                                  widget.pathImage,
+                                  widget.pathSound))
+                              : _db.deleteWord(widget.wordInSpanish);
                           setState(() {
                             colorFavorite = (colorFavorite == Colors.white)
                                 ? Colors.red[900]

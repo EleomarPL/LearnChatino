@@ -4,26 +4,31 @@
             "vocabulary": {
                 "word-1": {
                     "wordInSpanish": "Bienvenido",
+                    "wordInChatino": "wordInChatino",
                     "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
                     "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
                 },
                 "word-2": {
                     "wordInSpanish": "Que",
+                    "wordInChatino": "wordInChatino",
                     "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
                     "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "Como",
+                    "wordInChatino": "wordInChatino",
                     "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
                     "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "Saluda",
+                    "wordInChatino": "wordInChatino",
                     "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
                     "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Conocer",
+                    "wordInChatino": "wordInChatino",
                     "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
                     "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
                 }

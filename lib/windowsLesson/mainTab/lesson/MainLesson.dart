@@ -7,7 +7,11 @@ import 'vocabulary/MainVocabulary.dart';
 class MainLesson extends StatelessWidget {
   final int numLevel;
   final int numLesson;
-  const MainLesson({Key key, this.numLevel, this.numLesson}) : super(key: key);
+  final int idUser;
+  final int typeUser;
+  const MainLesson(
+      {Key key, this.numLevel, this.numLesson, this.idUser, this.typeUser})
+      : super(key: key);
   Route _handleNavigationPressed(Widget classToGo) {
     return PageRouteBuilder(
       transitionDuration: const Duration(
@@ -104,6 +108,7 @@ class MainLesson extends StatelessWidget {
                       .push(_handleNavigationPressed(MainVocabulary(
                     numLevel: numLevel,
                     numLesson: numLesson,
+                    idUser: idUser,
                   )));
                 },
               ),

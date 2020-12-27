@@ -22,6 +22,7 @@ class WordFavorites {
       this.pathSound);
   Map<String, dynamic> toMap() {
     return {
+      "idUser": idUser,
       "wordSpanish": wordSpanish,
       "wordChatino": wordChatino,
       "pathImage": pathImage,

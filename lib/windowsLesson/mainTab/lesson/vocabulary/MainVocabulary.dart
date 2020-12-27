@@ -6,7 +6,9 @@ import 'ComponentVocabulary.dart';
 class MainVocabulary extends StatefulWidget {
   final int numLevel;
   final int numLesson;
-  MainVocabulary({Key key, this.numLevel, this.numLesson}) : super(key: key);
+  final int idUser;
+  MainVocabulary({Key key, this.numLevel, this.numLesson, this.idUser})
+      : super(key: key);
 
   @override
   _MainVocabularyState createState() => _MainVocabularyState();
@@ -33,8 +35,12 @@ class _MainVocabularyState extends State<MainVocabulary> {
                         children: [
                           for (int i = 0; i < (snapshot.data).length; i++)
                             ComponentVocabulary(
+                              idUser: widget.idUser,
                               wordInSpanish: snapshot.data['word-${i + 1}']
                                       ['wordInSpanish']
+                                  .toString(),
+                              wordInChatino: snapshot.data['word-${i + 1}']
+                                      ['wordInChatino']
                                   .toString(),
                               pathImage: snapshot.data['word-${i + 1}']
                                       ['pathBackground']

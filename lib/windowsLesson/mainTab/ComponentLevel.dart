@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'lesson/MainLesson.dart';
 
 class ComponentLevel extends StatefulWidget {
+  final int idUser;
+  final int typeUser;
   final int numLevel;
   final bool isAccessibleLessonOne;
   final bool isAccessibleLessonTwo;
@@ -17,7 +19,9 @@ class ComponentLevel extends StatefulWidget {
       this.isAccessibleLessonThree,
       this.isFinishedLessonOne,
       this.isFinishedLessonTwo,
-      this.isFinishedLessonThree})
+      this.isFinishedLessonThree,
+      this.idUser,
+      this.typeUser})
       : super(key: key);
 
   @override
@@ -33,6 +37,8 @@ class _ComponentLevelState extends State<ComponentLevel> {
       pageBuilder: (context, animation, secondaryAnimation) => MainLesson(
         numLevel: widget.numLevel,
         numLesson: numLesson,
+        idUser: widget.idUser,
+        typeUser: widget.typeUser,
       ),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)
@@ -121,9 +127,6 @@ class _ComponentLevelState extends State<ComponentLevel> {
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                //'assets/lessonHome/huevo_normal.png'
-                //'assets/lessonHome/huevo_amarillo.png'
-                //'assets/lessonHome/huevo_rojo.png'
                 _lessonComponent(
                     1,
                     (widget.isFinishedLessonOne)
