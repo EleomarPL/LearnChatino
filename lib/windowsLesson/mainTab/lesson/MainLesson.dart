@@ -77,9 +77,11 @@ class _MainLessonState extends State<MainLesson> {
       );
   @override
   void dispose() {
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      widget.callbackRefresh();
-    });
+    if (widget.typeUser == 0) {
+      WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+        widget.callbackRefresh();
+      });
+    }
     super.dispose();
   }
 
@@ -111,7 +113,9 @@ class _MainLessonState extends State<MainLesson> {
           ),
         ),
         onPressed: () {
-          widget.callbackRefresh();
+          if (widget.typeUser == 0) {
+            widget.callbackRefresh();
+          }
           Navigator.pop(context);
         },
       ),

@@ -52,8 +52,8 @@ class _MainInformationState extends State<MainInformation> {
                     'Los chatinos',
                     'Rescatemos nuestra lengua materna',
                     'Las lenguas del mundo',
-                    'Oaxaca un estado pluricultural y plueibilingue',
-                    'Chiapas, segundo ligar en diversidad linguistica',
+                    'Oaxaca un estado pluricultural y plurilingüe',
+                    'Chiapas, segundo ligar en diversidad lingüística',
                     'Difundamos nuestra lengua'
                   ]
                 ],

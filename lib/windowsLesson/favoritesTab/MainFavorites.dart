@@ -52,17 +52,6 @@ class _MainFavoriteState extends State<MainFavorite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: RaisedButton(
-        color: Colors.blue[900],
-        child: Text(
-          'AÑADIR PALABRA NUEVA',
-          style: TextStyle(
-            fontSize: 17,
-            color: Colors.white,
-          ),
-        ),
-        onPressed: () => {},
-      ),
       body: ListView(
         children: [
           Column(
