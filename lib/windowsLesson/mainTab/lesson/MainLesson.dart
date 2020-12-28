@@ -145,6 +145,8 @@ class MainLesson extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context)
                       .push(_handleNavigationPressed(MainExercise(
+                    idUser: idUser,
+                    typeUser: typeUser,
                     numLevel: numLevel,
                     numLesson: numLesson,
                   )));

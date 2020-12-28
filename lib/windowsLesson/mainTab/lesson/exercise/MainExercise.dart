@@ -7,7 +7,11 @@ import '../HeaderWindowLesson.dart';
 class MainExercise extends StatefulWidget {
   final int numLevel;
   final int numLesson;
-  MainExercise({Key key, this.numLevel, this.numLesson}) : super(key: key);
+  final int idUser;
+  final int typeUser;
+  MainExercise(
+      {Key key, this.numLevel, this.numLesson, this.idUser, this.typeUser})
+      : super(key: key);
 
   @override
   _MainExerciseState createState() => _MainExerciseState();
@@ -35,6 +39,9 @@ class _MainExerciseState extends State<MainExercise> {
             AsyncSnapshot<Map<String, dynamic>> snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return ComponentExercise(
+              idUser: widget.idUser,
+              typeUser: widget.typeUser,
+              numExercise: numExercise,
               numLesson: widget.numLesson,
               numLevel: widget.numLevel,
               correctWord1: snapshot.data['correctWord1'].toString(),

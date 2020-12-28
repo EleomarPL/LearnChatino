@@ -36,7 +36,8 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
   _methodInitComponent() async {
     MainDatabase _db = MainDatabase();
     await _db.initDB();
-    bool band = await _db.existThisWordInFavorite(widget.wordInSpanish);
+    bool band =
+        await _db.existThisWordInFavorite(widget.idUser, widget.wordInSpanish);
     setState(() {
       colorFavorite = (band) ? Colors.red[900] : Colors.white;
     });

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../database/MainDatabase.dart';
 
 class ComponentExercise extends StatefulWidget {
   final String incorrectWord1;
@@ -7,7 +8,9 @@ class ComponentExercise extends StatefulWidget {
   final String correctWord2;
   final int numLevel;
   final int numLesson;
-
+  final int idUser;
+  final int typeUser;
+  final int numExercise;
   ComponentExercise(
       {Key key,
       this.incorrectWord1,
@@ -15,7 +18,10 @@ class ComponentExercise extends StatefulWidget {
       this.incorrectWord2,
       this.correctWord2,
       this.numLevel,
-      this.numLesson})
+      this.numLesson,
+      this.idUser,
+      this.typeUser,
+      this.numExercise})
       : super(key: key);
 
   @override
@@ -100,6 +106,26 @@ class _ComponentExerciseState extends State<ComponentExercise> {
     });
   }
 
+  _methodInitResults() async {
+    MainDatabase _db = MainDatabase();
+    await _db.initDB();
+    bool band = await _db.existThisExercise(int.tryParse(
+        '${widget.numLevel}${widget.numLesson}${widget.numExercise}'));
+    if (band) {
+      setState(() {
+        updateElement(true);
+      });
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.typeUser == 0) {
+      _methodInitResults();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -138,18 +164,24 @@ class _ComponentExerciseState extends State<ComponentExercise> {
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () => {
+                    onPressed: () async {
                       if ((controllerFirstWord.text.trim() ==
                               widget.correctWord1 &&
                           controllerSecondWord.text.trim() ==
-                              widget.correctWord2))
-                        {
-                          updateElement(true),
+                              widget.correctWord2)) {
+                        if (widget.typeUser == 0) {
+                          MainDatabase _db = MainDatabase();
+                          await _db.initDB();
+                          await _db.insertExercisePassed(
+                              widget.idUser,
+                              widget.numLevel,
+                              widget.numLesson,
+                              widget.numExercise);
                         }
-                      else
-                        {
-                          updateElement(false),
-                        }
+                        updateElement(true);
+                      } else {
+                        updateElement(false);
+                      }
                     },
                   ),
                 ),

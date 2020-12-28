@@ -16,7 +16,10 @@ class MainDatabase {
         'idUser INTEGER NOT NULL,'
         'levelAdvance INTEGER NOT NULL,'
         'lessonAdvance INTEGER NOT NULL,'
-        'exercise INTEGER NOT NULL);'
+        'exercise INTEGER NOT NULL);',
+    'CREATE TABLE exerciseControl('
+        'idExercise INTEGER PRIMARY KEY,'
+        'idUser INTEGER NOT NULL);',
   ];
   initDB() async {
     _db = await openDatabase(
@@ -32,7 +35,6 @@ class MainDatabase {
             'nameUser VARCHAR(30) NOT NULL,'
             'userUser VARCHAR(30) NOT NULL,'
             'typeUser INTEGER NOT NULL);');
-        //}
       },
       version: 1,
     );
@@ -88,9 +90,10 @@ class MainDatabase {
         conflictAlgorithm: ConflictAlgorithm.ignore);
   }
 
-  Future<bool> existThisWordInFavorite(String word) async {
+  Future<bool> existThisWordInFavorite(int idUser, String word) async {
     List<Map<String, dynamic>> data = await _db.rawQuery(
-        'SELECT * FROM wordFavorites WHERE wordSpanish = ?', ['$word']);
+        'SELECT * FROM wordFavorites WHERE wordSpanish = ? AND idUser = ?',
+        ['$word', '$idUser']);
     return (data.length == 0) ? false : true;
   }
 
@@ -100,5 +103,34 @@ class MainDatabase {
       where: "wordSpanish = ?",
       whereArgs: ['$wordInSpanish'],
     );
+  }
+
+  Future<void> insertExercisePassed(
+      int idUser, int numLevel, int numLesson, int numExercise) async {
+    ControlExercise controlExercise = ControlExercise(
+        int.tryParse('$numLevel$numLesson$numExercise'), idUser);
+    int result = await _db.insert('exerciseControl', controlExercise.toMap(),
+        conflictAlgorithm: ConflictAlgorithm.ignore);
+    if (result != null) {
+      updateControlExercise(idUser, numLevel, numLesson);
+    }
+  }
+
+  Future<void> updateControlExercise(
+      int idUser, int numLevel, int numLesson) async {
+    int idPossibleToSearch = int.tryParse('$numLevel$numLesson');
+    List<Map<String, dynamic>> data = await _db.rawQuery(
+        'SELECT * FROM exerciseControl WHERE idExercise LIKE ? ',
+        ['$idPossibleToSearch%']);
+    await _db.rawUpdate(
+        'UPDATE progressUser SET exercise = ? '
+        'WHERE idUser = ? AND levelAdvance = ? AND lessonAdvance = ? ',
+        ['${data.length}', '$idUser', '$numLevel', '$numLesson']);
+  }
+
+  Future<bool> existThisExercise(int idExercise) async {
+    List<Map<String, dynamic>> data = await _db.rawQuery(
+        'SELECT * FROM exerciseControl WHERE idExercise = ? ', ['$idExercise']);
+    return (data.length == 0) ? false : true;
   }
 }
