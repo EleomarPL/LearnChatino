@@ -133,4 +133,8 @@ class MainDatabase {
         'SELECT * FROM exerciseControl WHERE idExercise = ? ', ['$idExercise']);
     return (data.length == 0) ? false : true;
   }
+
+  Future<void> close() async {
+    await _db.close();
+  }
 }

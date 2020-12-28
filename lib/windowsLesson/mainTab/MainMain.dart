@@ -63,6 +63,7 @@ Widget fillLevels(int idUser, ContentData contentData,
           Map<String, dynamic> listJSON = jsonDecode(snapshot.data);
           _registerInitialValue(
               idUser, listJSON.length, listUser.length, mainDatabase);
+          mainDatabase.close();
           return Column(
             children: [
               for (int i = 0; i < listJSON.length; i++)

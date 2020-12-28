@@ -190,9 +190,11 @@ class _FormRegisterState extends State<FormRegister> {
                             (controllerName.text).trim(),
                             (controllerUser.text).trim(),
                             (dropdownValue == "Modo aprendiz" ? 0 : 1)));
+                        await _db.close();
                         Navigator.pop(context);
                       } else {
                         _showMessague();
+                        await _db.close();
                       }
                     });
                   }

@@ -34,10 +34,10 @@ Widget _textWords(String text, double sizeWord, FontWeight weightText) => Text(
 class _ComponentVocabularyState extends State<ComponentVocabulary> {
   Color colorFavorite = Colors.white;
   _methodInitComponent() async {
-    MainDatabase _db = MainDatabase();
-    await _db.initDB();
-    bool band =
-        await _db.existThisWordInFavorite(widget.idUser, widget.wordInSpanish);
+    MainDatabase _database = MainDatabase();
+    await _database.initDB();
+    bool band = await _database.existThisWordInFavorite(
+        widget.idUser, widget.wordInSpanish);
     setState(() {
       colorFavorite = (band) ? Colors.red[900] : Colors.white;
     });
@@ -129,6 +129,7 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                                   widget.pathImage,
                                   widget.pathSound))
                               : _db.deleteWord(widget.wordInSpanish);
+                          await _db.close();
                           setState(() {
                             colorFavorite = (colorFavorite == Colors.white)
                                 ? Colors.red[900]

@@ -139,13 +139,16 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                                       (controllerUser.text).trim());
                               resultQueryUser.then((key) async {
                                 if (key != null) {
+                                  await _db.close();
                                   Navigator.of(context).push(
                                       _handleNavigationPressed(
                                           windowLesson.MainWindow(
                                     idUser: key['idUser'],
                                     typeUser: key['typeUser'],
                                   )));
-                                } else {}
+                                } else {
+                                  await _db.close();
+                                }
                               });
                             }
                           },

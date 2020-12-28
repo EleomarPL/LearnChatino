@@ -111,6 +111,7 @@ class _ComponentExerciseState extends State<ComponentExercise> {
     await _db.initDB();
     bool band = await _db.existThisExercise(int.tryParse(
         '${widget.numLevel}${widget.numLesson}${widget.numExercise}'));
+    await _db.close();
     if (band) {
       setState(() {
         updateElement(true);
@@ -177,6 +178,7 @@ class _ComponentExerciseState extends State<ComponentExercise> {
                               widget.numLevel,
                               widget.numLesson,
                               widget.numExercise);
+                          await _db.close();
                         }
                         updateElement(true);
                       } else {
