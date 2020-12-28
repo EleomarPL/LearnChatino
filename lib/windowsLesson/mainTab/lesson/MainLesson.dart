@@ -76,6 +76,14 @@ class _MainLessonState extends State<MainLesson> {
         ),
       );
   @override
+  void dispose() {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      widget.callbackRefresh();
+    });
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
