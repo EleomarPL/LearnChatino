@@ -129,7 +129,6 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                                   widget.pathImage,
                                   widget.pathSound))
                               : _db.deleteWord(widget.wordInSpanish);
-                          await _db.close();
                           setState(() {
                             colorFavorite = (colorFavorite == Colors.white)
                                 ? Colors.red[900]

@@ -4,14 +4,25 @@ import 'exercise/MainExercise.dart';
 import 'pronunciaton/MainPronunciaton.dart';
 import 'vocabulary/MainVocabulary.dart';
 
-class MainLesson extends StatelessWidget {
+class MainLesson extends StatefulWidget {
   final int numLevel;
   final int numLesson;
   final int idUser;
   final int typeUser;
+  final Function callbackRefresh;
   const MainLesson(
-      {Key key, this.numLevel, this.numLesson, this.idUser, this.typeUser})
+      {Key key,
+      this.numLevel,
+      this.numLesson,
+      this.idUser,
+      this.typeUser,
+      this.callbackRefresh})
       : super(key: key);
+  @override
+  _MainLessonState createState() => _MainLessonState();
+}
+
+class _MainLessonState extends State<MainLesson> {
   Route _handleNavigationPressed(Widget classToGo) {
     return PageRouteBuilder(
       transitionDuration: const Duration(
@@ -73,7 +84,7 @@ class MainLesson extends StatelessWidget {
           automaticallyImplyLeading: false,
           backgroundColor: Colors.green,
           title: Text(
-            'Leccion $numLesson',
+            'Leccion ${widget.numLesson}',
             style: TextStyle(
               fontSize: 23.0,
               fontWeight: FontWeight.w900,
@@ -91,7 +102,10 @@ class MainLesson extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        onPressed: () => {},
+        onPressed: () {
+          widget.callbackRefresh();
+          Navigator.pop(context);
+        },
       ),
       body: Column(
         children: [
@@ -106,9 +120,9 @@ class MainLesson extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context)
                       .push(_handleNavigationPressed(MainVocabulary(
-                    numLevel: numLevel,
-                    numLesson: numLesson,
-                    idUser: idUser,
+                    numLevel: widget.numLevel,
+                    numLesson: widget.numLesson,
+                    idUser: widget.idUser,
                   )));
                 },
               ),
@@ -117,8 +131,8 @@ class MainLesson extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context)
                       .push(_handleNavigationPressed(MainPronunciaton(
-                    numLevel: numLevel,
-                    numLesson: numLesson,
+                    numLevel: widget.numLevel,
+                    numLesson: widget.numLesson,
                   )));
                 },
               )
@@ -135,8 +149,8 @@ class MainLesson extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context)
                       .push(_handleNavigationPressed(MainConversation(
-                    numLevel: numLevel,
-                    numLesson: numLesson,
+                    numLevel: widget.numLevel,
+                    numLesson: widget.numLesson,
                   )));
                 },
               ),
@@ -145,10 +159,10 @@ class MainLesson extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context)
                       .push(_handleNavigationPressed(MainExercise(
-                    idUser: idUser,
-                    typeUser: typeUser,
-                    numLevel: numLevel,
-                    numLesson: numLesson,
+                    idUser: widget.idUser,
+                    typeUser: widget.typeUser,
+                    numLevel: widget.numLevel,
+                    numLesson: widget.numLesson,
                   )));
                 },
               ),

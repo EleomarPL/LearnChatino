@@ -166,136 +166,829 @@
             }
         },
         "lesson-2": {
+            "vocabulary": {
+                "word-1": {
+                    "wordInSpanish": "Bienvenido",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                },
+                "word-2": {
+                    "wordInSpanish": "Que",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                },
+                "word-3": {
+                    "wordInSpanish": "Como",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                },
+                "word-4": {
+                    "wordInSpanish": "Saluda",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                },
+                "word-5": {
+                    "wordInSpanish": "Conocer",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                }
+            },
+            "pronunciaton": {
+                "basicvowels": {
+                    "a": {
+                        "wordInSpanish": "mesa",
+                        "wordInChatino": "msa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                    },
+                    "e": {
+                        "wordInSpanish": "cafe",
+                        "wordInChatino": "kajue",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                    },
+                    "i": {
+                        "wordInSpanish": "pequeño",
+                        "wordInChatino": "lio ´ti",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                    },
+                    "o": {
+                        "wordInSpanish": "pollo",
+                        "wordInChatino": "kuto",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                    },
+                    "u": {
+                        "wordInSpanish": "suelo",
+                        "wordInChatino": "liu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                    }
+                },
+                "longvowels": {
+                    "aa": {
+                        "wordInSpanish": "frijol",
+                        "wordInChatino": "ndaa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                    },
+                    "ee": {
+                        "wordInSpanish": "José",
+                        "wordInChatino": "see",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                    },
+                    "ii": {
+                        "wordInSpanish": "zacate",
+                        "wordInChatino": "kii",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                    },
+                    "oo": {
+                        "wordInSpanish": "nube",
+                        "wordInChatino": "koo",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                    },
+                    "uu": {
+                        "wordInSpanish": "tierra",
+                        "wordInChatino": "yuu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                    }
+                }
+            },
+            "conversation": {
+                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+            },            
             "exercises": {
                 "act-1": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "mula",
+                    "incorrectWord1": "ulam",
+                    "correctWord2": "caballo",
+                    "incorrectWord2": "lalboac"
                 },
                 "act-2": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-3": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-4": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-5": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-6": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-7": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-8": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-9": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-10": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 }
             }
         },
         "lesson-3": {
+            "vocabulary": {
+                "word-1": {
+                    "wordInSpanish": "Bienvenido",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                },
+                "word-2": {
+                    "wordInSpanish": "Que",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                },
+                "word-3": {
+                    "wordInSpanish": "Como",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                },
+                "word-4": {
+                    "wordInSpanish": "Saluda",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                },
+                "word-5": {
+                    "wordInSpanish": "Conocer",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                }
+            },
+            "pronunciaton": {
+                "basicvowels": {
+                    "a": {
+                        "wordInSpanish": "mesa",
+                        "wordInChatino": "msa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                    },
+                    "e": {
+                        "wordInSpanish": "cafe",
+                        "wordInChatino": "kajue",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                    },
+                    "i": {
+                        "wordInSpanish": "pequeño",
+                        "wordInChatino": "lio ´ti",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                    },
+                    "o": {
+                        "wordInSpanish": "pollo",
+                        "wordInChatino": "kuto",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                    },
+                    "u": {
+                        "wordInSpanish": "suelo",
+                        "wordInChatino": "liu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                    }
+                },
+                "longvowels": {
+                    "aa": {
+                        "wordInSpanish": "frijol",
+                        "wordInChatino": "ndaa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                    },
+                    "ee": {
+                        "wordInSpanish": "José",
+                        "wordInChatino": "see",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                    },
+                    "ii": {
+                        "wordInSpanish": "zacate",
+                        "wordInChatino": "kii",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                    },
+                    "oo": {
+                        "wordInSpanish": "nube",
+                        "wordInChatino": "koo",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                    },
+                    "uu": {
+                        "wordInSpanish": "tierra",
+                        "wordInChatino": "yuu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                    }
+                }
+            },
+            "conversation": {
+                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+            },            
             "exercises": {
                 "act-1": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "mula",
+                    "incorrectWord1": "ulam",
+                    "correctWord2": "caballo",
+                    "incorrectWord2": "lalboac"
                 },
                 "act-2": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-3": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-4": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-5": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-6": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-7": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-8": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-9": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-10": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 }
             }
         }
     },
     "level-2": {
-        "lesson_1": {
+        "lesson-1": {
+            "vocabulary": {
+                "word-1": {
+                    "wordInSpanish": "Bienvenido",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                },
+                "word-2": {
+                    "wordInSpanish": "Que",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                },
+                "word-3": {
+                    "wordInSpanish": "Como",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                },
+                "word-4": {
+                    "wordInSpanish": "Saluda",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                },
+                "word-5": {
+                    "wordInSpanish": "Conocer",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                }
+            },
+            "pronunciaton": {
+                "basicvowels": {
+                    "a": {
+                        "wordInSpanish": "mesa",
+                        "wordInChatino": "msa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                    },
+                    "e": {
+                        "wordInSpanish": "cafe",
+                        "wordInChatino": "kajue",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                    },
+                    "i": {
+                        "wordInSpanish": "pequeño",
+                        "wordInChatino": "lio ´ti",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                    },
+                    "o": {
+                        "wordInSpanish": "pollo",
+                        "wordInChatino": "kuto",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                    },
+                    "u": {
+                        "wordInSpanish": "suelo",
+                        "wordInChatino": "liu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                    }
+                },
+                "longvowels": {
+                    "aa": {
+                        "wordInSpanish": "frijol",
+                        "wordInChatino": "ndaa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                    },
+                    "ee": {
+                        "wordInSpanish": "José",
+                        "wordInChatino": "see",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                    },
+                    "ii": {
+                        "wordInSpanish": "zacate",
+                        "wordInChatino": "kii",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                    },
+                    "oo": {
+                        "wordInSpanish": "nube",
+                        "wordInChatino": "koo",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                    },
+                    "uu": {
+                        "wordInSpanish": "tierra",
+                        "wordInChatino": "yuu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                    }
+                }
+            },
+            "conversation": {
+                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+            },            
             "exercises": {
                 "act-1": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "mula",
+                    "incorrectWord1": "ulam",
+                    "correctWord2": "caballo",
+                    "incorrectWord2": "lalboac"
                 },
                 "act-2": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-3": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-4": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-5": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-6": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-7": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-8": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-9": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 },
                 "act-10": {
-                    "correct": "yuu",
-                    "incorrect": "ayu"
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                }
+            }
+        },
+        "lesson-2": {
+            "vocabulary": {
+                "word-1": {
+                    "wordInSpanish": "Bienvenido",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                },
+                "word-2": {
+                    "wordInSpanish": "Que",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                },
+                "word-3": {
+                    "wordInSpanish": "Como",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                },
+                "word-4": {
+                    "wordInSpanish": "Saluda",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                },
+                "word-5": {
+                    "wordInSpanish": "Conocer",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                }
+            },
+            "pronunciaton": {
+                "basicvowels": {
+                    "a": {
+                        "wordInSpanish": "mesa",
+                        "wordInChatino": "msa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                    },
+                    "e": {
+                        "wordInSpanish": "cafe",
+                        "wordInChatino": "kajue",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                    },
+                    "i": {
+                        "wordInSpanish": "pequeño",
+                        "wordInChatino": "lio ´ti",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                    },
+                    "o": {
+                        "wordInSpanish": "pollo",
+                        "wordInChatino": "kuto",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                    },
+                    "u": {
+                        "wordInSpanish": "suelo",
+                        "wordInChatino": "liu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                    }
+                },
+                "longvowels": {
+                    "aa": {
+                        "wordInSpanish": "frijol",
+                        "wordInChatino": "ndaa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                    },
+                    "ee": {
+                        "wordInSpanish": "José",
+                        "wordInChatino": "see",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                    },
+                    "ii": {
+                        "wordInSpanish": "zacate",
+                        "wordInChatino": "kii",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                    },
+                    "oo": {
+                        "wordInSpanish": "nube",
+                        "wordInChatino": "koo",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                    },
+                    "uu": {
+                        "wordInSpanish": "tierra",
+                        "wordInChatino": "yuu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                    }
+                }
+            },
+            "conversation": {
+                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+            },            
+            "exercises": {
+                "act-1": {
+                    "correctWord1": "mula",
+                    "incorrectWord1": "ulam",
+                    "correctWord2": "caballo",
+                    "incorrectWord2": "lalboac"
+                },
+                "act-2": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-3": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-4": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-5": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-6": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-7": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-8": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-9": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-10": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                }
+            }
+        },
+        "lesson-3": {
+            "vocabulary": {
+                "word-1": {
+                    "wordInSpanish": "Bienvenido",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                },
+                "word-2": {
+                    "wordInSpanish": "Que",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                },
+                "word-3": {
+                    "wordInSpanish": "Como",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                },
+                "word-4": {
+                    "wordInSpanish": "Saluda",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                },
+                "word-5": {
+                    "wordInSpanish": "Conocer",
+                    "wordInChatino": "wordInChatino",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                }
+            },
+            "pronunciaton": {
+                "basicvowels": {
+                    "a": {
+                        "wordInSpanish": "mesa",
+                        "wordInChatino": "msa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                    },
+                    "e": {
+                        "wordInSpanish": "cafe",
+                        "wordInChatino": "kajue",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                    },
+                    "i": {
+                        "wordInSpanish": "pequeño",
+                        "wordInChatino": "lio ´ti",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                    },
+                    "o": {
+                        "wordInSpanish": "pollo",
+                        "wordInChatino": "kuto",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                    },
+                    "u": {
+                        "wordInSpanish": "suelo",
+                        "wordInChatino": "liu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                    }
+                },
+                "longvowels": {
+                    "aa": {
+                        "wordInSpanish": "frijol",
+                        "wordInChatino": "ndaa",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                    },
+                    "ee": {
+                        "wordInSpanish": "José",
+                        "wordInChatino": "see",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                    },
+                    "ii": {
+                        "wordInSpanish": "zacate",
+                        "wordInChatino": "kii",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                    },
+                    "oo": {
+                        "wordInSpanish": "nube",
+                        "wordInChatino": "koo",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                    },
+                    "uu": {
+                        "wordInSpanish": "tierra",
+                        "wordInChatino": "yuu",
+                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                    }
+                }
+            },
+            "conversation": {
+                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+            },            
+            "exercises": {
+                "act-1": {
+                    "correctWord1": "mula",
+                    "incorrectWord1": "ulam",
+                    "correctWord2": "caballo",
+                    "incorrectWord2": "lalboac"
+                },
+                "act-2": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-3": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-4": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-5": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-6": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-7": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-8": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-9": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
+                },
+                "act-10": {
+                    "correctWord1": "yuu",
+                    "incorrectWord1": "ayu",
+                    "correctWord2": "yuu",
+                    "incorrectWord2": "ayu"
                 }
             }
         }

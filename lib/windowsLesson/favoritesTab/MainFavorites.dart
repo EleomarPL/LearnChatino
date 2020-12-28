@@ -18,7 +18,6 @@ _validateData(BuildContext context, MainDatabase mainDatabase, int idUser) {
     builder:
         (BuildContext context, AsyncSnapshot<List<WordFavorites>> snapshot) {
       if (snapshot.hasData && snapshot.data.length != 0) {
-        mainDatabase.close();
         return Column(
           children: [
             for (WordFavorites wordFavorites in snapshot.data)

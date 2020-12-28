@@ -60,6 +60,58 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
     );
   }
 
+  _messagueUserNotExist(String principalText) {
+    return showDialog(
+      context: context,
+      builder: (context) {
+        return SimpleDialog(
+          backgroundColor: Colors.black87,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
+              child: Column(
+                children: [
+                  Center(
+                      child: Text(
+                    principalText,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.white),
+                  )),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      RaisedButton(
+                        color: Colors.blue[800],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                            15.0,
+                          ),
+                        ),
+                        child: Text(
+                          'Si',
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -139,15 +191,17 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                                       (controllerUser.text).trim());
                               resultQueryUser.then((key) async {
                                 if (key != null) {
-                                  await _db.close();
-                                  Navigator.of(context).push(
+                                  Navigator.of(context).pushAndRemoveUntil(
                                       _handleNavigationPressed(
                                           windowLesson.MainWindow(
-                                    idUser: key['idUser'],
-                                    typeUser: key['typeUser'],
-                                  )));
+                                        idUser: key['idUser'],
+                                        typeUser: key['typeUser'],
+                                      )),
+                                      (route) => false);
                                 } else {
-                                  await _db.close();
+                                  _messagueUserNotExist(
+                                      'Vaya!, no existe esta cuenta, lo puede crear '
+                                      'con el boton "Crea uno aquí!"');
                                 }
                               });
                             }

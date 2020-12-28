@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'lesson/MainLesson.dart';
 
 class ComponentLevel extends StatefulWidget {
+  final Function callbackRefresh;
   final int idUser;
   final int typeUser;
   final int numLevel;
@@ -21,7 +22,8 @@ class ComponentLevel extends StatefulWidget {
       this.isFinishedLessonTwo,
       this.isFinishedLessonThree,
       this.idUser,
-      this.typeUser})
+      this.typeUser,
+      this.callbackRefresh})
       : super(key: key);
 
   @override
@@ -39,6 +41,7 @@ class _ComponentLevelState extends State<ComponentLevel> {
         numLesson: numLesson,
         idUser: widget.idUser,
         typeUser: widget.typeUser,
+        callbackRefresh: widget.callbackRefresh,
       ),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         var tween = Tween<Offset>(begin: Offset(0.0, 1.0), end: Offset.zero)

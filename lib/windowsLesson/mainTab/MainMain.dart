@@ -21,8 +21,14 @@ _registerInitialValue(int idUser, int numLevels, int numLevelsRegister,
   }
 }
 
-Widget _fillComponentLevel(int i, int numLevels, int numLevelsRegister,
-    List<ProgressUser> progressUser, int idUser, int typeUser) {
+Widget _fillComponentLevel(
+    int i,
+    int numLevels,
+    int numLevelsRegister,
+    List<ProgressUser> progressUser,
+    int idUser,
+    int typeUser,
+    Function callbackRefresh) {
   Map<String, int> lessonLevel = {
     "lesson-1": (((numLevelsRegister / numLevels) * i)).toInt(),
     "lesson-2": (((numLevelsRegister / numLevels) * i) + 1).toInt(),
@@ -32,6 +38,7 @@ Widget _fillComponentLevel(int i, int numLevels, int numLevelsRegister,
     idUser: idUser,
     typeUser: typeUser,
     numLevel: (i + 1),
+    callbackRefresh: callbackRefresh,
     isAccessibleLessonOne: (i == 0)
         ? true
         : (progressUser[lessonLevel['lesson-1'] - 1].exercise == 10)
@@ -54,8 +61,13 @@ Widget _fillComponentLevel(int i, int numLevels, int numLevelsRegister,
   );
 }
 
-Widget fillLevels(int idUser, ContentData contentData,
-    List<ProgressUser> listUser, MainDatabase mainDatabase, int typeUser) {
+Widget fillLevels(
+    int idUser,
+    ContentData contentData,
+    List<ProgressUser> listUser,
+    MainDatabase mainDatabase,
+    int typeUser,
+    Function callbackRefresh) {
   return FutureBuilder(
       future: contentData.queryNumLevel(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -63,7 +75,6 @@ Widget fillLevels(int idUser, ContentData contentData,
           Map<String, dynamic> listJSON = jsonDecode(snapshot.data);
           _registerInitialValue(
               idUser, listJSON.length, listUser.length, mainDatabase);
-          mainDatabase.close();
           return Column(
             children: [
               for (int i = 0; i < listJSON.length; i++)
@@ -72,6 +83,7 @@ Widget fillLevels(int idUser, ContentData contentData,
                     idUser: idUser,
                     typeUser: typeUser,
                     numLevel: (i + 1),
+                    callbackRefresh: callbackRefresh,
                     isAccessibleLessonOne: (i == 0) ? true : false,
                     isAccessibleLessonTwo: false,
                     isAccessibleLessonThree: false,
@@ -81,7 +93,7 @@ Widget fillLevels(int idUser, ContentData contentData,
                   )
                 else
                   _fillComponentLevel(i, listJSON.length, listUser.length,
-                      listUser, idUser, typeUser),
+                      listUser, idUser, typeUser, callbackRefresh),
             ],
           );
         } else {
@@ -92,15 +104,20 @@ Widget fillLevels(int idUser, ContentData contentData,
       });
 }
 
-_validateData(BuildContext context, MainDatabase mainDatabase,
-    ContentData contentData, int idUser, int typeUser) {
+_validateData(
+    BuildContext context,
+    MainDatabase mainDatabase,
+    ContentData contentData,
+    int idUser,
+    int typeUser,
+    Function callbackRefresh) {
   return FutureBuilder(
     future: mainDatabase.getProgressUser(idUser),
     builder:
         (BuildContext context, AsyncSnapshot<List<ProgressUser>> snapshot) {
       if (snapshot.hasData) {
-        return fillLevels(
-            idUser, contentData, snapshot.data, mainDatabase, typeUser);
+        return fillLevels(idUser, contentData, snapshot.data, mainDatabase,
+            typeUser, callbackRefresh);
       } else {
         return Center(
           child: CircularProgressIndicator(),
@@ -113,6 +130,13 @@ _validateData(BuildContext context, MainDatabase mainDatabase,
 class _MainMainState extends State<MainMain> {
   ContentData contentData = ContentData();
   MainDatabase mainDatabase = MainDatabase();
+
+  refreshPage() {
+    setState(() {
+      this.reassemble();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -126,7 +150,7 @@ class _MainMainState extends State<MainMain> {
                   builder: (BuildContext context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.done) {
                       return _validateData(context, mainDatabase, contentData,
-                          widget.idUser, widget.typeUser);
+                          widget.idUser, widget.typeUser, refreshPage);
                     } else {
                       return Center(
                         child: CircularProgressIndicator(),
@@ -146,6 +170,7 @@ class _MainMainState extends State<MainMain> {
                               idUser: widget.idUser,
                               typeUser: widget.typeUser,
                               numLevel: (i + 1),
+                              callbackRefresh: refreshPage,
                               isAccessibleLessonOne: true,
                               isAccessibleLessonTwo: true,
                               isAccessibleLessonThree: true,

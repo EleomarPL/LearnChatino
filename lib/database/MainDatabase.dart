@@ -108,7 +108,7 @@ class MainDatabase {
   Future<void> insertExercisePassed(
       int idUser, int numLevel, int numLesson, int numExercise) async {
     ControlExercise controlExercise = ControlExercise(
-        int.tryParse('$numLevel$numLesson$numExercise'), idUser);
+        int.tryParse('$idUser$numLevel$numLesson$numExercise'), idUser);
     int result = await _db.insert('exerciseControl', controlExercise.toMap(),
         conflictAlgorithm: ConflictAlgorithm.ignore);
     if (result != null) {
@@ -118,7 +118,7 @@ class MainDatabase {
 
   Future<void> updateControlExercise(
       int idUser, int numLevel, int numLesson) async {
-    int idPossibleToSearch = int.tryParse('$numLevel$numLesson');
+    int idPossibleToSearch = int.tryParse('$idUser$numLevel$numLesson');
     List<Map<String, dynamic>> data = await _db.rawQuery(
         'SELECT * FROM exerciseControl WHERE idExercise LIKE ? ',
         ['$idPossibleToSearch%']);
@@ -128,13 +128,28 @@ class MainDatabase {
         ['${data.length}', '$idUser', '$numLevel', '$numLesson']);
   }
 
-  Future<bool> existThisExercise(int idExercise) async {
+  Future<bool> existThisExercise(int idExercise, int idUser) async {
     List<Map<String, dynamic>> data = await _db.rawQuery(
-        'SELECT * FROM exerciseControl WHERE idExercise = ? ', ['$idExercise']);
+        'SELECT * FROM exerciseControl WHERE idExercise = ? AND idUser = ? ',
+        ['$idExercise', '$idUser']);
     return (data.length == 0) ? false : true;
   }
 
-  Future<void> close() async {
-    await _db.close();
+  Future<void> deleteAllProgressUser(int idUser) async {
+    await _db.delete(
+      'progressUser',
+      where: "idUser = ?",
+      whereArgs: ['$idUser'],
+    );
+    await _db.delete(
+      'exerciseControl',
+      where: "idUser = ?",
+      whereArgs: ['$idUser'],
+    );
+    await _db.delete(
+      'wordFavorites',
+      where: "idUser = ?",
+      whereArgs: ['$idUser'],
+    );
   }
 }

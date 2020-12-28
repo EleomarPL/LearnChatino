@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'favoritesTab/MainFavorites.dart';
 import 'informationTab/MainInformation.dart';
 import 'mainTab/MainMain.dart';
+import './loggedUserOptions/Options.dart';
 
 class MainWindow extends StatefulWidget {
   final int idUser;
@@ -22,6 +24,13 @@ Widget _textTabBar(String text) => Text(
 
 // ignore: camel_case_types
 class _mainWindowState extends State<MainWindow> {
+  refreshPage() {
+    setState(() {
+      this.reassemble();
+    });
+  }
+
+  Options options = Options();
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -43,7 +52,9 @@ class _mainWindowState extends State<MainWindow> {
           iconTheme: IconThemeData(color: Colors.white),
           actions: <Widget>[
             DropdownButton(
-              onChanged: (String val) => {},
+              onChanged: (String val) {
+                options.cases(val, context, widget.idUser, refreshPage);
+              },
               dropdownColor: Colors.black,
               style: TextStyle(
                 color: Colors.white,
@@ -60,9 +71,6 @@ class _mainWindowState extends State<MainWindow> {
               items: <String>[
                 'Cerrar sesión',
                 'Reiniciar todo',
-                'Ayuda',
-                'Opciones',
-                'Acerca de',
               ].map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
