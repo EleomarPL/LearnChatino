@@ -323,64 +323,64 @@
             },            
             "exercises": {
                 "act-1": {
-                    "correctWord1": "mula",
-                    "incorrectWord1": "ulam",
-                    "correctWord2": "caballo",
-                    "incorrectWord2": "lalboac"
+                    "correctWord1": "nu lyu'",
+                    "incorrectWord1": "u'ly nu",
+                    "correctWord2": "kuwi'",
+                    "incorrectWord2": "kwui'"
                 },
                 "act-2": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ta nten",
+                    "incorrectWord1": "tnen at",
+                    "correctWord2": "sñe'",
+                    "incorrectWord2": "s'eñ"
                 },
                 "act-3": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "nu luwe ti",
+                    "incorrectWord1": "ti uwel un",
+                    "correctWord2": "sñe' na'an",
+                    "incorrectWord2": "ñe's anna'"
                 },
                 "act-4": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "nu lyu'",
+                    "incorrectWord1": "yu'l nu",
+                    "correctWord2": "xtya'an",
+                    "incorrectWord2": "n'aaxty"
                 },
                 "act-5": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tya'a ngula",
+                    "incorrectWord1": "gulan ya'at",
+                    "correctWord2": "sti kula",
+                    "incorrectWord2": "tis ulak"
                 },
                 "act-6": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ta'a ngula",
+                    "incorrectWord1": "nulag taa'",
+                    "correctWord2": "kuwi'",
+                    "incorrectWord2": "kwi'u"
                 },
                 "act-7": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ma' ste'",
+                    "incorrectWord1": "te's ma'",
+                    "correctWord2": "kwilyo'o",
+                    "incorrectWord2": "lwo'okiy"
                 },
                 "act-8": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "jya'an lyaa",
+                    "incorrectWord1": "laay ya'jan",
+                    "correctWord2": "sti lyaa",
+                    "incorrectWord2": "tis yaal"
                 },
                 "act-9": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "xtya'an",
+                    "incorrectWord1": "tyxa'an",
+                    "correctWord2": "nu luwe ti",
+                    "incorrectWord2": "un ti ulew"
                 },
                 "act-10": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "sñe'",
+                    "incorrectWord1": "e'sñ",
+                    "correctWord2": "kwilyo'o",
+                    "incorrectWord2": "wo'koyil"
                 }
             }
         },
@@ -709,64 +709,64 @@
             },            
             "exercises": {
                 "act-1": {
-                    "correctWord1": "mula",
-                    "incorrectWord1": "ulam",
-                    "correctWord2": "caballo",
-                    "incorrectWord2": "lalboac"
+                    "correctWord1": "jyu'u",
+                    "incorrectWord1": "y'uju",
+                    "correctWord2": "tike'",
+                    "incorrectWord2": "e'tki"
                 },
                 "act-2": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "sin' ti'",
+                    "incorrectWord1": "n'i' tsi'",
+                    "correctWord2": "tlya'",
+                    "incorrectWord2": "yla't"
                 },
                 "act-3": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ti'í",
+                    "incorrectWord1": "i'ít",
+                    "correctWord2": "xtya ti'",
+                    "incorrectWord2": "tyxa it"
                 },
                 "act-4": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tñan'",
+                    "incorrectWord1": "ñn'ta",
+                    "correctWord2": "ndiyu'",
+                    "incorrectWord2": "yinu'd"
                 },
                 "act-5": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "jo'o",
+                    "incorrectWord1": "joo'",
+                    "correctWord2": "su'we tiye",
+                    "incorrectWord2": "sweu' yite"
                 },
                 "act-6": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ti'i",
+                    "incorrectWord1": "i'ti",
+                    "correctWord2": "tñan ti'",
+                    "incorrectWord2": "ti ñtan"
                 },
                 "act-7": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kuliya'",
+                    "incorrectWord1": "ia'ykul",
+                    "correctWord2": "ti'í",
+                    "incorrectWord2": "tíi'"
                 },
                 "act-8": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "jo'o",
+                    "incorrectWord1": "o'jo",
+                    "correctWord2": "jyu'u",
+                    "incorrectWord2": "u'yju"
                 },
                 "act-9": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tike'",
+                    "incorrectWord1": "ikte'",
+                    "correctWord2": "xtya ti'",
+                    "incorrectWord2": "it xaty"
                 },
                 "act-10": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tñan ti'",
+                    "incorrectWord1": "tnañ ti",
+                    "correctWord2": "su'we tiye",
+                    "incorrectWord2": "esu'w iety"
                 }
             }
         },
@@ -928,64 +928,64 @@
             },            
             "exercises": {
                 "act-1": {
-                    "correctWord1": "mula",
-                    "incorrectWord1": "ulam",
-                    "correctWord2": "caballo",
-                    "incorrectWord2": "lalboac"
+                    "correctWord1": "kala",
+                    "incorrectWord1": "laak",
+                    "correctWord2": "tixka",
+                    "incorrectWord2": "ixtka"
                 },
                 "act-2": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tityukwaa",
+                    "incorrectWord1": "kwatiyatu",
+                    "correctWord2": "kala tyii",
+                    "incorrectWord2": "kaal yiit"
                 },
                 "act-3": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kaa",
+                    "incorrectWord1": "aka",
+                    "correctWord2": "tii",
+                    "incorrectWord2": "iit"
                 },
                 "act-4": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "snan",
+                    "incorrectWord1": "nsan",
+                    "correctWord2": "ka'yu",
+                    "incorrectWord2": "a'kuy"
                 },
                 "act-5": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ska",
+                    "incorrectWord1": "kas",
+                    "correctWord2": "jakwa",
+                    "incorrectWord2": "wakaj"
                 },
                 "act-6": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tukwa",
+                    "incorrectWord1": "twaku",
+                    "correctWord2": "skwa",
+                    "incorrectWord2": "sawk"
                 },
                 "act-7": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "snu'",
+                    "incorrectWord1": "u'ns",
+                    "correctWord2": "kati",
+                    "incorrectWord2": "akit"
                 },
                 "act-8": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ka'yu",
+                    "incorrectWord1": "kuya'",
+                    "correctWord2": "tii",
+                    "incorrectWord2": "iti"
                 },
                 "act-9": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kaa",
+                    "incorrectWord1": "aak",
+                    "correctWord2": "kala",
+                    "incorrectWord2": "alak"
                 },
                 "act-10": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tixka",
+                    "incorrectWord1": "kaxti",
+                    "correctWord2": "tukwa",
+                    "incorrectWord2": "kwatu"
                 }
             }
         },
