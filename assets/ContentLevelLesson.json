@@ -3,34 +3,94 @@
         "lesson-1": {
             "vocabulary": {
                 "word-1": {
-                    "wordInSpanish": "Bienvenido",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                    "wordInSpanish": "Enero",
+                    "wordInChatino": "enero",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Enero.ogg"
                 },
                 "word-2": {
-                    "wordInSpanish": "Que",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                    "wordInSpanish": "Febrero",
+                    "wordInChatino": "febrero",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Febrero.ogg"
                 },
                 "word-3": {
-                    "wordInSpanish": "Como",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                    "wordInSpanish": "Marzo",
+                    "wordInChatino": "marzo",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Marzo.ogg"
                 },
                 "word-4": {
-                    "wordInSpanish": "Saluda",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                    "wordInSpanish": "Abril",
+                    "wordInChatino": "abril",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Abril.ogg"
                 },
                 "word-5": {
-                    "wordInSpanish": "Conocer",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                    "wordInSpanish": "Mayo",
+                    "wordInChatino": "mayo",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Mayo.ogg"
+                },
+                "word-6": {
+                    "wordInSpanish": "Junio",
+                    "wordInChatino": "junio",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Junio.ogg"
+                },
+                "word-7": {
+                    "wordInSpanish": "Julio",
+                    "wordInChatino": "julio",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Julio.ogg"
+                },
+                "word-8": {
+                    "wordInSpanish": "Agosto",
+                    "wordInChatino": "agosto",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Agosto.ogg"
+                },
+                "word-9": {
+                    "wordInSpanish": "Septiembre",
+                    "wordInChatino": "septiembre",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Septiembre.ogg"
+                },
+                "word-10": {
+                    "wordInSpanish": "Octubre",
+                    "wordInChatino": "octubre",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Octubre.ogg"
+                },
+                "word-11": {
+                    "wordInSpanish": "Noviembre",
+                    "wordInChatino": "noviembre",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Noviembre.ogg"
+                },
+                "word-12": {
+                    "wordInSpanish": "Diciembre",
+                    "wordInChatino": "diciembre",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Diciembre.ogg"
+                },
+                "word-13": {
+                    "wordInSpanish": "6 de enero",
+                    "wordInChatino": "skwa'o ko' enero",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/6deenero.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/6DeEnero.ogg"
+                },
+                "word-14": {
+                    "wordInSpanish": "30 de octubre",
+                    "wordInChatino": "kala tyii'o ko' octubre",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/30DeOctubre.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/30DeOctubre.ogg"
+                },
+                "word-15": {
+                    "wordInSpanish": "5 de mayo",
+                    "wordInChatino": "ka'yu'o ko' mayo",
+                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/5demayo.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/5DeMayo.ogg"
                 }
             },
             "pronunciaton": {
@@ -104,64 +164,64 @@
             },            
             "exercises": {
                 "act-1": {
-                    "correctWord1": "mula",
-                    "incorrectWord1": "ulam",
-                    "correctWord2": "caballo",
-                    "incorrectWord2": "lalboac"
+                    "correctWord1": "septiembre",
+                    "incorrectWord1": "eistembper",
+                    "correctWord2": "diciembre",
+                    "incorrectWord2": "ceediirbm"
                 },
                 "act-2": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "enero",
+                    "incorrectWord1": "ernoe",
+                    "correctWord2": "lio 'ti",
+                    "incorrectWord2": "i'loti"
                 },
                 "act-3": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kii",
+                    "incorrectWord1": "iik",
+                    "correctWord2": "kuto",
+                    "incorrectWord2": "tkou"
                 },
                 "act-4": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kajue",
+                    "incorrectWord1": "keuaj",
+                    "correctWord2": "marzo",
+                    "incorrectWord2": "zrmao"
                 },
                 "act-5": {
                     "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "incorrectWord1": "uyu",
+                    "correctWord2": "abril",
+                    "incorrectWord2": "brila"
                 },
                 "act-6": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "junio",
+                    "incorrectWord1": "ojiun",
+                    "correctWord2": "julio",
+                    "incorrectWord2": "liuoj"
                 },
                 "act-7": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "msa",
+                    "incorrectWord1": "sma",
+                    "correctWord2": "liu",
+                    "incorrectWord2": "iul"
                 },
                 "act-8": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "noviembre",
+                    "incorrectWord1": "bmenrvoei",
+                    "correctWord2": "octubre",
+                    "incorrectWord2": "rucoetb"
                 },
                 "act-9": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ndaa",
+                    "incorrectWord1": "naad",
+                    "correctWord2": "see",
+                    "incorrectWord2": "ese"
                 },
                 "act-10": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "agosto",
+                    "incorrectWord1": "osagto",
+                    "correctWord2": "koo",
+                    "incorrectWord2": "oko"
                 }
             }
         },
@@ -550,64 +610,64 @@
             },            
             "exercises": {
                 "act-1": {
-                    "correctWord1": "mula",
-                    "incorrectWord1": "ulam",
-                    "correctWord2": "caballo",
-                    "incorrectWord2": "lalboac"
+                    "correctWord1": "bra wa ska siin",
+                    "incorrectWord1": "krw ai ssi bana",
+                    "correctWord2": "nchga yka kwa",
+                    "incorrectWord2": "awnk ahc ygka"
                 },
                 "act-2": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "tu'wa",
+                    "incorrectWord1": "a'uwt",
+                    "correctWord2": "na'an",
+                    "incorrectWord2": "nnaa'"
                 },
                 "act-3": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "bra",
+                    "incorrectWord1": "rab",
+                    "correctWord2": "tla",
+                    "incorrectWord2": "alt"
                 },
                 "act-4": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kixin",
+                    "incorrectWord1": "iiknx",
+                    "correctWord2": "mskan'",
+                    "incorrectWord2": "'kmnsa"
                 },
                 "act-5": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "te'én",
+                    "incorrectWord1": "ent'é",
+                    "correctWord2": "ku siin",
+                    "incorrectWord2": "ns uiik"
                 },
                 "act-6": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
+                    "correctWord1": "romsaa",
+                    "incorrectWord1": "sroama",
                     "correctWord2": "yuu",
                     "incorrectWord2": "ayu"
                 },
                 "act-7": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "skwa",
+                    "incorrectWord1": "awsk",
+                    "correctWord2": "wte",
+                    "incorrectWord2": "twe"
                 },
                 "act-8": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "nda'an",
+                    "incorrectWord1": "d'nnaa",
+                    "correctWord2": "ta'a",
+                    "incorrectWord2": "aat'"
                 },
                 "act-9": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "jakatun",
+                    "incorrectWord1": "uajnatk",
+                    "correctWord2": "jyu'u",
+                    "incorrectWord2": "u'ujy"
                 },
                 "act-10": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "sin' ti'",
+                    "incorrectWord1": "ini''st",
+                    "correctWord2": "tlya",
+                    "incorrectWord2": "ylat"
                 }
             }
         }
@@ -1154,7 +1214,7 @@
                     },
                     "i": {
                         "wordInSpanish": "pequeño",
-                        "wordInChatino": "lio ´ti",
+                        "wordInChatino": "lio 'ti",
                         "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
                         "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
                     },
@@ -1209,64 +1269,64 @@
             },            
             "exercises": {
                 "act-1": {
-                    "correctWord1": "mula",
-                    "incorrectWord1": "ulam",
-                    "correctWord2": "caballo",
-                    "incorrectWord2": "lalboac"
+                    "correctWord1": "teminku",
+                    "incorrectWord1": "inmetku",
+                    "correctWord2": "kuto",
+                    "incorrectWord2": "oukt"
                 },
                 "act-2": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "kii",
+                    "incorrectWord1": "iik",
+                    "correctWord2": "jwebe",
+                    "incorrectWord2": "jebew"
                 },
                 "act-3": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ska semnan",
+                    "incorrectWord1": "asn msaken",
+                    "correctWord2": "saro",
+                    "incorrectWord2": "aros"
                 },
                 "act-4": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "nga ko'",
+                    "incorrectWord1": "go' kan",
+                    "correctWord2": "luni",
+                    "incorrectWord2": "niul"
                 },
                 "act-5": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "merku",
+                    "incorrectWord1": "ukmre",
+                    "correctWord2": "biyerne",
+                    "incorrectWord2": "enbyrei"
                 },
                 "act-6": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "ndaa",
+                    "incorrectWord1": "adan",
+                    "correctWord2": "see",
+                    "incorrectWord2": "ese"
                 },
                 "act-7": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "lio 'ti",
+                    "incorrectWord1": "lo' tii",
+                    "correctWord2": "liu",
+                    "incorrectWord2": "uli"
                 },
                 "act-8": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "wcha",
+                    "incorrectWord1": "cawh",
+                    "correctWord2": "lo kiya'",
+                    "incorrectWord2": "io kyl'a"
                 },
                 "act-9": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "marte",
+                    "incorrectWord1": "rtema",
+                    "correctWord2": "ti kaa",
+                    "incorrectWord2": "at ika"
                 },
                 "act-10": {
-                    "correctWord1": "yuu",
-                    "incorrectWord1": "ayu",
-                    "correctWord2": "yuu",
-                    "incorrectWord2": "ayu"
+                    "correctWord1": "jwebe",
+                    "incorrectWord1": "jebew",
+                    "correctWord2": "koo",
+                    "incorrectWord2": "oko"
                 }
             }
         }
