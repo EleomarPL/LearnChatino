@@ -387,34 +387,96 @@
         "lesson-3": {
             "vocabulary": {
                 "word-1": {
-                    "wordInSpanish": "Bienvenido",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
-                },
+                    "wordInSpanish": "Hora",
+                    "wordInChatino": "bra",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/hora.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/hora.ogg"
+                }, 
                 "word-2": {
-                    "wordInSpanish": "Que",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                    "wordInSpanish": "De la mañana",
+                    "wordInChatino": "bra wa kaa nda'a",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/delamanana.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/DeLaManana.ogg"
                 },
                 "word-3": {
-                    "wordInSpanish": "Como",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                    "wordInSpanish": "De la tarde",
+                    "wordInChatino": "bra wa ska siin",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/delatarde.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/DeLaTarde.ogg"
                 },
                 "word-4": {
-                    "wordInSpanish": "Saluda",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                    "wordInSpanish": "De la noche",
+                    "wordInChatino": "tla",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/delanoche.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/DeLaNoche.ogg"
                 },
                 "word-5": {
-                    "wordInSpanish": "Conocer",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                    "wordInSpanish": "Mediodía",
+                    "wordInChatino": "ywan",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/mediodia.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/MedioDia.ogg"
+                },
+                "word-6": {
+                    "wordInSpanish": "Medianoche",
+                    "wordInChatino": "jlu'we tla",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/medianoche.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/MediaNoche.ogg"
+                }
+                ,
+                "word-7": {
+                    "wordInSpanish": "Temprano",
+                    "wordInChatino": "nchga yka kwa",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/temprano.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Temprano.ogg"
+                },
+                "word-8": {
+                    "wordInSpanish": "Tarde",
+                    "wordInChatino": "wa kwichaa la",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/tarde.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Tarde.ogg"
+                },
+                "word-9": {
+                    "wordInSpanish": "Y media",
+                    "wordInChatino": "jlu'we",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/ymedia.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/YMedia.ogg"
+                }
+                ,
+                "word-10": {
+                    "wordInSpanish": "Cuando",
+                    "wordInChatino": "la yaa",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/cuando.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Cuando.ogg"
+                },
+                "word-11": {
+                    "wordInSpanish": "Almuerzo",
+                    "wordInChatino": "romsaa",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/almuerzo.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Almuerzo.ogg"
+                },
+                "word-12": {
+                    "wordInSpanish": "Comida",
+                    "wordInChatino": "skwa",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/comida.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Comida.ogg"
+                },
+                "word-13": {
+                    "wordInSpanish": "Cena",
+                    "wordInChatino": "ku siin",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/cena.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Cena.ogg"
+                },
+                "word-14": {
+                    "wordInSpanish": "Clases",
+                    "wordInChatino": "xla",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/clases.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Clases.ogg"
+                },
+                "word-15": {
+                    "wordInSpanish": "Fiesta",
+                    "wordInChatino": "ta'a",
+                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/Fiesta.jpg",
+                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Fiesta.ogg"
                 }
             },
             "pronunciaton": {

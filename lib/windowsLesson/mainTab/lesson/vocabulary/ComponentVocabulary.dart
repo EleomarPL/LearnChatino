@@ -63,7 +63,7 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(widget.pathImage),
-                    fit: BoxFit.fill,
+                    fit: BoxFit.contain,
                   ),
                   borderRadius: BorderRadius.circular(20),
                 ),
