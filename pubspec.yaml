@@ -61,9 +61,16 @@ flutter:
     - assets/dataApp/level1/lesson1/pronunciaton/longvowels/
     - assets/dataApp/level1/lesson1/conversation/
     - assets/dataApp/level1/lesson2/vocabulary/
+    - assets/dataApp/level1/lesson2/pronunciaton/basicvowels/
+    - assets/dataApp/level1/lesson2/pronunciaton/longvowels/
+    - assets/dataApp/level1/lesson3/pronunciaton/basicvowels/
+    - assets/dataApp/level1/lesson3/pronunciaton/longvowels/
     - assets/dataApp/level2/lesson1/vocabulary/
+    - assets/dataApp/level2/lesson1/pronunciaton/basicvowels/
+    - assets/dataApp/level2/lesson1/pronunciaton/longvowels/
     - assets/dataApp/level2/lesson2/vocabulary/
     - assets/dataApp/level1/lesson3/vocabulary/
+    - assets/dataApp/level2/lesson3/vocabulary/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
