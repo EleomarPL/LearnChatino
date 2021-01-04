@@ -168,34 +168,88 @@
         "lesson-2": {
             "vocabulary": {
                 "word-1": {
-                    "wordInSpanish": "Bienvenido",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                    "wordInSpanish": "Familia",
+                    "wordInChatino": "Ta nten",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/familia.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/familia.ogg"
                 },
                 "word-2": {
-                    "wordInSpanish": "Que",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                    "wordInSpanish": "Niño",
+                    "wordInChatino": "Nu luwe ti",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/nino.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/nino.ogg"
                 },
                 "word-3": {
-                    "wordInSpanish": "Como",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                    "wordInSpanish": "Niña",
+                    "wordInChatino": "Nu lyu'",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/nina.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/nina.ogg"
                 },
                 "word-4": {
-                    "wordInSpanish": "Saluda",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                    "wordInSpanish": "Hijo",
+                    "wordInChatino": "Sñe'",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermano-hijo.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hijo.ogg"
                 },
                 "word-5": {
-                    "wordInSpanish": "Conocer",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                    "wordInSpanish": "Hija",
+                    "wordInChatino": "Sñe' na'an",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermana-hija.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hija.ogg"
+                },
+                "word-6": {
+                    "wordInSpanish": "Madre",
+                    "wordInChatino": "xtya'an",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/madre.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/madre.ogg"
+                },
+                "word-7": {
+                    "wordInSpanish": "Bebé",
+                    "wordInChatino": "Kuwi'",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/bebe.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/bebe.ogg"
+                },
+                "word-8": {
+                    "wordInSpanish": "Hermano",
+                    "wordInChatino": "Ta'a ngula",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermano-hijo.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hermano.ogg"
+                },
+                "word-9": {
+                    "wordInSpanish": "Hermana",
+                    "wordInChatino": "Tya'a ngula",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermana-hija.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hermana.ogg"
+                },
+                "word-10": {
+                    "wordInSpanish": "Abuelo",
+                    "wordInChatino": "Sti kula",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/abuelo.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/abuelo.ogg"
+                },
+                "word-11": {
+                    "wordInSpanish": "Abuela",
+                    "wordInChatino": "Ma' ste'",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/abuela.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/abuela.ogg"
+                },
+                "word-12": {
+                    "wordInSpanish": "Esposo",
+                    "wordInChatino": "kwilyo'o",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/suegro-esposo.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/esposo.ogg"
+                },
+                "word-13": {
+                    "wordInSpanish": "Suegra",
+                    "wordInChatino": "jya'an lyaa",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/suegra.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/suegra.ogg"
+                },
+                "word-14": {
+                    "wordInSpanish": "Suegro",
+                    "wordInChatino": "Sti lyaa",
+                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/suegro-esposo.png",
+                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/suegro.ogg"
                 }
             },
             "pronunciaton": {
@@ -500,34 +554,88 @@
         "lesson-1": {
             "vocabulary": {
                 "word-1": {
-                    "wordInSpanish": "Bienvenido",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                    "wordInSpanish": "Contento",
+                    "wordInChatino": "Su'we ka tiye",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/contento.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/contento.ogg"
                 },
                 "word-2": {
-                    "wordInSpanish": "Que",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                    "wordInSpanish": "Triste",
+                    "wordInChatino": "Jyu'u",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/triste.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/triste.ogg"
                 },
                 "word-3": {
-                    "wordInSpanish": "Como",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                    "wordInSpanish": "Enojado",
+                    "wordInChatino": "Sin' ti'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/enojado.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/enojado.ogg"
                 },
                 "word-4": {
-                    "wordInSpanish": "Saluda",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                    "wordInSpanish": "Calor",
+                    "wordInChatino": "Tike'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/calor.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/calor.ogg"
                 },
                 "word-5": {
-                    "wordInSpanish": "Conocer",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                    "wordInSpanish": "Frío",
+                    "wordInChatino": "Tlya'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/frio.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/frio.ogg"
+                },
+                "word-6": {
+                    "wordInSpanish": "Enfermo",
+                    "wordInChatino": "Ti'í",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/enfermo.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/enfermo.ogg"
+                },
+                "word-7": {
+                    "wordInSpanish": "Cansado",
+                    "wordInChatino": "Tñan'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/cansado.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/cansado.ogg"
+                },
+                "word-8": {
+                    "wordInSpanish": "Nervioso",
+                    "wordInChatino": "Xtya ti'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/nervioso.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/nervioso.ogg"
+                },
+                "word-9": {
+                    "wordInSpanish": "Loco",
+                    "wordInChatino": "Ndiyu'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/enojado.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/loco.ogg"
+                },
+                "word-10": {
+                    "wordInSpanish": "Flojo",
+                    "wordInChatino": "Jo'o",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/flojo.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/flojo.ogg"
+                },
+                "word-11": {
+                    "wordInSpanish": "Trabajador",
+                    "wordInChatino": "Tñan ti'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/trabajador.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/trabajador.ogg"
+                },
+                "word-12": {
+                    "wordInSpanish": "Rico",
+                    "wordInChatino": "Kuliya'",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/rico.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/rico.ogg"
+                },
+                "word-13": {
+                    "wordInSpanish": "Pobre",
+                    "wordInChatino": "Ti'i",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/pobre.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/pobre.ogg"
+                },
+                "word-14": {
+                    "wordInSpanish": "Amable",
+                    "wordInChatino": "Su'we tiye",
+                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/contento.png",
+                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/amable.ogg"
                 }
             },
             "pronunciaton": {
@@ -665,34 +773,88 @@
         "lesson-2": {
             "vocabulary": {
                 "word-1": {
-                    "wordInSpanish": "Bienvenido",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/bienvenido2.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/bienvenido.ogg"
+                    "wordInSpanish": "Uno",
+                    "wordInChatino": "Ska",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/uno.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/uno.ogg"
                 },
                 "word-2": {
-                    "wordInSpanish": "Que",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/que.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/que.ogg"
+                    "wordInSpanish": "Dos",
+                    "wordInChatino": "Tukwa",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/dos.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/dos.ogg"
                 },
                 "word-3": {
-                    "wordInSpanish": "Como",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/como.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/como.ogg"
+                    "wordInSpanish": "Tres",
+                    "wordInChatino": "Snan",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/tres.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/tres.ogg"
                 },
                 "word-4": {
-                    "wordInSpanish": "Saluda",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/saluda.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/saluda.ogg"
+                    "wordInSpanish": "Cuatro",
+                    "wordInChatino": "Jakwa",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/cuatro.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/cuatro.ogg"
                 },
                 "word-5": {
-                    "wordInSpanish": "Conocer",
-                    "wordInChatino": "wordInChatino",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/conocer.png",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/conocer.ogg"
+                    "wordInSpanish": "Cinco",
+                    "wordInChatino": "Ka'yu",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/cinco.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/cinco.ogg"
+                },
+                "word-6": {
+                    "wordInSpanish": "Seis",
+                    "wordInChatino": "Skwa",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/seis.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/seis.ogg"
+                },
+                "word-7": {
+                    "wordInSpanish": "Siete",
+                    "wordInChatino": "Kati",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/siete.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/siete.ogg"
+                },
+                "word-8": {
+                    "wordInSpanish": "Ocho",
+                    "wordInChatino": "Snu'",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/ocho.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/ocho.ogg"
+                },
+                "word-9": {
+                    "wordInSpanish": "Nueve",
+                    "wordInChatino": "Kaa",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/nueve.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/nueve.ogg"
+                },
+                "word-10": {
+                    "wordInSpanish": "Diez",
+                    "wordInChatino": "Tii",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/diez.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/diez.ogg"
+                },
+                "word-11": {
+                    "wordInSpanish": "Once",
+                    "wordInChatino": "Tixka",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/once.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/once.ogg"
+                },
+                "word-12": {
+                    "wordInSpanish": "Doce",
+                    "wordInChatino": "Tityukwaa",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/doce.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/doce.ogg"
+                },
+                "word-13": {
+                    "wordInSpanish": "Veinte",
+                    "wordInChatino": "Kala",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/veinte.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/veinte.ogg"
+                },
+                "word-14": {
+                    "wordInSpanish": "Treinta",
+                    "wordInChatino": "Kala tyii",
+                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/treinta.png",
+                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/treinta.ogg"
                 }
             },
             "pronunciaton": {
