@@ -1,28 +1,27 @@
 class User {
-  String nameUser;
-  String userUser;
-  int typeUser;
-  User(this.nameUser, this.userUser, this.typeUser);
+  String uid;
+  int type;
+
+  User(this.uid, this.type);
   Map<String, dynamic> toMap() {
     return {
-      "nameUser": nameUser,
-      "userUser": userUser,
-      "typeUser": typeUser,
+      "uid": uid,
+      "type": type,
     };
   }
 }
 
 class WordFavorites {
-  int idUser;
+  String uidUser;
   String wordSpanish;
   String wordChatino;
   String pathImage;
   String pathSound;
-  WordFavorites(this.idUser, this.wordSpanish, this.wordChatino, this.pathImage,
-      this.pathSound);
+  WordFavorites(this.uidUser, this.wordSpanish, this.wordChatino,
+      this.pathImage, this.pathSound);
   Map<String, dynamic> toMap() {
     return {
-      "idUser": idUser,
+      "uidUser": uidUser,
       "wordSpanish": wordSpanish,
       "wordChatino": wordChatino,
       "pathImage": pathImage,
@@ -31,7 +30,7 @@ class WordFavorites {
   }
 
   WordFavorites.toMap(Map<String, dynamic> map) {
-    idUser = map['idUser'];
+    uidUser = map['uidUser'];
     wordSpanish = map['wordSpanish'];
     wordChatino = map['wordChatino'];
     pathImage = map['pathImage'];
@@ -40,15 +39,15 @@ class WordFavorites {
 }
 
 class ProgressUser {
-  int idUser;
+  String uidUser;
   int levelAdavance;
   int lessonAdvance;
   int exercise;
   ProgressUser(
-      this.idUser, this.levelAdavance, this.lessonAdvance, this.exercise);
+      this.uidUser, this.levelAdavance, this.lessonAdvance, this.exercise);
   Map<String, dynamic> toMap() {
     return {
-      'idUser': idUser,
+      'uidUser': uidUser,
       'levelAdvance': levelAdavance,
       'lessonAdvance': lessonAdvance,
       'exercise': exercise
@@ -56,7 +55,7 @@ class ProgressUser {
   }
 
   ProgressUser.toMap(Map<String, dynamic> map) {
-    idUser = map['idUser'];
+    uidUser = map['uidUser'];
     levelAdavance = map['levelAdvance'];
     lessonAdvance = map['lessonAdvance'];
     exercise = map['exercise'];
@@ -64,13 +63,13 @@ class ProgressUser {
 }
 
 class ControlExercise {
-  int idExercise;
-  int idUser;
-  ControlExercise(this.idExercise, this.idUser);
+  String idExercise;
+  String uidUser;
+  ControlExercise(this.idExercise, this.uidUser);
   Map<String, dynamic> toMap() {
     return {
       'idExercise': idExercise,
-      'idUser': idUser,
+      'uidUser': uidUser,
     };
   }
 }

@@ -7,14 +7,14 @@ import 'vocabulary/MainVocabulary.dart';
 class MainLesson extends StatefulWidget {
   final int numLevel;
   final int numLesson;
-  final int idUser;
+  final String uidUser;
   final int typeUser;
   final Function callbackRefresh;
   const MainLesson(
       {Key key,
       this.numLevel,
       this.numLesson,
-      this.idUser,
+      this.uidUser,
       this.typeUser,
       this.callbackRefresh})
       : super(key: key);
@@ -134,7 +134,7 @@ class _MainLessonState extends State<MainLesson> {
                       .push(_handleNavigationPressed(MainVocabulary(
                     numLevel: widget.numLevel,
                     numLesson: widget.numLesson,
-                    idUser: widget.idUser,
+                    uidUser: widget.uidUser,
                   )));
                 },
               ),
@@ -171,7 +171,7 @@ class _MainLessonState extends State<MainLesson> {
                 onTap: () {
                   Navigator.of(context)
                       .push(_handleNavigationPressed(MainExercise(
-                    idUser: widget.idUser,
+                    uidUser: widget.uidUser,
                     typeUser: widget.typeUser,
                     numLevel: widget.numLevel,
                     numLesson: widget.numLesson,

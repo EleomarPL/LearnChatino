@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../database/MainDatabase.dart';
-import '../database/ObjectTables.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FormRegister extends StatefulWidget {
   @override
@@ -10,17 +10,24 @@ class FormRegister extends StatefulWidget {
 class _FormRegisterState extends State<FormRegister> {
   final _formKey = GlobalKey<FormState>();
 
-  TextEditingController controllerName = TextEditingController();
+  FirebaseAuth _auth = FirebaseAuth.instance;
+  FirebaseFirestore _db = FirebaseFirestore.instance;
 
-  TextEditingController controllerUser = TextEditingController();
+  TextEditingController controllerName = TextEditingController();
+  TextEditingController controllerEmail = TextEditingController();
+  TextEditingController controllerPassword = TextEditingController();
 
   String dropdownValue = "Modo aprendiz";
   String textDescriptionDropDown =
       "Este modo te permite ir avanzando las lecciones una por una, hasta terminar todas";
 
-  Widget _textFormFieldBox(TextEditingController controllerBox,
-      String labelTextBox, bool isFocused) {
+  Widget _textFormFieldBox(
+      TextEditingController controllerBox, String labelTextBox, bool isFocused,
+      {bool obscureText = false,
+      TextInputType keyboardType = TextInputType.text}) {
     return TextFormField(
+      obscureText: obscureText,
+      keyboardType: keyboardType,
       controller: controllerBox,
       validator: (String value) {
         return (value.trim().isEmpty)
@@ -53,7 +60,7 @@ class _FormRegisterState extends State<FormRegister> {
     );
   }
 
-  _showMessague() => showDialog(
+  _showMessage(msg) => showDialog(
         context: context,
         builder: (context) {
           return SimpleDialog(
@@ -65,8 +72,7 @@ class _FormRegisterState extends State<FormRegister> {
                   children: [
                     Center(
                         child: Text(
-                      'Ya existe una cuenta con el mismo usuario, '
-                      'utilice otro',
+                      msg,
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white),
                     )),
@@ -100,6 +106,7 @@ class _FormRegisterState extends State<FormRegister> {
           );
         },
       );
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -111,7 +118,18 @@ class _FormRegisterState extends State<FormRegister> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _textFormFieldBox(controllerName, "Nombre", false),
-              _textFormFieldBox(controllerUser, "Usuario", false),
+              _textFormFieldBox(
+                controllerEmail,
+                "Email",
+                false,
+                keyboardType: TextInputType.emailAddress,
+              ),
+              _textFormFieldBox(
+                controllerPassword,
+                "Contraseña",
+                false,
+                obscureText: true,
+              ),
               SizedBox(
                 height: 40,
               ),
@@ -178,23 +196,9 @@ class _FormRegisterState extends State<FormRegister> {
                     color: Colors.white,
                   ),
                 ),
-                onPressed: () async {
+                onPressed: () {
                   if (_formKey.currentState.validate()) {
-                    MainDatabase _db = MainDatabase();
-                    await _db.initDB();
-                    Future<int> isEmpty =
-                        _db.queryUser((controllerUser.text).trim());
-                    isEmpty.then((value) async {
-                      if (value == null) {
-                        await _db.insertUser(User(
-                            (controllerName.text).trim(),
-                            (controllerUser.text).trim(),
-                            (dropdownValue == "Modo aprendiz" ? 0 : 1)));
-                        Navigator.pop(context);
-                      } else {
-                        _showMessague();
-                      }
-                    });
+                    _registerAccount();
                   }
                 },
               ),
@@ -215,5 +219,40 @@ class _FormRegisterState extends State<FormRegister> {
         ),
       ),
     );
+  }
+
+  Future<void> _registerAccount() async {
+    try {
+      UserCredential userCredential =
+          await _auth.createUserWithEmailAndPassword(
+        email: controllerEmail.text.trim(),
+        password: controllerPassword.text.trim(),
+      );
+      await userCredential.user
+          .updateProfile(displayName: controllerName.text.trim());
+      await _db.collection('users').add({
+        "uid": userCredential.user.uid,
+        "type": dropdownValue == "Modo aprendiz" ? 0 : 1
+      });
+      Navigator.pop(context);
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'weak-password')
+        _showMessage(
+            'La contraseña es debil. Escriba una mezclando letras y numeros.');
+      else if (e.code == 'email-already-in-use')
+        _showMessage(
+            'Ya existe una cuenta registrada con este email. Escriba otro emial');
+      else if (e.code == 'invalid-email')
+        _showMessage(
+            'La dirección email no tiene un formato valido. Debe de contener "@"');
+      else if (e.code == 'unknown')
+        _showMessage(
+            'No se pudo establecer conexión con el servidor. Compruebe su conexión a Internet.');
+      else
+        _showMessage('Mensaje: ${e.message}. Codigo: ${e.code}');
+    } catch (e) {
+      _showMessage('Error desconocido');
+      print(e);
+    }
   }
 }

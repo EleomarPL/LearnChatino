@@ -1,33 +1,34 @@
 import 'package:flutter/material.dart';
 import '../../database/MainDatabase.dart';
 import '../../homeWindow/ComponentsHome.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Options {
-  cases(String val, BuildContext context, int idUser, Function callback) {
+  cases(String val, BuildContext context, String uidUser, Function callback) {
     switch (val) {
       case 'Cerrar sesión':
         return closeSesion(context);
         break;
       case 'Reiniciar todo':
-        return restartAll(context, idUser, callback);
+        return restartAll(context, uidUser, callback);
         break;
     }
   }
 
   closeSesion(BuildContext context) {
     _previousMessague(context, '¿Esta seguro que quiere cerrar sesión?', () {
-      Navigator.of(context).pushAndRemoveUntil(
-          _handleNavigationPressed(ComponentsHome()), (route) => false);
+      FirebaseAuth.instance.signOut().then((value) => Navigator.of(context)
+          .pushAndRemoveUntil(
+              _handleNavigationPressed(ComponentsHome()), (route) => false));
     });
   }
 
-  restartAll(BuildContext context, int idUser, Function callback) {
+  restartAll(BuildContext context, String uidUser, Function callback) {
     _previousMessague(
         context, 'Esta opcion borrara todos sus progresos, ¿Esta seguro?',
         () async {
       MainDatabase _db = MainDatabase();
-      await _db.initDB();
-      await _db.deleteAllProgressUser(idUser);
+      _db.deleteAllProgressUser(uidUser);
       callback();
       Navigator.pop(context);
     });

@@ -6,9 +6,9 @@ import 'mainTab/MainMain.dart';
 import './loggedUserOptions/Options.dart';
 
 class MainWindow extends StatefulWidget {
-  final int idUser;
+  final String uidUser;
   final int typeUser;
-  MainWindow({Key key, this.idUser, this.typeUser}) : super(key: key);
+  MainWindow({Key key, this.uidUser, this.typeUser}) : super(key: key);
 
   @override
   _mainWindowState createState() => _mainWindowState();
@@ -53,7 +53,7 @@ class _mainWindowState extends State<MainWindow> {
           actions: <Widget>[
             DropdownButton(
               onChanged: (String val) {
-                options.cases(val, context, widget.idUser, refreshPage);
+                options.cases(val, context, widget.uidUser, refreshPage);
               },
               dropdownColor: Colors.black,
               style: TextStyle(
@@ -85,11 +85,11 @@ class _mainWindowState extends State<MainWindow> {
         body: TabBarView(
           children: [
             MainMain(
-              idUser: widget.idUser,
+              uidUser: widget.uidUser,
               typeUser: widget.typeUser,
             ),
             MainFavorite(
-              idUser: widget.idUser,
+              uidUser: widget.uidUser,
             ),
             MainInformation(),
           ],

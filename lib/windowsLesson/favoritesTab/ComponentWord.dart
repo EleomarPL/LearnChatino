@@ -4,7 +4,7 @@ import '../../database/ObjectTables.dart';
 import '../../database/MainDatabase.dart';
 
 class ComponentWord extends StatefulWidget {
-  final int idUser;
+  final String uidUser;
   final String wordInSpanish;
   final String wordInChatino;
   final String pathImage;
@@ -15,7 +15,7 @@ class ComponentWord extends StatefulWidget {
       this.wordInChatino,
       this.pathImage,
       this.pathSound,
-      this.idUser})
+      this.uidUser})
       : super(key: key);
 
   @override
@@ -109,15 +109,15 @@ class _ComponentWordState extends State<ComponentWord> {
                         ),
                         onTap: () async {
                           MainDatabase _db = MainDatabase();
-                          await _db.initDB();
                           (colorFavorite == Colors.white)
                               ? _db.insertWordFavorite(WordFavorites(
-                                  widget.idUser,
+                                  widget.uidUser,
                                   widget.wordInSpanish,
                                   widget.wordInChatino,
                                   widget.pathImage,
                                   widget.pathSound))
-                              : _db.deleteWord(widget.wordInSpanish);
+                              : _db.deleteWord(
+                                  widget.uidUser, widget.wordInSpanish);
                           setState(() {
                             colorFavorite = (colorFavorite == Colors.white)
                                 ? Colors.red[900]

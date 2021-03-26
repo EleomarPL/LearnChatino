@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1002815168246",
+    "project_id": "learnchatino",
+    "storage_bucket": "learnchatino.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002815168246:android:ebf5e57606255a902c16d7",
+        "android_client_info": {
+          "package_name": "com.example.learn_chatino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002815168246-mbs1v6ss1fi5t3mlsvgi6gpjf0kpbfd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOaaN_IFceXGcDdJaYve5nEFnR6kY6soY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002815168246-mbs1v6ss1fi5t3mlsvgi6gpjf0kpbfd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

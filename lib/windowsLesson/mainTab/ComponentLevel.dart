@@ -3,7 +3,7 @@ import 'lesson/MainLesson.dart';
 
 class ComponentLevel extends StatefulWidget {
   final Function callbackRefresh;
-  final int idUser;
+  final String uidUser;
   final int typeUser;
   final int numLevel;
   final bool isAccessibleLessonOne;
@@ -21,7 +21,7 @@ class ComponentLevel extends StatefulWidget {
       this.isFinishedLessonOne,
       this.isFinishedLessonTwo,
       this.isFinishedLessonThree,
-      this.idUser,
+      this.uidUser,
       this.typeUser,
       this.callbackRefresh})
       : super(key: key);
@@ -39,7 +39,7 @@ class _ComponentLevelState extends State<ComponentLevel> {
       pageBuilder: (context, animation, secondaryAnimation) => MainLesson(
         numLevel: widget.numLevel,
         numLesson: numLesson,
-        idUser: widget.idUser,
+        uidUser: widget.uidUser,
         typeUser: widget.typeUser,
         callbackRefresh: widget.callbackRefresh,
       ),

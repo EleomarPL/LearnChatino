@@ -8,7 +8,7 @@ class ComponentExercise extends StatefulWidget {
   final String correctWord2;
   final int numLevel;
   final int numLesson;
-  final int idUser;
+  final String uidUser;
   final int typeUser;
   final int numExercise;
   ComponentExercise(
@@ -19,7 +19,7 @@ class ComponentExercise extends StatefulWidget {
       this.correctWord2,
       this.numLevel,
       this.numLesson,
-      this.idUser,
+      this.uidUser,
       this.typeUser,
       this.numExercise})
       : super(key: key);
@@ -108,11 +108,9 @@ class _ComponentExerciseState extends State<ComponentExercise> {
 
   _methodInitResults() async {
     MainDatabase _db = MainDatabase();
-    await _db.initDB();
     bool band = await _db.existThisExercise(
-        int.tryParse(
-            '${widget.idUser}${widget.numLevel}${widget.numLesson}${widget.numExercise}'),
-        widget.idUser);
+        '${widget.uidUser}${widget.numLevel}${widget.numLesson}${widget.numExercise}',
+        widget.uidUser);
     if (band) {
       setState(() {
         updateElement(true);
@@ -173,9 +171,8 @@ class _ComponentExerciseState extends State<ComponentExercise> {
                               widget.correctWord2)) {
                         if (widget.typeUser == 0) {
                           MainDatabase _db = MainDatabase();
-                          await _db.initDB();
                           await _db.insertExercisePassed(
-                              widget.idUser,
+                              widget.uidUser,
                               widget.numLevel,
                               widget.numLesson,
                               widget.numExercise);

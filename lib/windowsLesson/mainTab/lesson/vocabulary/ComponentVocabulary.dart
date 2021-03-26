@@ -4,7 +4,7 @@ import '../../../../database/MainDatabase.dart';
 import '../../../../database/ObjectTables.dart';
 
 class ComponentVocabulary extends StatefulWidget {
-  final int idUser;
+  final String uidUser;
   final String wordInSpanish;
   final String wordInChatino;
   final String pathImage;
@@ -15,7 +15,7 @@ class ComponentVocabulary extends StatefulWidget {
       this.pathImage,
       this.pathSound,
       this.wordInChatino,
-      this.idUser})
+      this.uidUser})
       : super(key: key);
 
   @override
@@ -35,9 +35,8 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
   Color colorFavorite = Colors.white;
   _methodInitComponent() async {
     MainDatabase _database = MainDatabase();
-    await _database.initDB();
     bool band = await _database.existThisWordInFavorite(
-        widget.idUser, widget.wordInSpanish);
+        widget.uidUser, widget.wordInSpanish);
     setState(() {
       colorFavorite = (band) ? Colors.red[900] : Colors.white;
     });
@@ -120,15 +119,15 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                         ),
                         onTap: () async {
                           MainDatabase _db = MainDatabase();
-                          await _db.initDB();
                           (colorFavorite == Colors.white)
                               ? _db.insertWordFavorite(WordFavorites(
-                                  widget.idUser,
+                                  widget.uidUser,
                                   widget.wordInSpanish,
                                   widget.wordInChatino,
                                   widget.pathImage,
                                   widget.pathSound))
-                              : _db.deleteWord(widget.wordInSpanish);
+                              : _db.deleteWord(
+                                  widget.uidUser, widget.wordInSpanish);
                           setState(() {
                             colorFavorite = (colorFavorite == Colors.white)
                                 ? Colors.red[900]
