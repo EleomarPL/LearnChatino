@@ -83,12 +83,11 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      RaisedButton(
-                        color: Colors.blue[800],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                            15.0,
-                          ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.blue[800],
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0)),
                         ),
                         child: Text(
                           'Si',
@@ -173,8 +172,10 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                         SizedBox(
                           height: 20,
                         ),
-                        RaisedButton(
-                          color: Colors.blue[900],
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.blue[900],
+                          ),
                           child: Text(
                             'INICIAR SESIÓN',
                             style: TextStyle(
@@ -227,10 +228,11 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                     decoration: TextDecoration.none,
                   ),
                 ),
-                RaisedButton(
-                  color: Colors.transparent,
-                  elevation: 0.0,
-                  padding: EdgeInsets.all(0.0),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.transparent,
+                      elevation: 0,
+                      padding: EdgeInsets.all(0.0)),
                   child: Text(
                     "Crea uno aquí!",
                     style: TextStyle(

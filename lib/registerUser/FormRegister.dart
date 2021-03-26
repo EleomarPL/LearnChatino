@@ -73,11 +73,11 @@ class _FormRegisterState extends State<FormRegister> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        RaisedButton(
-                          color: Colors.blue[800],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(
-                              15.0,
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.blue[800],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
                             ),
                           ),
                           child: Text(
@@ -169,8 +169,10 @@ class _FormRegisterState extends State<FormRegister> {
               SizedBox(
                 height: 20,
               ),
-              RaisedButton(
-                color: Colors.blue[900],
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.blue[900],
+                ),
                 child: Text(
                   'Aceptar',
                   style: TextStyle(

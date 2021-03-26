@@ -103,8 +103,10 @@ class _MainLessonState extends State<MainLesson> {
           centerTitle: true,
         ),
       ),
-      bottomNavigationBar: RaisedButton(
-        color: Colors.blue[900],
+      bottomNavigationBar: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.blue[900],
+        ),
         child: Text(
           'SIGUIENTE LECCIÓN',
           style: TextStyle(

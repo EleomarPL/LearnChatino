@@ -14,7 +14,6 @@ class MainFavorite extends StatefulWidget {
 _validateData(BuildContext context, MainDatabase mainDatabase, int idUser) {
   return FutureBuilder(
     future: mainDatabase.getWordFavorites(idUser),
-    initialData: List<WordFavorites>(),
     builder:
         (BuildContext context, AsyncSnapshot<List<WordFavorites>> snapshot) {
       if (snapshot.hasData && snapshot.data.length != 0) {

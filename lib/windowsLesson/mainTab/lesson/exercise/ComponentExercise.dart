@@ -157,8 +157,10 @@ class _ComponentExerciseState extends State<ComponentExercise> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 50, left: 50),
-                  child: RaisedButton(
-                    color: Colors.blue[900],
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.blue[900],
+                    ),
                     child: Text(
                       'CALIFICAR',
                       style: TextStyle(

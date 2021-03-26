@@ -55,9 +55,11 @@ class _ComponentBodyState extends State<ComponentBody>
       );
   Widget _buttonController(String textButton, double sizeText,
           FontWeight weightText, Color colorText, bool isNext) =>
-      RaisedButton(
-          elevation: 0,
-          color: Colors.white,
+      ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            primary: Colors.white,
+            elevation: 0,
+          ),
           child: _textBody(textButton, sizeText, weightText, colorText),
           onPressed: () {
             setState(() {
