@@ -5,92 +5,92 @@
                 "word-1": {
                     "wordInSpanish": "Enero",
                     "wordInChatino": "enero",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Enero.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Enero.ogg"
                 },
                 "word-2": {
                     "wordInSpanish": "Febrero",
                     "wordInChatino": "febrero",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Febrero.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Febrero.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "Marzo",
                     "wordInChatino": "marzo",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Marzo.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Marzo.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "Abril",
                     "wordInChatino": "abril",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Abril.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Abril.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Mayo",
                     "wordInChatino": "mayo",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Mayo.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Mayo.ogg"
                 },
                 "word-6": {
                     "wordInSpanish": "Junio",
                     "wordInChatino": "junio",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Junio.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Junio.ogg"
                 },
                 "word-7": {
                     "wordInSpanish": "Julio",
                     "wordInChatino": "julio",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Julio.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Julio.ogg"
                 },
                 "word-8": {
                     "wordInSpanish": "Agosto",
                     "wordInChatino": "agosto",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Agosto.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Agosto.ogg"
                 },
                 "word-9": {
                     "wordInSpanish": "Septiembre",
                     "wordInChatino": "septiembre",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Septiembre.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Septiembre.ogg"
                 },
                 "word-10": {
                     "wordInSpanish": "Octubre",
                     "wordInChatino": "octubre",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Octubre.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Octubre.ogg"
                 },
                 "word-11": {
                     "wordInSpanish": "Noviembre",
                     "wordInChatino": "noviembre",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Noviembre.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Noviembre.ogg"
                 },
                 "word-12": {
                     "wordInSpanish": "Diciembre",
                     "wordInChatino": "diciembre",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/Diciembre.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/mes.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/Diciembre.ogg"
                 },
                 "word-13": {
                     "wordInSpanish": "6 de enero",
                     "wordInChatino": "skwa'o ko' enero",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/6deenero.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/6DeEnero.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/6deenero.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/6DeEnero.ogg"
                 },
                 "word-14": {
                     "wordInSpanish": "30 de octubre",
                     "wordInChatino": "kala tyii'o ko' octubre",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/30DeOctubre.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/30DeOctubre.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/30DeOctubre.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/30DeOctubre.ogg"
                 },
                 "word-15": {
                     "wordInSpanish": "5 de mayo",
                     "wordInChatino": "ka'yu'o ko' mayo",
-                    "pathBackground": "assets/dataApp/level1/lesson1/vocabulary/5demayo.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson1/vocabulary/5DeMayo.ogg"
+                    "pathBackground": "level1/lesson1/vocabulary/5demayo.jpg",
+                    "pathSound": "level1/lesson1/vocabulary/5DeMayo.ogg"
                 }
             },
             "pronunciaton": {
@@ -98,69 +98,69 @@
                     "a": {
                         "wordInSpanish": "mesa",
                         "wordInChatino": "msa",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
                     },
                     "e": {
                         "wordInSpanish": "cafe",
                         "wordInChatino": "kajue",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
                     },
                     "i": {
                         "wordInSpanish": "pequeño",
                         "wordInChatino": "lio ´ti",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
                     },
                     "o": {
                         "wordInSpanish": "pollo",
                         "wordInChatino": "kuto",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
                     },
                     "u": {
                         "wordInSpanish": "suelo",
                         "wordInChatino": "liu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
                     }
                 },
                 "longvowels": {
                     "aa": {
                         "wordInSpanish": "frijol",
                         "wordInChatino": "ndaa",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
                     },
                     "ee": {
                         "wordInSpanish": "José",
                         "wordInChatino": "see",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
                     },
                     "ii": {
                         "wordInSpanish": "zacate",
                         "wordInChatino": "kii",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
                     },
                     "oo": {
                         "wordInSpanish": "nube",
                         "wordInChatino": "koo",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
                     },
                     "uu": {
                         "wordInSpanish": "tierra",
                         "wordInChatino": "yuu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
                     }
                 }
             },
             "conversation": {
-                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+                "pathVideo": "level1/lesson1/conversation/conver01.mp4"
             },            
             "exercises": {
                 "act-1": {
@@ -230,86 +230,86 @@
                 "word-1": {
                     "wordInSpanish": "Familia",
                     "wordInChatino": "Ta nten",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/familia.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/familia.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/familia.png",
+                    "pathSound": "level1/lesson2/vocabulary/familia.ogg"
                 },
                 "word-2": {
                     "wordInSpanish": "Niño",
                     "wordInChatino": "Nu luwe ti",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/nino.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/nino.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/nino.png",
+                    "pathSound": "level1/lesson2/vocabulary/nino.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "Niña",
                     "wordInChatino": "Nu lyu'",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/nina.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/nina.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/nina.png",
+                    "pathSound": "level1/lesson2/vocabulary/nina.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "Hijo",
                     "wordInChatino": "Sñe'",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermano-hijo.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hijo.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/hermano-hijo.png",
+                    "pathSound": "level1/lesson2/vocabulary/hijo.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Hija",
                     "wordInChatino": "Sñe' na'an",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermana-hija.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hija.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/hermana-hija.png",
+                    "pathSound": "level1/lesson2/vocabulary/hija.ogg"
                 },
                 "word-6": {
                     "wordInSpanish": "Madre",
                     "wordInChatino": "xtya'an",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/madre.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/madre.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/madre.png",
+                    "pathSound": "level1/lesson2/vocabulary/madre.ogg"
                 },
                 "word-7": {
                     "wordInSpanish": "Bebé",
                     "wordInChatino": "Kuwi'",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/bebe.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/bebe.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/bebe.png",
+                    "pathSound": "level1/lesson2/vocabulary/bebe.ogg"
                 },
                 "word-8": {
                     "wordInSpanish": "Hermano",
                     "wordInChatino": "Ta'a ngula",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermano-hijo.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hermano.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/hermano-hijo.png",
+                    "pathSound": "level1/lesson2/vocabulary/hermano.ogg"
                 },
                 "word-9": {
                     "wordInSpanish": "Hermana",
                     "wordInChatino": "Tya'a ngula",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/hermana-hija.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/hermana.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/hermana-hija.png",
+                    "pathSound": "level1/lesson2/vocabulary/hermana.ogg"
                 },
                 "word-10": {
                     "wordInSpanish": "Abuelo",
                     "wordInChatino": "Sti kula",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/abuelo.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/abuelo.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/abuelo.png",
+                    "pathSound": "level1/lesson2/vocabulary/abuelo.ogg"
                 },
                 "word-11": {
                     "wordInSpanish": "Abuela",
                     "wordInChatino": "Ma' ste'",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/abuela.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/abuela.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/abuela.png",
+                    "pathSound": "level1/lesson2/vocabulary/abuela.ogg"
                 },
                 "word-12": {
                     "wordInSpanish": "Esposo",
                     "wordInChatino": "kwilyo'o",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/suegro-esposo.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/esposo.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/suegro-esposo.png",
+                    "pathSound": "level1/lesson2/vocabulary/esposo.ogg"
                 },
                 "word-13": {
                     "wordInSpanish": "Suegra",
                     "wordInChatino": "jya'an lyaa",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/suegra.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/suegra.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/suegra.png",
+                    "pathSound": "level1/lesson2/vocabulary/suegra.ogg"
                 },
                 "word-14": {
                     "wordInSpanish": "Suegro",
                     "wordInChatino": "Sti lyaa",
-                    "pathBackground": "assets/dataApp/level1/lesson2/vocabulary/suegro-esposo.png",
-                    "pathSound": "assets/dataApp/level1/lesson2/vocabulary/suegro.ogg"
+                    "pathBackground": "level1/lesson2/vocabulary/suegro-esposo.png",
+                    "pathSound": "level1/lesson2/vocabulary/suegro.ogg"
                 }
             },
             "pronunciaton": {
@@ -317,69 +317,69 @@
                     "a": {
                         "wordInSpanish": "Maiz",
                         "wordInChatino": "nskwa'",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/maiz.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/Maiz.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/basicvowels/maiz.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/basicvowels/Maiz.ogg"
                     },
                     "e": {
                         "wordInSpanish": "Limon",
                         "wordInChatino": "ndsen",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/limon.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/Limon.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/basicvowels/limon.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/basicvowels/Limon.ogg"
                     },
                     "i": {
                         "wordInSpanish": "Rana",
                         "wordInChatino": "kwityi'",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/rana.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/Rana.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/basicvowels/rana.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/basicvowels/Rana.ogg"
                     },
                     "o": {
                         "wordInSpanish": "Raton",
                         "wordInChatino": "tña'",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/raton.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/Raton.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/basicvowels/raton.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/basicvowels/Raton.ogg"
                     },
                     "u": {
                         "wordInSpanish": "Ocho",
                         "wordInChatino": "snu'",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/ocho.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/basicvowels/Ocho.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/basicvowels/ocho.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/basicvowels/Ocho.ogg"
                     }
                 },
                 "longvowels": {
                     "aa": {
                         "wordInSpanish": "Verde",
                         "wordInChatino": "jyi'a",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/verde.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/Verde.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/longvowels/verde.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/longvowels/Verde.ogg"
                     },
                     "ee": {
                         "wordInSpanish": "Lamer",
                         "wordInChatino": "kwe'e",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/lamer.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/Lamer.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/longvowels/lamer.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/longvowels/Lamer.ogg"
                     },
                     "ii": {
                         "wordInSpanish": "Comprar",
                         "wordInChatino": "kwi'ya",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/comprar.png",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/Comprar.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/longvowels/comprar.png",
+                        "pathSound": "level1/lesson2/pronunciaton/longvowels/Comprar.ogg"
                     },
                     "oo": {
                         "wordInSpanish": "Tomar",
                         "wordInChatino": "ko'o",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/tomar.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/Tomar.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/longvowels/tomar.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/longvowels/Tomar.ogg"
                     },
                     "uu": {
                         "wordInSpanish": "Platano",
                         "wordInChatino": "ju'wa",
-                        "pathImage": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/platano.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson2/pronunciaton/longvowels/Platano.ogg"
+                        "pathImage": "level1/lesson2/pronunciaton/longvowels/platano.jpg",
+                        "pathSound": "level1/lesson2/pronunciaton/longvowels/Platano.ogg"
                     }
                 }
             },
             "conversation": {
-                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+                "pathVideo": "level1/lesson1/conversation/conver01.mp4"
             },            
             "exercises": {
                 "act-1": {
@@ -449,94 +449,94 @@
                 "word-1": {
                     "wordInSpanish": "Hora",
                     "wordInChatino": "bra",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/hora.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/hora.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/hora.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/hora.ogg"
                 }, 
                 "word-2": {
                     "wordInSpanish": "De la mañana",
                     "wordInChatino": "bra wa kaa nda'a",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/delamanana.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/DeLaManana.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/delamanana.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/DeLaManana.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "De la tarde",
                     "wordInChatino": "bra wa ska siin",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/delatarde.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/DeLaTarde.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/delatarde.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/DeLaTarde.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "De la noche",
                     "wordInChatino": "tla",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/delanoche.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/DeLaNoche.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/delanoche.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/DeLaNoche.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Mediodía",
                     "wordInChatino": "ywan",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/mediodia.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/MedioDia.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/mediodia.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/MedioDia.ogg"
                 },
                 "word-6": {
                     "wordInSpanish": "Medianoche",
                     "wordInChatino": "jlu'we tla",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/medianoche.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/MediaNoche.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/medianoche.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/MediaNoche.ogg"
                 }
                 ,
                 "word-7": {
                     "wordInSpanish": "Temprano",
                     "wordInChatino": "nchga yka kwa",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/temprano.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Temprano.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/temprano.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Temprano.ogg"
                 },
                 "word-8": {
                     "wordInSpanish": "Tarde",
                     "wordInChatino": "wa kwichaa la",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/tarde.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Tarde.ogg"
+                    "pathBackground": "lesson3/vocabulary/tarde.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Tarde.ogg"
                 },
                 "word-9": {
                     "wordInSpanish": "Y media",
                     "wordInChatino": "jlu'we",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/ymedia.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/YMedia.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/ymedia.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/YMedia.ogg"
                 }
                 ,
                 "word-10": {
                     "wordInSpanish": "Cuando",
                     "wordInChatino": "la yaa",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/cuando.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Cuando.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/cuando.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Cuando.ogg"
                 },
                 "word-11": {
                     "wordInSpanish": "Almuerzo",
                     "wordInChatino": "romsaa",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/almuerzo.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Almuerzo.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/almuerzo.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Almuerzo.ogg"
                 },
                 "word-12": {
                     "wordInSpanish": "Comida",
                     "wordInChatino": "skwa",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/comida.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Comida.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/comida.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Comida.ogg"
                 },
                 "word-13": {
                     "wordInSpanish": "Cena",
                     "wordInChatino": "ku siin",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/cena.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Cena.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/cena.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Cena.ogg"
                 },
                 "word-14": {
                     "wordInSpanish": "Clases",
                     "wordInChatino": "xla",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/clases.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Clases.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/clases.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Clases.ogg"
                 },
                 "word-15": {
                     "wordInSpanish": "Fiesta",
                     "wordInChatino": "ta'a",
-                    "pathBackground": "assets/dataApp/level1/lesson3/vocabulary/Fiesta.jpg",
-                    "pathSound": "assets/dataApp/level1/lesson3/vocabulary/Fiesta.ogg"
+                    "pathBackground": "level1/lesson3/vocabulary/Fiesta.jpg",
+                    "pathSound": "level1/lesson3/vocabulary/Fiesta.ogg"
                 }
             },
             "pronunciaton": {
@@ -544,69 +544,69 @@
                     "a": {
                         "wordInSpanish": "Boca",
                         "wordInChatino": "tu'wa",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/boca.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/Boca.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/basicvowels/boca.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/basicvowels/Boca.ogg"
                     },
                     "e": {
                         "wordInSpanish": "Cohete",
                         "wordInChatino": "wte",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/cohete.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/Cuete.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/basicvowels/cohete.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/basicvowels/Cuete.ogg"
                     },
                     "i": {
                         "wordInSpanish": "Monte",
                         "wordInChatino": "kixin'",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/monte.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/Monte.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/basicvowels/monte.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/basicvowels/Monte.ogg"
                     },
                     "o": {
                         "wordInSpanish": "Amarrar",
                         "wordInChatino": "mskan'",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/amarrar.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/Amarrar.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/basicvowels/amarrar.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/basicvowels/Amarrar.ogg"
                     },
                     "u": {
                         "wordInSpanish": "Tamales",
                         "wordInChatino": "jakatun'",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/tamales.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/basicvowels/Tamales.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/basicvowels/tamales.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/basicvowels/Tamales.ogg"
                     }
                 },
                 "longvowels": {
                     "aa": {
                         "wordInSpanish": "Casa",
                         "wordInChatino": "na'an",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/casa.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/Casa.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/longvowels/casa.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/longvowels/Casa.ogg"
                     },
                     "ee": {
                         "wordInSpanish": "Cantaro",
                         "wordInChatino": "te'én",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/cantaro.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/Cantaro.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/longvowels/cantaro.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/longvowels/Cantaro.ogg"
                     },
                     "ii": {
                         "wordInSpanish": "Golpear",
                         "wordInChatino": "jwi'in",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/golpear.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/Golpear.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/longvowels/golpear.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/longvowels/Golpear.ogg"
                     },
                     "oo": {
                         "wordInSpanish": "Elote",
                         "wordInChatino": "nda'an",
-                        "pathImage": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/elote.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson3/pronunciaton/longvowels/Elote.ogg"
+                        "pathImage": "level1/lesson3/pronunciaton/longvowels/elote.jpg",
+                        "pathSound": "level1/lesson3/pronunciaton/longvowels/Elote.ogg"
                     },
                     "uu": {
                         "wordInSpanish": "tierra",
                         "wordInChatino": "yuu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
                     }
                 }
             },
             "conversation": {
-                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+                "pathVideo": "level1/lesson1/conversation/conver01.mp4"
             },            
             "exercises": {
                 "act-1": {
@@ -678,86 +678,86 @@
                 "word-1": {
                     "wordInSpanish": "Contento",
                     "wordInChatino": "Su'we ka tiye",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/contento.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/contento.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/contento.png",
+                    "pathSound": "level2/lesson1/vocabulary/contento.ogg"
                 },
                 "word-2": {
                     "wordInSpanish": "Triste",
                     "wordInChatino": "Jyu'u",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/triste.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/triste.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/triste.png",
+                    "pathSound": "level2/lesson1/vocabulary/triste.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "Enojado",
                     "wordInChatino": "Sin' ti'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/enojado.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/enojado.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/enojado.png",
+                    "pathSound": "level2/lesson1/vocabulary/enojado.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "Calor",
                     "wordInChatino": "Tike'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/calor.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/calor.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/calor.png",
+                    "pathSound": "level2/lesson1/vocabulary/calor.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Frío",
                     "wordInChatino": "Tlya'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/frio.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/frio.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/frio.png",
+                    "pathSound": "level2/lesson1/vocabulary/frio.ogg"
                 },
                 "word-6": {
                     "wordInSpanish": "Enfermo",
                     "wordInChatino": "Ti'í",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/enfermo.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/enfermo.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/enfermo.png",
+                    "pathSound": "level2/lesson1/vocabulary/enfermo.ogg"
                 },
                 "word-7": {
                     "wordInSpanish": "Cansado",
                     "wordInChatino": "Tñan'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/cansado.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/cansado.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/cansado.png",
+                    "pathSound": "level2/lesson1/vocabulary/cansado.ogg"
                 },
                 "word-8": {
                     "wordInSpanish": "Nervioso",
                     "wordInChatino": "Xtya ti'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/nervioso.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/nervioso.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/nervioso.png",
+                    "pathSound": "level2/lesson1/vocabulary/nervioso.ogg"
                 },
                 "word-9": {
                     "wordInSpanish": "Loco",
                     "wordInChatino": "Ndiyu'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/enojado.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/loco.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/enojado.png",
+                    "pathSound": "level2/lesson1/vocabulary/loco.ogg"
                 },
                 "word-10": {
                     "wordInSpanish": "Flojo",
                     "wordInChatino": "Jo'o",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/flojo.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/flojo.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/flojo.png",
+                    "pathSound": "level2/lesson1/vocabulary/flojo.ogg"
                 },
                 "word-11": {
                     "wordInSpanish": "Trabajador",
                     "wordInChatino": "Tñan ti'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/trabajador.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/trabajador.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/trabajador.png",
+                    "pathSound": "level2/lesson1/vocabulary/trabajador.ogg"
                 },
                 "word-12": {
                     "wordInSpanish": "Rico",
                     "wordInChatino": "Kuliya'",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/rico.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/rico.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/rico.png",
+                    "pathSound": "level2/lesson1/vocabulary/rico.ogg"
                 },
                 "word-13": {
                     "wordInSpanish": "Pobre",
                     "wordInChatino": "Ti'i",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/pobre.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/pobre.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/pobre.png",
+                    "pathSound": "level2/lesson1/vocabulary/pobre.ogg"
                 },
                 "word-14": {
                     "wordInSpanish": "Amable",
                     "wordInChatino": "Su'we tiye",
-                    "pathBackground": "assets/dataApp/level2/lesson1/vocabulary/contento.png",
-                    "pathSound": "assets/dataApp/level2/lesson1/vocabulary/amable.ogg"
+                    "pathBackground": "level2/lesson1/vocabulary/contento.png",
+                    "pathSound": "level2/lesson1/vocabulary/amable.ogg"
                 }
             },
             "pronunciaton": {
@@ -765,69 +765,69 @@
                     "a": {
                         "wordInSpanish": "Huarache",
                         "wordInChatino": "kanan",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/huarache.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/Huarache.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/basicvowels/huarache.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/basicvowels/Huarache.ogg"
                     },
                     "e": {
                         "wordInSpanish": "Gente",
                         "wordInChatino": "nten",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/gente.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/Gente.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/basicvowels/gente.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/basicvowels/Gente.ogg"
                     },
                     "i": {
                         "wordInSpanish": "Bolsa",
                         "wordInChatino": "kwijin",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/bolsa.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/Bolsa.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/basicvowels/bolsa.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/basicvowels/Bolsa.ogg"
                     },
                     "o": {
                         "wordInSpanish": "Hamaca",
                         "wordInChatino": "katan",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/hamaca.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/Hamaca.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/basicvowels/hamaca.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/basicvowels/Hamaca.ogg"
                     },
                     "u": {
                         "wordInSpanish": "Nudo",
                         "wordInChatino": "tuun",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/nudo.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/basicvowels/Nudo.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/basicvowels/nudo.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/basicvowels/Nudo.ogg"
                     }
                 },
                 "longvowels": {
                     "aa": {
                         "wordInSpanish": "Pierna",
                         "wordInChatino": "kiya'",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/pierna.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/Pierna.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/longvowels/pierna.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/longvowels/Pierna.ogg"
                     },
                     "ee": {
                         "wordInSpanish": "Camino",
                         "wordInChatino": "tuwiin",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/camino.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/Camino.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/longvowels/camino.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/longvowels/Camino.ogg"
                     },
                     "ii": {
                         "wordInSpanish": "Musica",
                         "wordInChatino": "jiiin",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/musica.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/Musica.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/longvowels/musica.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/longvowels/Musica.ogg"
                     },
                     "oo": {
                         "wordInSpanish": "Día",
                         "wordInChatino": "tsan",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/dia.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/Dia.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/longvowels/dia.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/longvowels/Dia.ogg"
                     },
                     "uu": {
                         "wordInSpanish": "camote",
                         "wordInChatino": "kuun",
-                        "pathImage": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/camote.jpg",
-                        "pathSound": "assets/dataApp/level2/lesson1/pronunciaton/longvowels/Camote.ogg"
+                        "pathImage": "level2/lesson1/pronunciaton/longvowels/camote.jpg",
+                        "pathSound": "level2/lesson1/pronunciaton/longvowels/Camote.ogg"
                     }
                 }
             },
             "conversation": {
-                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+                "pathVideo": "level1/lesson1/conversation/conver01.mp4"
             },            
             "exercises": {
                 "act-1": {
@@ -897,86 +897,86 @@
                 "word-1": {
                     "wordInSpanish": "Uno",
                     "wordInChatino": "Ska",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/uno.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/uno.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/uno.png",
+                    "pathSound": "level2/lesson2/vocabulary/uno.ogg"
                 },
                 "word-2": {
                     "wordInSpanish": "Dos",
                     "wordInChatino": "Tukwa",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/dos.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/dos.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/dos.png",
+                    "pathSound": "level2/lesson2/vocabulary/dos.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "Tres",
                     "wordInChatino": "Snan",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/tres.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/tres.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/tres.png",
+                    "pathSound": "level2/lesson2/vocabulary/tres.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "Cuatro",
                     "wordInChatino": "Jakwa",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/cuatro.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/cuatro.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/cuatro.png",
+                    "pathSound": "level2/lesson2/vocabulary/cuatro.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Cinco",
                     "wordInChatino": "Ka'yu",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/cinco.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/cinco.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/cinco.png",
+                    "pathSound": "level2/lesson2/vocabulary/cinco.ogg"
                 },
                 "word-6": {
                     "wordInSpanish": "Seis",
                     "wordInChatino": "Skwa",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/seis.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/seis.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/seis.png",
+                    "pathSound": "level2/lesson2/vocabulary/seis.ogg"
                 },
                 "word-7": {
                     "wordInSpanish": "Siete",
                     "wordInChatino": "Kati",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/siete.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/siete.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/siete.png",
+                    "pathSound": "level2/lesson2/vocabulary/siete.ogg"
                 },
                 "word-8": {
                     "wordInSpanish": "Ocho",
                     "wordInChatino": "Snu'",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/ocho.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/ocho.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/ocho.png",
+                    "pathSound": "level2/lesson2/vocabulary/ocho.ogg"
                 },
                 "word-9": {
                     "wordInSpanish": "Nueve",
                     "wordInChatino": "Kaa",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/nueve.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/nueve.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/nueve.png",
+                    "pathSound": "level2/lesson2/vocabulary/nueve.ogg"
                 },
                 "word-10": {
                     "wordInSpanish": "Diez",
                     "wordInChatino": "Tii",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/diez.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/diez.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/diez.png",
+                    "pathSound": "level2/lesson2/vocabulary/diez.ogg"
                 },
                 "word-11": {
                     "wordInSpanish": "Once",
                     "wordInChatino": "Tixka",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/once.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/once.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/once.png",
+                    "pathSound": "level2/lesson2/vocabulary/once.ogg"
                 },
                 "word-12": {
                     "wordInSpanish": "Doce",
                     "wordInChatino": "Tityukwaa",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/doce.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/doce.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/doce.png",
+                    "pathSound": "level2/lesson2/vocabulary/doce.ogg"
                 },
                 "word-13": {
                     "wordInSpanish": "Veinte",
                     "wordInChatino": "Kala",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/veinte.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/veinte.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/veinte.png",
+                    "pathSound": "level2/lesson2/vocabulary/veinte.ogg"
                 },
                 "word-14": {
                     "wordInSpanish": "Treinta",
                     "wordInChatino": "Kala tyii",
-                    "pathBackground": "assets/dataApp/level2/lesson2/vocabulary/treinta.png",
-                    "pathSound": "assets/dataApp/level2/lesson2/vocabulary/treinta.ogg"
+                    "pathBackground": "level2/lesson2/vocabulary/treinta.png",
+                    "pathSound": "level2/lesson2/vocabulary/treinta.ogg"
                 }
             },
             "pronunciaton": {
@@ -984,69 +984,69 @@
                     "a": {
                         "wordInSpanish": "mesa",
                         "wordInChatino": "msa",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
                     },
                     "e": {
                         "wordInSpanish": "cafe",
                         "wordInChatino": "kajue",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
                     },
                     "i": {
                         "wordInSpanish": "pequeño",
                         "wordInChatino": "lio ´ti",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
                     },
                     "o": {
                         "wordInSpanish": "pollo",
                         "wordInChatino": "kuto",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
                     },
                     "u": {
                         "wordInSpanish": "suelo",
                         "wordInChatino": "liu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
                     }
                 },
                 "longvowels": {
                     "aa": {
                         "wordInSpanish": "frijol",
                         "wordInChatino": "ndaa",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
                     },
                     "ee": {
                         "wordInSpanish": "José",
                         "wordInChatino": "see",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
                     },
                     "ii": {
                         "wordInSpanish": "zacate",
                         "wordInChatino": "kii",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
                     },
                     "oo": {
                         "wordInSpanish": "nube",
                         "wordInChatino": "koo",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
                     },
                     "uu": {
                         "wordInSpanish": "tierra",
                         "wordInChatino": "yuu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
                     }
                 }
             },
             "conversation": {
-                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+                "pathVideo": "level1/lesson1/conversation/conver01.mp4"
             },            
             "exercises": {
                 "act-1": {
@@ -1116,86 +1116,86 @@
                 "word-1": {
                     "wordInSpanish": "Lunes",
                     "wordInChatino": "luni",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Lunes.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Lunes.ogg"
                 },
                 "word-2": {
                     "wordInSpanish": "Martes",
                     "wordInChatino": "marte",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Martes.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Martes.ogg"
                 },
                 "word-3": {
                     "wordInSpanish": "Miercoles",
                     "wordInChatino": "Merku",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Miercoles.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Miercoles.ogg"
                 },
                 "word-4": {
                     "wordInSpanish": "Jueves",
                     "wordInChatino": "jwebe",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Jueves.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Jueves.ogg"
                 },
                 "word-5": {
                     "wordInSpanish": "Viernes",
                     "wordInChatino": "biyerne",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Viernes.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Viernes.ogg"
                 },
                 "word-6": {
                     "wordInSpanish": "Sabado",
                     "wordInChatino": "Saro",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Sabado.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Sabado.ogg"
                 },
                 "word-7": {
                     "wordInSpanish": "Domingo",
                     "wordInChatino": "Teminku",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/lmmjvsd.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Domingo.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/lmmjvsd.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Domingo.ogg"
                 },
                 "word-8": {
                     "wordInSpanish": "Semana",
                     "wordInChatino": "ska semnan",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/semana.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Semana.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/semana.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Semana.ogg"
                 },
                 "word-9": {
                     "wordInSpanish": "Mes",
                     "wordInChatino": "nga ko'",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/mes.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Mes.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/mes.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Mes.ogg"
                 },
                 "word-10": {
                     "wordInSpanish": "Año",
                     "wordInChatino": "yijan",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/anio.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Anio.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/anio.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Anio.ogg"
                 },
                 "word-11": {
                     "wordInSpanish": "Mañana",
                     "wordInChatino": "kyaa",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/mpa.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Manana.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/mpa.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Manana.ogg"
                 },
                 "word-12": {
                     "wordInSpanish": "Pasado mañana",
                     "wordInChatino": "wcha",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/mpa.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/PasadoManana.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/mpa.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/PasadoManana.ogg"
                 },
                 "word-13": {
                     "wordInSpanish": "Ayer",
                     "wordInChatino": "ti kaa",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/mpa.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/Ayer.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/mpa.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/Ayer.ogg"
                 },
                 "word-14": {
                     "wordInSpanish": "Plaza",
                     "wordInChatino": "lo kiya'",
-                    "pathBackground": "assets/dataApp/level2/lesson3/vocabulary/plaza.jpg",
-                    "pathSound": "assets/dataApp/level2/lesson3/vocabulary/plaza.ogg"
+                    "pathBackground": "level2/lesson3/vocabulary/plaza.jpg",
+                    "pathSound": "level2/lesson3/vocabulary/plaza.ogg"
                 }
             },
             "pronunciaton": {
@@ -1203,69 +1203,69 @@
                     "a": {
                         "wordInSpanish": "mesa",
                         "wordInChatino": "msa",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/mesa.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/alesson1.ogg"
                     },
                     "e": {
                         "wordInSpanish": "cafe",
                         "wordInChatino": "kajue",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/cafe.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/elesson1.ogg"
                     },
                     "i": {
                         "wordInSpanish": "pequeño",
                         "wordInChatino": "lio 'ti",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/boy.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/boy.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/ilesson1.ogg"
                     },
                     "o": {
                         "wordInSpanish": "pollo",
                         "wordInChatino": "kuto",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/pollo.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/olesson1.ogg"
                     },
                     "u": {
                         "wordInSpanish": "suelo",
                         "wordInChatino": "liu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/suelo.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/basicvowels/suelo.png",
+                        "pathSound": "level1/lesson1/pronunciaton/basicvowels/ulesson1.ogg"
                     }
                 },
                 "longvowels": {
                     "aa": {
                         "wordInSpanish": "frijol",
                         "wordInChatino": "ndaa",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/frijol.jpg",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/frijol.jpg",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/aalesson1.ogg"
                     },
                     "ee": {
                         "wordInSpanish": "José",
                         "wordInChatino": "see",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/jose.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/jose.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/eelesson1.ogg"
                     },
                     "ii": {
                         "wordInSpanish": "zacate",
                         "wordInChatino": "kii",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/zacate.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/zacate.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/iilesson1.ogg"
                     },
                     "oo": {
                         "wordInSpanish": "nube",
                         "wordInChatino": "koo",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/nube.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/nube.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/oolesson1.ogg"
                     },
                     "uu": {
                         "wordInSpanish": "tierra",
                         "wordInChatino": "yuu",
-                        "pathImage": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/tierra.png",
-                        "pathSound": "assets/dataApp/level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
+                        "pathImage": "level1/lesson1/pronunciaton/longvowels/tierra.png",
+                        "pathSound": "level1/lesson1/pronunciaton/longvowels/uulesson1.ogg"
                     }
                 }
             },
             "conversation": {
-                "pathVideo": "assets/dataApp/level1/lesson1/conversation/conver01.mp4"
+                "pathVideo": "level1/lesson1/conversation/conver01.mp4"
             },            
             "exercises": {
                 "act-1": {

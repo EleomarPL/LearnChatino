@@ -7,13 +7,14 @@ class ComponentVocabulary extends StatefulWidget {
   final String uidUser;
   final String wordInSpanish;
   final String wordInChatino;
-  final String pathImage;
-  final String pathSound;
+  final Map<String, String> image;
+  final Map<String, String> sound;
+
   ComponentVocabulary(
       {Key key,
       this.wordInSpanish,
-      this.pathImage,
-      this.pathSound,
+      this.image,
+      this.sound,
       this.wordInChatino,
       this.uidUser})
       : super(key: key);
@@ -61,7 +62,7 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                 width: (MediaQuery.of(context).size.width) - 23,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(widget.pathImage),
+                    image: NetworkImage(widget.image['URL']),
                     fit: BoxFit.contain,
                   ),
                   borderRadius: BorderRadius.circular(20),
@@ -124,8 +125,8 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
                                   widget.uidUser,
                                   widget.wordInSpanish,
                                   widget.wordInChatino,
-                                  widget.pathImage,
-                                  widget.pathSound))
+                                  widget.image['path'],
+                                  widget.sound['path']))
                               : _db.deleteWord(
                                   widget.uidUser, widget.wordInSpanish);
                           setState(() {
@@ -144,7 +145,7 @@ class _ComponentVocabularyState extends State<ComponentVocabulary> {
           ),
           onTap: () {
             AssetsAudioPlayer.newPlayer().open(
-              Audio(widget.pathSound),
+              Audio.network(widget.sound['URL']),
               autoStart: true,
               showNotification: true,
             );

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class ComponentConversation extends StatefulWidget {
-  final String pathVideo;
-  ComponentConversation({Key key, this.pathVideo}) : super(key: key);
+  final String videoURL;
+  ComponentConversation({Key key, this.videoURL}) : super(key: key);
 
   @override
   _ComponentConversationState createState() => _ComponentConversationState();
@@ -15,7 +15,7 @@ class _ComponentConversationState extends State<ComponentConversation> {
 
   @override
   void initState() {
-    _controller = VideoPlayerController.asset(widget.pathVideo);
+    _controller = VideoPlayerController.network(widget.videoURL);
     _initializeVideoPlayerFuture = _controller.initialize();
     super.initState();
   }

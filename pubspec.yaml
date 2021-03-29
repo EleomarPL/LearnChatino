@@ -34,6 +34,7 @@ dependencies:
   firebase_core: "^0.7.0"
   cloud_firestore: "^0.16.0+1"
   firebase_auth: "^0.20.1"
+  firebase_storage: "^7.0.0"
 
 dev_dependencies:
   flutter_test:
@@ -57,21 +58,6 @@ flutter:
     - assets/lessonHome/
     - assets/lessonHome/exercise/
     - assets/informationTab/
-    - assets/dataApp/level1/lesson1/vocabulary/
-    - assets/dataApp/level1/lesson1/pronunciaton/basicvowels/
-    - assets/dataApp/level1/lesson1/pronunciaton/longvowels/
-    - assets/dataApp/level1/lesson1/conversation/
-    - assets/dataApp/level1/lesson2/vocabulary/
-    - assets/dataApp/level1/lesson2/pronunciaton/basicvowels/
-    - assets/dataApp/level1/lesson2/pronunciaton/longvowels/
-    - assets/dataApp/level1/lesson3/pronunciaton/basicvowels/
-    - assets/dataApp/level1/lesson3/pronunciaton/longvowels/
-    - assets/dataApp/level2/lesson1/vocabulary/
-    - assets/dataApp/level2/lesson1/pronunciaton/basicvowels/
-    - assets/dataApp/level2/lesson1/pronunciaton/longvowels/
-    - assets/dataApp/level2/lesson2/vocabulary/
-    - assets/dataApp/level1/lesson3/vocabulary/
-    - assets/dataApp/level2/lesson3/vocabulary/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../contentData/ContentData.dart';
-
+import '../../../../database/Storage.dart';
 import '../components/ComponentBody.dart';
 import 'components/ComponentPronunciaton.dart';
 
@@ -16,6 +16,8 @@ class LongVowels extends StatefulWidget {
 class _LongVowelsState extends State<LongVowels> {
   List<String> _tabLongVowels = ["aa", "ee", "ii", "oo", "uu"];
   ContentData _contentData = ContentData();
+  Storage _storage = Storage();
+
   Widget _fillListVowel(String letter) {
     return FutureBuilder(
         future: _contentData.getPronunciaton(
@@ -23,12 +25,25 @@ class _LongVowelsState extends State<LongVowels> {
         builder: (BuildContext context,
             AsyncSnapshot<Map<String, dynamic>> snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            return ComponentPronunciaton(
-              pathImage: snapshot.data['pathImage'].toString(),
-              wordInSpanish: snapshot.data['wordInSpanish'].toString(),
-              wordInChatino: snapshot.data['wordInChatino'].toString(),
-              pathSound: snapshot.data['pathSound'].toString(),
-            );
+            return FutureBuilder(
+                future: _storage.getImageAndURLSound(
+                    snapshot.data['pathImage'].toString(),
+                    snapshot.data['pathSound'].toString()),
+                builder:
+                    (BuildContext c, AsyncSnapshot<Map<String, String>> s) {
+                  if (s.hasData) {
+                    return ComponentPronunciaton(
+                      imageURL: s.data['imageURL'],
+                      wordInSpanish: snapshot.data['wordInSpanish'].toString(),
+                      wordInChatino: snapshot.data['wordInChatino'].toString(),
+                      soundURL: s.data['soundURL'],
+                    );
+                  } else {
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+                });
           } else {
             return Center(
               child: CircularProgressIndicator(),

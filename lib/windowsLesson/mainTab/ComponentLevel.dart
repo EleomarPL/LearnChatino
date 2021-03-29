@@ -76,18 +76,18 @@ class _ComponentLevelState extends State<ComponentLevel> {
                   height: 7,
                 ),
                 (isAccessible)
-                    ? RaisedButton(
-                        color: Colors.green,
+                    ? ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.green,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                        ),
                         onPressed: () {
                           Navigator.of(context)
                               .push(_handleNavigationPressed(numLesson));
                         },
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                            15.0,
-                          ),
-                        ),
                         child: Text(
                           "Iniciar",
                           textAlign: TextAlign.center,

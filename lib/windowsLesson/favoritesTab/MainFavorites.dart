@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../database/ObjectTables.dart';
 import '../../database/MainDatabase.dart';
+import '../../database/Storage.dart';
 import 'ComponentWord.dart';
 
 class MainFavorite extends StatefulWidget {
@@ -13,6 +14,8 @@ class MainFavorite extends StatefulWidget {
 
 class _MainFavoriteState extends State<MainFavorite> {
   MainDatabase mainDatabase = MainDatabase();
+  Storage _storage = Storage();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,13 +43,35 @@ class _MainFavoriteState extends State<MainFavorite> {
                     return Column(
                       children: [
                         for (WordFavorites wordFavorites in snapshot.data)
-                          ComponentWord(
-                            uidUser: widget.uidUser,
-                            wordInSpanish: wordFavorites.wordSpanish,
-                            wordInChatino: wordFavorites.wordChatino,
-                            pathImage: wordFavorites.pathImage,
-                            pathSound: wordFavorites.pathSound,
-                          ),
+                          FutureBuilder(
+                              future: _storage.getImageAndURLSound(
+                                  wordFavorites.pathImage,
+                                  wordFavorites.pathSound),
+                              builder: (c, s) {
+                                if (s.hasData) {
+                                  return ComponentWord(
+                                    uidUser: widget.uidUser,
+                                    wordInSpanish: wordFavorites.wordSpanish,
+                                    wordInChatino: wordFavorites.wordChatino,
+                                    image: {
+                                      'URL': s.data['imageURL'],
+                                      'path': wordFavorites.pathImage
+                                    },
+                                    sound: {
+                                      'URL': s.data['soundURL'],
+                                      'path': wordFavorites.pathSound
+                                    },
+                                  );
+                                } else {
+                                  return Center(
+                                      child: Column(
+                                    children: [
+                                      SizedBox(height: 30),
+                                      CircularProgressIndicator(),
+                                    ],
+                                  ));
+                                }
+                              })
                       ],
                     );
                   } else {

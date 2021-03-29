@@ -7,14 +7,14 @@ class ComponentWord extends StatefulWidget {
   final String uidUser;
   final String wordInSpanish;
   final String wordInChatino;
-  final String pathImage;
-  final String pathSound;
+  final Map<String, String> image;
+  final Map<String, String> sound;
   ComponentWord(
       {Key key,
       this.wordInSpanish,
       this.wordInChatino,
-      this.pathImage,
-      this.pathSound,
+      this.image,
+      this.sound,
       this.uidUser})
       : super(key: key);
 
@@ -46,7 +46,7 @@ class _ComponentWordState extends State<ComponentWord> {
                 width: (MediaQuery.of(context).size.width) - 23,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(widget.pathImage),
+                    image: NetworkImage(widget.image['URL']),
                     fit: BoxFit.fill,
                   ),
                   borderRadius: BorderRadius.circular(20),
@@ -114,8 +114,8 @@ class _ComponentWordState extends State<ComponentWord> {
                                   widget.uidUser,
                                   widget.wordInSpanish,
                                   widget.wordInChatino,
-                                  widget.pathImage,
-                                  widget.pathSound))
+                                  widget.image['path'],
+                                  widget.sound['path']))
                               : _db.deleteWord(
                                   widget.uidUser, widget.wordInSpanish);
                           setState(() {
@@ -134,7 +134,7 @@ class _ComponentWordState extends State<ComponentWord> {
           ),
           onTap: () {
             AssetsAudioPlayer.newPlayer().open(
-              Audio(widget.pathSound),
+              Audio.network(widget.sound['URL']),
               autoStart: true,
               showNotification: true,
             );

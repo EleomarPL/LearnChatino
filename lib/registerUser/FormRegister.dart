@@ -12,28 +12,27 @@ class _FormRegisterState extends State<FormRegister> {
 
   FirebaseAuth _auth = FirebaseAuth.instance;
   FirebaseFirestore _db = FirebaseFirestore.instance;
+  bool isProcessingQuery = false;
 
   TextEditingController controllerName = TextEditingController();
   TextEditingController controllerEmail = TextEditingController();
   TextEditingController controllerPassword = TextEditingController();
+  TextEditingController controllerPasswordConfir = TextEditingController();
 
   String dropdownValue = "Modo aprendiz";
   String textDescriptionDropDown =
       "Este modo te permite ir avanzando las lecciones una por una, hasta terminar todas";
 
   Widget _textFormFieldBox(
-      TextEditingController controllerBox, String labelTextBox, bool isFocused,
+      TextEditingController controllerBox, String labelTextBox,
       {bool obscureText = false,
-      TextInputType keyboardType = TextInputType.text}) {
+      TextInputType keyboardType = TextInputType.text,
+      validator}) {
     return TextFormField(
       obscureText: obscureText,
       keyboardType: keyboardType,
       controller: controllerBox,
-      validator: (String value) {
-        return (value.trim().isEmpty)
-            ? 'Rellena el campo'
-            : ((value.length > 29) ? "Maximo 29 caracteres" : null);
-      },
+      validator: validator,
       style: TextStyle(
         fontSize: 23,
         color: Colors.white,
@@ -79,11 +78,11 @@ class _FormRegisterState extends State<FormRegister> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        RaisedButton(
-                          color: Colors.blue[800],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(
-                              15.0,
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.blue[800],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
                             ),
                           ),
                           child: Text(
@@ -117,19 +116,27 @@ class _FormRegisterState extends State<FormRegister> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _textFormFieldBox(controllerName, "Nombre", false),
-              _textFormFieldBox(
-                controllerEmail,
-                "Email",
-                false,
-                keyboardType: TextInputType.emailAddress,
-              ),
-              _textFormFieldBox(
-                controllerPassword,
-                "Contraseña",
-                false,
-                obscureText: true,
-              ),
+              _textFormFieldBox(controllerName, "Nombre",
+                  validator: (String value) => (value.trim().isEmpty)
+                      ? 'Rellena el campo'
+                      : ((value.length > 29) ? "Maximo 29 caracteres" : null)),
+              _textFormFieldBox(controllerEmail, "Email",
+                  keyboardType: TextInputType.emailAddress,
+                  validator: (String value) => (value.trim().isEmpty)
+                      ? 'Rellena el campo'
+                      : ((value.length > 29) ? "Maximo 29 caracteres" : null)),
+              _textFormFieldBox(controllerPassword, "Contraseña",
+                  obscureText: true,
+                  validator: (String value) => (value.trim().isEmpty)
+                      ? 'Rellena el campo'
+                      : ((value.length > 29) ? "Maximo 29 caracteres" : null)),
+              _textFormFieldBox(controllerPasswordConfir, "Repetir Contraseña",
+                  obscureText: true,
+                  validator: (String value) => (value.trim().isEmpty)
+                      ? 'Rellena el campo'
+                      : ((value != controllerPassword.text)
+                          ? "Las contraseñas no coinciden"
+                          : null)),
               SizedBox(
                 height: 40,
               ),
@@ -187,17 +194,38 @@ class _FormRegisterState extends State<FormRegister> {
               SizedBox(
                 height: 20,
               ),
-              RaisedButton(
-                color: Colors.blue[900],
-                child: Text(
-                  'Aceptar',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                  ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.blue[900],
+                  padding: EdgeInsets.only(top: 10, bottom: 10),
                 ),
+                child: isProcessingQuery
+                    ? Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircularProgressIndicator(),
+                          SizedBox(width: 15),
+                          Text(
+                            'Aceptar',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      )
+                    : Text(
+                        'Aceptar',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                      ),
                 onPressed: () {
-                  if (_formKey.currentState.validate()) {
+                  if (!isProcessingQuery && _formKey.currentState.validate()) {
+                    setState(() {
+                      isProcessingQuery = true;
+                    });
                     _registerAccount();
                   }
                 },
@@ -253,6 +281,10 @@ class _FormRegisterState extends State<FormRegister> {
     } catch (e) {
       _showMessage('Error desconocido');
       print(e);
+    } finally {
+      setState(() {
+        isProcessingQuery = false;
+      });
     }
   }
 }

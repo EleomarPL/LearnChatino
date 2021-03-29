@@ -45,6 +45,7 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
   TextEditingController controllerPassword = TextEditingController();
   final _auth = FirebaseAuth.instance;
   final _db = FirebaseFirestore.instance;
+  bool isProcessingQuery = false;
 
   Route _handleNavigationPressed(Widget nextWindow) {
     return PageRouteBuilder(
@@ -87,11 +88,11 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      RaisedButton(
-                        color: Colors.blue[800],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                            15.0,
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.blue[800],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
                           ),
                         ),
                         child: Text(
@@ -146,28 +147,46 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                           "Email",
                           keyboardType: TextInputType.emailAddress,
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
                         _buildField(
                           controllerPassword,
                           "Contraseña",
                           obscureText: true,
                         ),
                         SizedBox(
-                          height: 20,
+                          height: 50,
                         ),
-                        RaisedButton(
-                          color: Colors.blue[900],
-                          child: Text(
-                            'INICIAR SESIÓN',
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.white,
-                            ),
-                          ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              primary: Colors.blue[900],
+                              padding: EdgeInsets.only(top: 10, bottom: 10)),
+                          child: isProcessingQuery
+                              ? Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CircularProgressIndicator(),
+                                    SizedBox(width: 15),
+                                    Text(
+                                      'INICIAR SESIÓN',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              : Text(
+                                  'INICIAR SESIÓN',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                  ),
+                                ),
                           onPressed: () {
-                            if (_formKey.currentState.validate()) {
+                            if (!isProcessingQuery &&
+                                _formKey.currentState.validate()) {
+                              setState(() {
+                                isProcessingQuery = true;
+                              });
                               _signInWithEmailAndPassword();
                             }
                           },
@@ -192,10 +211,12 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                     decoration: TextDecoration.none,
                   ),
                 ),
-                RaisedButton(
-                  color: Colors.transparent,
-                  elevation: 0.0,
-                  padding: EdgeInsets.all(0.0),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.transparent,
+                    elevation: 0,
+                    padding: EdgeInsets.all(0.0),
+                  ),
                   child: Text(
                     "Crea uno aquí!",
                     style: TextStyle(
@@ -204,10 +225,13 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
                       decoration: TextDecoration.none,
                     ),
                   ),
-                  onPressed: () => {
-                    Navigator.of(context).push(
-                        _handleNavigationPressed(registerUser.MainWindow())),
-                  },
+                  onPressed: isProcessingQuery
+                      ? null
+                      : () => {
+                            Navigator.of(context).push(_handleNavigationPressed(
+                                registerUser.MainWindow())),
+                          },
+                  onLongPress: null,
                 ),
               ],
             ),
@@ -291,6 +315,10 @@ class _bodyMainWindowState extends State<bodyMainWindow> {
     } catch (e) {
       _messageError('Error desconocido');
       print(e);
+    } finally {
+      setState(() {
+        isProcessingQuery = false;
+      });
     }
   }
 }

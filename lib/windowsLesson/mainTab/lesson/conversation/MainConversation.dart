@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../HeaderWindowLesson.dart';
 import 'ComponentConversation.dart';
 import '../../../../contentData/ContentData.dart';
+import '../../../../database/Storage.dart';
 
 class MainConversation extends StatefulWidget {
   final int numLevel;
@@ -14,6 +15,8 @@ class MainConversation extends StatefulWidget {
 
 class _MainConversationState extends State<MainConversation> {
   ContentData _contentData = ContentData();
+  Storage _storage = Storage();
+
   @override
   Widget build(BuildContext context) {
     return HeaderWindowLesson(
@@ -24,9 +27,19 @@ class _MainConversationState extends State<MainConversation> {
                 _contentData.getConversation(widget.numLevel, widget.numLesson),
             builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
-                return ComponentConversation(
-                  pathVideo: snapshot.data,
-                );
+                return FutureBuilder(
+                    future: _storage.getVideoURL(snapshot.data),
+                    builder: (c, s) {
+                      if (s.hasData) {
+                        return ComponentConversation(
+                          videoURL: s.data,
+                        );
+                      } else {
+                        return Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      }
+                    });
               } else {
                 return Center(
                   child: CircularProgressIndicator(),

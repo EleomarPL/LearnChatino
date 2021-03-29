@@ -76,13 +76,11 @@ class Options {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      RaisedButton(
-                        color: Colors.blue[800],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                            15.0,
-                          ),
-                        ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.blue[800],
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0))),
                         child: Text(
                           'Si',
                           style: TextStyle(
@@ -92,12 +90,11 @@ class Options {
                         ),
                         onPressed: actionYes,
                       ),
-                      RaisedButton(
-                        color: Colors.blue[800],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                            15.0,
-                          ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.blue[800],
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0)),
                         ),
                         child: Text(
                           'No',

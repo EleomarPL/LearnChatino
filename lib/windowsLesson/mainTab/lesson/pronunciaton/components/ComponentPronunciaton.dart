@@ -12,16 +12,16 @@ Widget _textComponentPonunciaton(
     );
 
 class ComponentPronunciaton extends StatelessWidget {
-  final String pathImage;
+  final String imageURL;
   final String wordInSpanish;
   final String wordInChatino;
-  final String pathSound;
+  final String soundURL;
   const ComponentPronunciaton(
       {Key key,
-      this.pathImage,
+      this.imageURL,
       this.wordInSpanish,
       this.wordInChatino,
-      this.pathSound})
+      this.soundURL})
       : super(key: key);
 
   @override
@@ -33,8 +33,8 @@ class ComponentPronunciaton extends StatelessWidget {
           height: 10,
         ),
         Container(
-          child: Image.asset(
-            pathImage,
+          child: Image.network(
+            imageURL,
             width: MediaQuery.of(context).size.width - 100,
             height: 180.0,
             fit: BoxFit.cover,
@@ -58,7 +58,7 @@ class ComponentPronunciaton extends StatelessWidget {
           ),
           onTap: () {
             AssetsAudioPlayer.newPlayer().open(
-              Audio(pathSound),
+              Audio.network(soundURL),
               autoStart: true,
               showNotification: true,
             );

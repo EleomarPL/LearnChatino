@@ -29,9 +29,11 @@ class _ComponentTabBarViewState extends State<ComponentTabBarView> {
   Widget build(BuildContext context) {
     Widget _buttonController(String textButton, double sizeText,
             FontWeight weightText, Color colorText, bool isNext) =>
-        RaisedButton(
-            elevation: 0,
-            color: Colors.white,
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              primary: Colors.white,
+              elevation: 0,
+            ),
             child: _textBody(textButton, sizeText, weightText, colorText),
             onPressed: () {
               FocusScope.of(context).requestFocus(new FocusNode());
