@@ -91,7 +91,10 @@ class _ComponentLevelState extends State<ComponentLevel> {
                         child: Text(
                           "Iniciar",
                           textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                          ),
                         ),
                       )
                     : SizedBox(

@@ -37,55 +37,58 @@ class _MainFavoriteState extends State<MainFavorite> {
               FutureBuilder(
                 future: mainDatabase.getWordFavorites(widget.uidUser),
                 initialData: List<WordFavorites>(),
-                builder: (BuildContext context,
-                    AsyncSnapshot<List<WordFavorites>> snapshot) {
-                  if (snapshot.hasData && snapshot.data.length != 0) {
-                    return Column(
-                      children: [
-                        for (WordFavorites wordFavorites in snapshot.data)
-                          FutureBuilder(
-                              future: _storage.getImageAndURLSound(
-                                  wordFavorites.pathImage,
-                                  wordFavorites.pathSound),
-                              builder: (c, s) {
-                                if (s.hasData) {
-                                  return ComponentWord(
-                                    uidUser: widget.uidUser,
-                                    wordInSpanish: wordFavorites.wordSpanish,
-                                    wordInChatino: wordFavorites.wordChatino,
-                                    image: {
-                                      'URL': s.data['imageURL'],
-                                      'path': wordFavorites.pathImage
+                builder:
+                    (context, AsyncSnapshot<List<WordFavorites>> snapshot) {
+                  if (snapshot.connectionState == ConnectionState.done) {
+                    if (snapshot.hasData && snapshot.data.length != 0) {
+                      return Column(
+                          children: snapshot.data
+                              .map((word) => FutureBuilder(
+                                    future: _storage.getImageAndURLSound(
+                                        word.pathImage, word.pathSound),
+                                    builder: (c,
+                                        AsyncSnapshot<Map<String, String>> s) {
+                                      if (s.hasData) {
+                                        return ComponentWord(
+                                          uidUser: widget.uidUser,
+                                          wordInSpanish: word.wordSpanish,
+                                          wordInChatino: word.wordChatino,
+                                          image: {
+                                            'URL': s.data['imageURL'],
+                                            'path': word.pathImage
+                                          },
+                                          sound: {
+                                            'URL': s.data['soundURL'],
+                                            'path': word.pathSound
+                                          },
+                                        );
+                                      } else {
+                                        return Center(
+                                            child: Column(
+                                          children: [
+                                            SizedBox(height: 30),
+                                            CircularProgressIndicator(),
+                                          ],
+                                        ));
+                                      }
                                     },
-                                    sound: {
-                                      'URL': s.data['soundURL'],
-                                      'path': wordFavorites.pathSound
-                                    },
-                                  );
-                                } else {
-                                  return Center(
-                                      child: Column(
-                                    children: [
-                                      SizedBox(height: 30),
-                                      CircularProgressIndicator(),
-                                    ],
-                                  ));
-                                }
-                              })
-                      ],
-                    );
-                  } else {
-                    return Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height / 2,
-                      alignment: Alignment.center,
-                      child: Text(
-                        'No hay palabras favoritas',
-                        style: TextStyle(
-                          fontSize: 20.0,
+                                  ))
+                              .toList());
+                    } else {
+                      return Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: MediaQuery.of(context).size.height / 2,
+                        alignment: Alignment.center,
+                        child: Text(
+                          'No hay palabras favoritas',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                          ),
                         ),
-                      ),
-                    );
+                      );
+                    }
+                  } else {
+                    return Center(child: CircularProgressIndicator());
                   }
                 },
               ),
